@@ -77,10 +77,10 @@
   }
   
   .i-img {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     padding-top: 50px;
-    padding-left: 35vh;
+    padding-left: 10vh;
     object-fit: cover;
     position: absolute;
   }
