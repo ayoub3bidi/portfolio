@@ -53,7 +53,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.h3`
   font-weight: 500;
   letter-spacing: 2px;
-  color: #9cc9e3;
+  color: white;
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? '3rem' : '2rem')};
 `;
@@ -63,7 +63,7 @@ export const Hr = styled.hr`
   height: 3px;
   margin: 20px auto;
   border: 0;
-  background: #d0bb57;
+  background: gray;
 `;
 
 export const Intro = styled.div`

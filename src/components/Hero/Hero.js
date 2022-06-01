@@ -12,7 +12,7 @@ const Hero = (props) => (
           Ayoub Abidi
         </SectionTitle>
         <SectionText>
-        I'm a software engineering student & a junior web developer.
+        I'm a software engineering student & a junior web developer interested in entrepreneurship.
         </SectionText>
       </LeftSection>
     </Section>
