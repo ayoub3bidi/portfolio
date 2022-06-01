@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Dokkodo',
-    description: "a minimalist website that can display Musashi's 21 principles for those who walk alone in this life.",
+    description: "A minimalist website that can display Musashi's 21 principles for those who walk alone in this life.",
       tags: ['JavaScript', 'CSS'],
     source: 'https://github.com/ayoub3bidi/Dokkodo',
     visit: 'https://ayoub3bidi.github.io/Dokkodo',
@@ -9,15 +9,15 @@ export const projects = [
   },
   {
     title: 'Quotes',
-    description:"a website that can display random inspirational quotes from a public Api.",
+    description:"A website that can display random inspirational quotes from a public Api.",
     tags: ['JavaScript', 'Bootstrap', 'public-api'],
     source: 'https://github.com/ayoub3bidi/Quotes',
     visit: 'https://ayoub3bidi.github.io/Quotes',
     id: 1,
   },
   {
-    title: 'My heroes',
-    description: "a minimalist website that can display mini-biographies about 20 programmers who made the internet as we know it today..",
+    title: 'My Heroes',
+    description: "A minimalist website that can display mini-biographies about 20 programmers who made the internet as we know it today..",
       tags: ['Vue.js', 'Bootstrap'],
     source: 'https://github.com/ayoub3bidi/myheroes',
     visit: 'https://ayoub3bidi.github.io/myheroes/',
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: `My List`,
-    description: "a simple platform to share your passion by creating lists and sharing them with other users. [My summer internship project]",
+    description: "A simple platform to share your passion by creating lists and sharing them with other users. [My summer internship project]",
     tags: ['Vue', 'Bootstrap', 'Firebase'],
     source: 'https://github.com/ayoub3bidi/mylist',
     visit: 'https://mylist-f82d6.firebaseapp.com',
@@ -65,7 +65,7 @@ export const projects = [
   },
   {
     title: '7amma frippe',
-    description: "a React E-commerce web app UI.",
+    description: "A React E-commerce web app UI.",
       tags: ['React', 'Styled-components'],
     source: 'https://github.com/ayoub3bidi/7amma-fripe',
     visit: 'https://7amma-fripe.netlify.app',
