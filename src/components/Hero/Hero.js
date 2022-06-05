@@ -13,7 +13,9 @@ const Hero = (props) => (
           Ayoub Abidi
         </SectionTitle>
         <SectionText>
-        I'm a software engineering graduate student & a co-organizer at GitHub's Tunisian Community, interested in web development & entrepreneurship.
+        I'm a software engineering graduate student & a co-organizer at <a href="https://www.githubtunisia.tn" target="_blank" rel="noopener noreferrer">GitHub's Tunisian Community</a>, interested in web development & entrepreneurship.
+        <br/>You can follow me on <a href="https://dev.to/ayoub3bidi" target="_blank" rel="noopener noreferrer">DEV</a> where I write about what I have learned so far.
+        <br/> Outside of programming, I enjoy books, manga, video games and movies.
         </SectionText>
         <a href="https://drive.google.com/file/d/1S1S4AdoBrYx0SeajSM6V5qLJD1616IDW/view?usp=sharing" target="_blank">
         <Button onClick={props.handleClick}>See my Resume</Button></a>

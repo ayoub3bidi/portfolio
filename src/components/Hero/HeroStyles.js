@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const LeftSection = styled.div`
+  a {
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.4s ease;
+  }
+  a:hover {
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+  }
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;

@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     title: 'My Heroes',
-    description: "A minimalist website that can display mini-biographies about 20 programmers who made the internet as we know it today..",
+    description: "A minimalist website that can display mini-biographies about 20 programmers who made the internet as we know it today.",
       tags: ['Vue', 'Bootstrap'],
     source: 'https://github.com/ayoub3bidi/myheroes',
     visit: 'https://ayoub3bidi.github.io/myheroes/',
@@ -74,7 +74,7 @@ export const projects = [
   {
     title: 'Ommek Sannefa',
     description: "Kitchen recipes sharing platform.",
-      tags: ['Vue','Firebase'],
+      tags: ['Vue', 'VueX' ,'Firebase'],
     source: 'https://github.com/ayoub3bidi/ommek-sannefa',
     visit: '',
     id: 9,
