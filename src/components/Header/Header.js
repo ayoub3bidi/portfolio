@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { DiClojureAlt } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
     <Div1>
-        <a style={{ display: 'flex', alignItems: 'center', color:"white" }} href="#" target="_blank">
-          <DiCssdeck size="3rem" /> <ShowCase>Ayoub Abidi</ShowCase>
+        <a  style={{ display: 'flex', alignItems: 'center', color:"white"}}>
+          <DiClojureAlt size="4rem" /> <ShowCase>Ayoub Abidi</ShowCase>
         </a>
     </Div1>
     <Div2>

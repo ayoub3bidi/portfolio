@@ -79,6 +79,14 @@ export const projects = [
     visit: '',
     id: 9,
   },
+  {
+    title: 'Flousi',
+    description: "a simple expense tracker web app.",
+      tags: ['React', 'Express' ,'Mongo DB'],
+    source: 'https://github.com/ayoub3bidi/flousi',
+    visit: 'https://flousi.vercel.app/',
+    id: 10,
+  },
 ];
 
 export const TimeLineData = [
