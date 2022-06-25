@@ -8,12 +8,20 @@ export const projects = [
     id: 0,
   },
   {
+    title: 'My Favorite LOL Champion',
+    description: "A minimalist website for my favorite League of Legends champion Ekko.",
+      tags: ['Bootstrap'],
+    source: 'https://github.com/ayoub3bidi/myFavoriteLolChampion',
+    visit: 'https://ayoub3bidi.github.io/myFavoriteLolChampion',
+    id: 1,
+  },
+  {
     title: 'Quotes',
     description:"A website that can display random inspirational quotes from a public Api.",
     tags: ['JavaScript', 'Bootstrap', 'Public API'],
     source: 'https://github.com/ayoub3bidi/Quotes',
     visit: 'https://ayoub3bidi.github.io/Quotes',
-    id: 1,
+    id: 2,
   },
   {
     title: 'My Heroes',
@@ -21,7 +29,7 @@ export const projects = [
       tags: ['Vue', 'Bootstrap'],
     source: 'https://github.com/ayoub3bidi/myheroes',
     visit: 'https://ayoub3bidi.github.io/myheroes/',
-    id: 2,
+    id: 3,
   },
   {
     title: `My List`,
@@ -29,7 +37,7 @@ export const projects = [
     tags: ['Vue', 'Bootstrap', 'Firebase'],
     source: 'https://github.com/ayoub3bidi/mylist',
     visit: 'https://mylist-f82d6.firebaseapp.com',
-    id: 3,
+    id: 4,
   },
   {
     title: `Time Check`,
@@ -37,7 +45,7 @@ export const projects = [
     tags: ['Vue', 'Bootstrap', 'Express', 'Mongo DB'],
     source: '',
     visit: '',
-    id: 4,
+    id: 5,
   },
   {
     title: 'Covid Tracker',
@@ -45,7 +53,7 @@ export const projects = [
       tags: ['Vue', 'Tailwind CSS', 'Covid-19 API'],
     source: 'https://github.com/ayoub3bidi/covid-tracker',
     visit: 'https://online-covid-19-tracker.netlify.app/',
-    id: 5,
+    id: 6,
   },
   {
     title: 'Sou9 api',
@@ -53,7 +61,7 @@ export const projects = [
       tags: ['Express', 'Crypto.js', 'JWT' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/sou9_api',
     visit: '',
-    id: 6,
+    id: 7,
   },
   {
     title: '7amma frippe',
@@ -61,7 +69,7 @@ export const projects = [
       tags: ['React', 'Styled-components'],
     source: 'https://github.com/ayoub3bidi/7amma-fripe',
     visit: 'https://7amma-fripe.netlify.app',
-    id: 7,
+    id: 8,
   },
   {
     title: 'Podium ESG',
@@ -69,7 +77,7 @@ export const projects = [
       tags: ['Vue','Express', 'PostgreSQL', 'Docker',],
     source: '',
     visit: '',
-    id: 8,
+    id: 9,
   },
   {
     title: 'Ommek Sannefa',
@@ -77,7 +85,7 @@ export const projects = [
       tags: ['Vue', 'VueX' ,'Firebase'],
     source: 'https://github.com/ayoub3bidi/ommek-sannefa',
     visit: '',
-    id: 9,
+    id: 10,
   },
   {
     title: 'Flousi',
@@ -85,7 +93,7 @@ export const projects = [
       tags: ['React', 'Express' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/flousi',
     visit: 'https://flousi.vercel.app/',
-    id: 10,
+    id: 11,
   },
 ];
 
