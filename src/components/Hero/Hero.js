@@ -17,7 +17,7 @@ const Hero = (props) => (
         <br/>You can follow me on <a href="https://dev.to/ayoub3bidi" target="_blank" rel="noopener noreferrer">DEV</a> where I write about what I have learned so far.
         <br/> Outside of programming, I enjoy books, manga, video games and movies.
         </SectionText>
-        <a href="https://drive.google.com/file/d/1-tGGdG8hV2dBETNQddctKoSsVQxgWw7Y/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1cYEIGbC8dMIIPW2SNitoNs6OWUHDr-PK/view?usp=sharing" target="_blank">
         <Button onClick={props.handleClick}>See my Resume</Button></a>
       </LeftSection>
     </Section>

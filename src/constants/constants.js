@@ -40,12 +40,20 @@ export const projects = [
     id: 4,
   },
   {
+    title: `Ice Combo`,
+    description: "Ice combo maker.",
+    tags: ['Vue', 'Bootstrap', 'Firebase'],
+    source: 'https://github.com/Tunisian-GitHub-Community/icecombo',
+    visit: 'https://icecombo-7b3f00.firebaseapp.com',
+    id: 5,
+  },
+  {
     title: `Time Check`,
     description: "Projects management platform. [Freelance project]",
     tags: ['Vue', 'Bootstrap', 'Express', 'Mongo DB'],
     source: '',
     visit: '',
-    id: 5,
+    id: 6,
   },
   {
     title: 'Covid Tracker',
@@ -53,7 +61,7 @@ export const projects = [
       tags: ['Vue', 'Tailwind CSS', 'Covid-19 API'],
     source: 'https://github.com/ayoub3bidi/covid-tracker',
     visit: 'https://online-covid-19-tracker.netlify.app/',
-    id: 6,
+    id: 7,
   },
   {
     title: 'Sou9 api',
@@ -61,15 +69,23 @@ export const projects = [
       tags: ['Express', 'Crypto.js', 'JWT' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/sou9_api',
     visit: '',
-    id: 7,
+    id: 8,
   },
   {
     title: '7amma frippe',
     description: "A React E-commerce web app UI.",
-      tags: ['React', 'Styled-components'],
+    tags: ['React', 'Styled-components'],
     source: 'https://github.com/ayoub3bidi/7amma-fripe',
     visit: 'https://7amma-fripe.netlify.app',
-    id: 8,
+    id: 9,
+  },
+  {
+    title: 'Koujina API',
+    description: "An API for kitchen recipes.",
+      tags: ['Express', 'bcrypt', 'JWT' ,'Mongo DB'],
+    source: 'https://github.com/Tunisian-GitHub-Community/Koujina_api',
+    visit: '',
+    id: 10,
   },
   {
     title: 'Podium ESG',
@@ -77,7 +93,7 @@ export const projects = [
       tags: ['Vue','Express', 'PostgreSQL', 'Docker',],
     source: '',
     visit: '',
-    id: 9,
+    id: 11,
   },
   {
     title: 'Ommek Sannefa',
@@ -85,7 +101,7 @@ export const projects = [
       tags: ['Vue', 'VueX' ,'Firebase'],
     source: 'https://github.com/ayoub3bidi/ommek-sannefa',
     visit: '',
-    id: 10,
+    id: 12,
   },
   {
     title: 'Flousi',
@@ -93,8 +109,16 @@ export const projects = [
       tags: ['React', 'Express' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/flousi',
     visit: 'https://flousi.vercel.app/',
-    id: 11,
+    id: 13,
   },
+  // {
+  //   title: 'React Clone',
+  //   description: "a full-stack react clone.",
+  //     tags: ['React', 'Express', 'GraphQL','PostgreSQL'],
+  //   source: 'https://github.com/ayoub3bidi/reddit-clone',
+  //   visit: '',
+  //   id: 14,
+  // },
 ];
 
 export const TimeLineData = [
