@@ -64,7 +64,7 @@ export const projects = [
     id: 7,
   },
   {
-    title: 'Sou9 api',
+    title: 'Sou9 API',
     description: "An API for e-commerce.",
       tags: ['Express', 'Crypto.js', 'JWT' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/sou9_api',
@@ -82,7 +82,7 @@ export const projects = [
   {
     title: 'Koujina API',
     description: "An API for kitchen recipes.",
-      tags: ['Express', 'bcrypt', 'JWT' ,'Mongo DB'],
+      tags: ['Express', 'Bcrypt', 'JWT' ,'Mongo DB'],
     source: 'https://github.com/Tunisian-GitHub-Community/Koujina_api',
     visit: '',
     id: 10,
