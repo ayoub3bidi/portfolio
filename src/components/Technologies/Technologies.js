@@ -31,7 +31,8 @@ const Technologies = () =>  (
           <ListParagraph>
             Firebase <br/>
             Express.js <br/>
-            Mongo DB
+            Mongo DB <br/>
+            PostgreSQL
           </ListParagraph>
         </ListContainer>
       </ListItem>

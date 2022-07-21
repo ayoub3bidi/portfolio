@@ -105,11 +105,19 @@ export const projects = [
   },
   {
     title: 'Flousi',
-    description: "a simple expense tracker web app.",
+    description: "A simple expense tracker web app.",
       tags: ['React', 'Express' ,'Mongo DB'],
     source: 'https://github.com/ayoub3bidi/flousi',
     visit: 'https://flousi.vercel.app/',
     id: 13,
+  },
+  {
+    title: 'Project Manager QL',
+    description: "A GraphQL project management system.",
+      tags: ['React', 'Express' , 'GraphQL' ,'Mongo DB'],
+    source: 'https://github.com/ayoub3bidi/project-manager-QL',
+    visit: '',
+    id: 14,
   },
   // {
   //   title: 'React Clone',
@@ -117,7 +125,7 @@ export const projects = [
   //     tags: ['React', 'Express', 'GraphQL','PostgreSQL'],
   //   source: 'https://github.com/ayoub3bidi/reddit-clone',
   //   visit: '',
-  //   id: 14,
+  //   id: 15,
   // },
 ];
 
