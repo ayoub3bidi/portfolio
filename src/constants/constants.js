@@ -111,23 +111,93 @@ export const projects = [
     visit: 'https://flousi.vercel.app/',
     id: 13,
   },
-  {
-    title: 'Project Manager QL',
-    description: "A GraphQL project management system.",
-      tags: ['React', 'Express' , 'GraphQL' ,'Mongo DB'],
-    source: 'https://github.com/ayoub3bidi/project-manager-QL',
-    visit: '',
-    id: 14,
-  },
   // {
-  //   title: 'React Clone',
-  //   description: "a full-stack react clone.",
-  //     tags: ['React', 'Express', 'GraphQL','PostgreSQL'],
+  //   title: 'Reddit Clone',
+  //   description: "A full-stack reddit clone.",
+  //     tags: ['Next', 'Express', 'GraphQL','PostgreSQL'],
   //   source: 'https://github.com/ayoub3bidi/reddit-clone',
   //   visit: '',
   //   id: 15,
   // },
 ];
+
+export const articles = [
+  {
+    id: 14,
+    title: "Let's talk about the Dunning Kruger effect",
+    link: 'https://www.linkedin.com/pulse/lets-talk-dunning-kruger-effect-ayoub-abidi'
+  },
+  {
+    id: 13,
+    title: "TypeScript (or Oh god why I didn't learn it sooner ?)",
+    link: 'https://dev.to/ayoub3bidi/typescript-or-oh-god-why-i-didnt-learn-it-sooner--52h0'
+  },
+  {
+    id: 12,
+    title: "Let's talk about Burnout",
+    link: 'https://www.linkedin.com/pulse/lets-talk-burnout-ayoub-abidi'
+  },
+  {
+    id: 11,
+    title: "It's time to escape tutorial Hell",
+    link: 'https://www.linkedin.com/pulse/its-time-escape-tutorial-hell-ayoub-abidi'
+  },
+  {
+    id: 10,
+    title: "How blogging will make you a better developer",
+    link: 'https://www.linkedin.com/pulse/how-blogging-make-you-better-developer-ayoub-abidi'
+  },
+  {
+    id: 9,
+    title: "Why we should go back to problem-solving",
+    link: 'https://www.linkedin.com/pulse/why-we-should-go-back-problem-solving-ayoub-abidi'
+  },
+  {
+    id: 8,
+    title: "I've learned React (after being in love with Vue)",
+    link: 'https://dev.to/ayoub3bidi/ive-learned-react-after-being-in-love-with-vue-2ng2'
+  },
+  {
+    id: 7,
+    title: "NPM vs Yarn: let's settle things out.",
+    link: 'https://dev.to/ayoub3bidi/npm-vs-yarn-lets-settle-things-out-28m6'
+  },
+  {
+    id: 6,
+    title: 'Docker in a Nutshell: A Powerful Platform for Containers',
+    link: 'https://dev.to/ayoub3bidi/docker-in-a-nutshell-a-powerful-platform-for-containers-5af6'
+  },
+  {
+    id: 5,
+    title: 'My experience with Flutter (as a beginner)',
+    link: 'https://dev.to/ayoub3bidi/my-experience-with-flutter-as-a-beginner-34n'
+  },
+  {
+    id: 4,
+    title: 'I tried Nuxt.js and why you should too !',
+    link: 'https://dev.to/ayoub3bidi/i-tried-nuxt-js-and-why-you-should-too-3pkg'
+  },
+  {
+    id: 3,
+    title: 'Databases you should know as a developer',
+    link: 'https://dev.to/ayoub3bidi/databases-you-should-know-as-a-developer-2449'
+  },
+  {
+    id: 2,
+    title: 'Bootstrap: still the best ?',
+    link: 'https://dev.to/ayoub3bidi/bootstrap-still-the-best-1f0e'
+  },
+  {
+    id: 1,
+    title: 'Vite.js or How i became the fastest programmer alive',
+    link: 'https://dev.to/ayoub3bidi/vite-js-or-how-i-became-the-fastest-programmer-alive-hi2'
+  },
+  {
+    id: 0,
+    title: 'Why you should try Vue.js ? (as a beginner)',
+    link: 'https://dev.to/ayoub3bidi/why-you-should-try-vue-js-as-a-beginner-2868'
+  }
+]
 
 export const TimeLineData = [
   { year: 2018, text: 'Wyróżnienie jako betatester'}

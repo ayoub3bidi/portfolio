@@ -183,3 +183,12 @@ export const GothicLink = styled.a`
   }
   text-decoration: underline;
 `;
+export const ArticleLink = styled.a`
+    color: rgba(255, 255, 255, 0.75);
+    transition: 0.4s ease;
+  :hover {
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+  }
+`;
