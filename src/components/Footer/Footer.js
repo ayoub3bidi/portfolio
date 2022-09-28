@@ -17,7 +17,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>&copy; Copyright 2022 | Ayoub Abidi</Slogan>
+          <Slogan>&copy; Ayoub Abidi | {new Date().getFullYear()}</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/ayoub3bidi" target="_blank">

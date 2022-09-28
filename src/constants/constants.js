@@ -41,7 +41,7 @@ export const projects = [
   },
   {
     title: `Ice Combo`,
-    description: "Ice combo maker.",
+    description: "Ice Cream recipes sharing platform.",
     tags: ['Vue', 'Bootstrap', 'Firebase'],
     source: 'https://github.com/Tunisian-GitHub-Community/icecombo',
     visit: 'https://icecombo-7b3f00.firebaseapp.com',
@@ -111,17 +111,30 @@ export const projects = [
     visit: 'https://flousi.vercel.app/',
     id: 13,
   },
+  {
+    title: 'Reddit Clone',
+    description: "A full-stack reddit clone.",
+      tags: ['Next', 'Express', 'GraphQL','PostgreSQL',],
+    source: 'https://github.com/ayoub3bidi/reddit-clone',
+    visit: '',
+    id: 14,
+  },
   // {
-  //   title: 'Reddit Clone',
-  //   description: "A full-stack reddit clone.",
-  //     tags: ['Next', 'Express', 'GraphQL','PostgreSQL'],
-  //   source: 'https://github.com/ayoub3bidi/reddit-clone',
+  //   title: 'Sector R',
+  //   description: "A real-time chatroom.",
+  //     tags: ['React', 'Sass', 'Firebase'],
+  //   source: 'https://github.com/ayoub3bidi/sector-r',
   //   visit: '',
   //   id: 15,
   // },
 ];
 
 export const articles = [
+  {
+    id: 15,
+    title: "Should you (still) use/learn GraphQL?",
+    link: 'https://dev.to/ayoub3bidi/should-you-still-uselearn-graphql-34g5'
+  },
   {
     id: 14,
     title: "Let's talk about the Dunning Kruger effect",

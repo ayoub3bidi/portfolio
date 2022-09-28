@@ -32,6 +32,7 @@ const Technologies = () =>  (
             Firebase <br/>
             Express.js <br/>
             Mongo DB <br/>
+            PostgreSQL
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -44,6 +45,7 @@ const Technologies = () =>  (
           <ListParagraph>
             Visual Studio Code <br/>
             WSL2 <br/>
+            Yarn
           </ListParagraph>
         </ListContainer>
       </ListItem>

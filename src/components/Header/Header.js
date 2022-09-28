@@ -7,12 +7,12 @@ import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './H
 
 const Header = () =>  (
   <Container>
-    <Div1>
+    <Div1 style={{ paddingBottom: "17px" }}>
         <a  style={{ display: 'flex', alignItems: 'center', color:"white"}}>
           <DiClojureAlt size="4rem" /> <ShowCase>Ayoub Abidi</ShowCase>
         </a>
     </Div1>
-    <Div2>
+    <Div2 style={{ paddingTop: "5px" }}>
       <li>
         <Link href="#projects">
           <NavLink>Projects</NavLink>
@@ -29,17 +29,17 @@ const Header = () =>  (
         </Link>
       </li>      
     </Div2>
-      <Div3>
-        <SocialIcons href="https://github.com/ayoub3bidi" target="_blank">
-          <AiFillGithub size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/ayoub3bidi" target="_blank">
-          <AiFillLinkedin size="3rem" />
-        </SocialIcons>
-        <SocialIcons href="https://twitter.com/ayoub3bidi" target="_blank">
-          <AiOutlineTwitter size="3rem"/>
-        </SocialIcons>
-      </Div3>
+    <Div3>
+      <SocialIcons href="https://github.com/ayoub3bidi" target="_blank">
+        <AiFillGithub size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://www.linkedin.com/in/ayoub3bidi" target="_blank">
+        <AiFillLinkedin size="3rem" />
+      </SocialIcons>
+      <SocialIcons href="https://twitter.com/ayoub3bidi" target="_blank">
+        <AiOutlineTwitter size="3rem"/>
+      </SocialIcons>
+    </Div3>
     </Container>
 );
 

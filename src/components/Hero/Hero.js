@@ -13,10 +13,10 @@ const Hero = (props) => (
           Hi, I am Ayoub Abidi
         </SectionTitle>
         <SectionText>
-          I'm a software engineering graduate student, web developer & a co-organizer at <a href="https://www.githubtunisia.tn" target="_blank" rel="noopener noreferrer">GitHub's Tunisian Community</a>.
+          I'm a software engineering graduate student, web developer & a co-organizer at <a href="https://www.githubtunisia.tn" target="_blank" rel="noopener noreferrer">GitHub's Tunisian Community</a>, currently looking for a new opportunity.
           <br/> <br/> Outside of programming, I enjoy books, manga, video games and movies.
         </SectionText>
-        <a href="https://drive.google.com/file/d/1Dwr5zC5JmtNLZqeLz9eg6oV2B47OBEfa/view?usp=sharing" target="_blank">
+        <a href="https://drive.google.com/file/d/1M-Rr231NQAbiTocgNuQXXueHP3jFoSKQ/view?usp=sharing" target="_blank">
         <Button onClick={props.handleClick}>See my Resume</Button></a>
       </LeftSection>
     </Section>
