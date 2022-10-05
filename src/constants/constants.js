@@ -119,14 +119,14 @@ export const projects = [
     visit: '',
     id: 14,
   },
-  // {
-  //   title: 'Sector R',
-  //   description: "A real-time chatroom.",
-  //     tags: ['React', 'Sass', 'Firebase'],
-  //   source: 'https://github.com/ayoub3bidi/sector-r',
-  //   visit: '',
-  //   id: 15,
-  // },
+  {
+    title: 'Sector R',
+    description: "A real-time chatroom.",
+      tags: ['React', 'Sass', 'Firebase'],
+    source: 'https://github.com/ayoub3bidi/sector-r',
+    visit: 'https://sector-r.vercel.app',
+    id: 15,
+  },
 ];
 
 export const articles = [
