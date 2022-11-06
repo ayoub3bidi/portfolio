@@ -15,6 +15,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
+            Flutter<br/>
             React.js<br/>
             Vue.js <br/>
             Bootstrap <br/>

@@ -131,6 +131,11 @@ export const projects = [
 
 export const articles = [
   {
+    id: 16,
+    title: "How gamification helped the software industry to thrive",
+    link: 'https://www.linkedin.com/pulse/how-gamification-helped-software-industry-thrive-ayoub-abidi'
+  },
+  {
     id: 15,
     title: "Should you (still) use/learn GraphQL?",
     link: 'https://dev.to/ayoub3bidi/should-you-still-uselearn-graphql-34g5'
