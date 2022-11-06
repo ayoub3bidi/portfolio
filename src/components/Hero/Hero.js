@@ -12,7 +12,7 @@ const Hero = (props) => (
           Hi, I am Ayoub Abidi
         </SectionTitle>
         <SectionText>
-          I'm a software engineering graduate student, web developer & a co-organizer at <a href="https://www.githubtunisia.tn" target="_blank" rel="noopener noreferrer">GitHub's Tunisian Community</a>.
+          I am a Full-stack Developer & Co-organizer at <a href="https://www.githubtunisia.tn" target="_blank" rel="noopener noreferrer">GitHub's Tunisian Community</a>.
           <br/> <br/> Outside of programming, I enjoy books, manga, video games and movies.
         </SectionText>
         {/* <a href="https://drive.google.com/file/d/1fkMkMoanE6LTFT6gQL4JtKfiow7IuNqD/view?usp=sharing" target="_blank">

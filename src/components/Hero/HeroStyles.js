@@ -11,8 +11,8 @@ export const LeftSection = styled.div`
     cursor: pointer;
   }
   width: 100%;
-  padding-bottom: 115px;
-  padding-top: 115px;
+  padding-bottom: 131px;
+  padding-top: 131px;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 80%;
     display: flex;
