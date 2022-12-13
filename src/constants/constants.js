@@ -127,9 +127,30 @@ export const projects = [
     visit: 'https://sector-r.vercel.app',
     id: 15,
   },
+  {
+    title: 'Mouzika',
+    description: "A Spotify clone.",
+      tags: ['React', 'Redux', 'Tailwind CSS', 'Rapid API'],
+    source: 'https://github.com/ayoub3bidi/mouzika',
+    visit: 'https://mouzika.vercel.app',
+    id: 16,
+  },
+  // {
+  //   title: 'Vets',
+  //   description: "A vetrinary clinic mobile app.",
+  //     tags: ['Flutter', 'Bloc/Cubit', 'Firebase'],
+  //   source: '',
+  //   visit: '',
+  //   id: 17,
+  // },
 ];
 
 export const articles = [
+  {
+    id: 17,
+    title: "Let's talk about being a \"jack of all trades, master of none\" in software development",
+    link: 'https://www.linkedin.com/pulse/lets-talk-being-jack-all-trades-master-none-software-ayoub-abidi',
+  },
   {
     id: 16,
     title: "How gamification helped the software industry to thrive",

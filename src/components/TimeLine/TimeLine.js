@@ -15,12 +15,14 @@ const Timeline = () => {
       <SectionDivider />
       <SectionTitle><br />Articles</SectionTitle>
       <SectionText>
-      <div>
-             {articles.map((article) => (
-                <div key={article.id}>
-                  <ArticleLink href={article.link} target="_blank" rel="noopener noreferrer">- {article.title}</ArticleLink>
-                </div>
-            ))}     
+        <div>
+          {
+            articles.map((article) => (
+              <div key={article.id}>
+                <ArticleLink href={article.link} target="_blank" rel="noopener noreferrer">- {article.title}</ArticleLink>
+              </div>
+            ))
+          }     
         </div>
       </SectionText>
     </Section>
