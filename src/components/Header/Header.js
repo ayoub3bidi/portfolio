@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin, AiOutlineMedium } from 'react-icons/ai';
 import { DiClojureAlt } from 'react-icons/di';
 
 import { Container, Div1, Div2, Div3, NavLink, ShowCase, SocialIcons } from './HeaderStyles';
@@ -38,6 +38,9 @@ const Header = () =>  (
       </SocialIcons>
       <SocialIcons href="https://twitter.com/ayoub3bidi" target="_blank">
         <AiOutlineTwitter size="3rem"/>
+      </SocialIcons>
+      <SocialIcons href="https://ayoub3bidi.medium.com" target="_blank">
+      <AiOutlineMedium size="3rem" />
       </SocialIcons>
     </Div3>
     </Container>
