@@ -3,9 +3,9 @@
   "version": "1.5.6",
   "private": true,
   "author": {
-    "name": "Parth Desai",
-    "email": "desaiparth2000@gmail.com",
-    "url": "https://musing.vercel.app/"
+    "name": "Ayoub Abidi",
+    "email": "mrayoubabidi@gmail.com",
+    "url": "https://ayoub3bidi.vercel.app/"
   },
   "scripts": {
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",

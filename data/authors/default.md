@@ -1,13 +1,13 @@
 ---
-name: Parth Desai
-avatar: /static/images/avatar.png
-occupation: Data Engineer
-company: Accenture
-email: desaiparth2000@gmail.com
-twitter: https://twitter.com/lone_Musk
-linkedin: https://www.linkedin.com/in/parth-desai-2bb1b0160/
-github: https://github.com/pycoder2000
-text1: I am an India based Data Engineer with a bachelors in Computer Science. I am passionate about Data Science and Automation. I am also fascinated with Mathematics and wish to make a career out of it someday.
+name: Ayoub Abidi
+avatar: /static/images/avatar.jpg
+occupation: Full-stack developer
+company:
+email: mrayoubabidi@gmail.com
+twitter: https://twitter.com/ayoub3bidi
+linkedin: https://www.linkedin.com/in/ayoub3bidi
+github: https://github.com/ayoub3bidi
+text1: I am a Full-stack Developer & Co-organizer at GitHub's Tunisian Community. Outside of programming, I enjoy books, manga, video games and movies.
 text2:
 text3:
 ---
