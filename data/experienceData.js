@@ -1,29 +1,43 @@
 const experienceData = [
   {
-    title: 'Data Engineering Intern',
-    company: 'Accenture',
-    location: 'Ahmedabad, India',
-    range: 'January 2022 - May 2022',
-    url: 'https://www.accenture.com/gr-en/about/consulting-index',
-    text1:
-      'Helped with the digital transformation of BOAT by working on their platform called ByteETL.',
-    text2:
-      'Built the encryption component for the platform using Scala and Spark which included 2 encoding functionalities : ENCRYPT and HASH.',
-    text3:
-      'Created JSON wrappers for the encryption components and automated and triggered the pipelines to run at specific intervals using CronJob.',
+    title: 'Frontend Developer',
+    company: 'Tagamuta Valley',
+    location: 'El Ghazela, Ariana, Tunisia',
+    range: 'October 2022 - December 2022',
+    url: 'https://tagamuta-valley.com',
+    text1: 'Developed mobile app interfaces with Flutter following Figma design.',
+    text2: "Consumed the backend's APIs with Clean Code Architecture.",
+    text3: '',
   },
   {
-    title: 'Software Engineer Analytics',
-    company: 'HOPS Healthcare',
-    location: 'Ahmedabad, India',
-    range: 'March 2021 - June 2021',
-    url: 'https://hops.healthcare/',
-    text1:
-      'Guided by Mr. Vivek Patel, to create a pipeline that extracts essential information from informal conversations.',
-    text2:
-      'Worked on creating a web app for their healthcare system for doctors to analyze and save reports.',
-    text3:
-      'Developed functions for automatically extracting important elements from reports using BioBERT and Regex.',
+    title: 'End of studies intern',
+    company: 'Podyam',
+    location: 'Remote',
+    range: 'January 2022 - May 2022',
+    url: 'https://www.podyam.com',
+    text1: 'Full-stack development of a finance web platform.',
+    text2: 'Developed interfaces with Vue.js, Quasar, and Bootstrap following Figma design.',
+    text3: 'Created tables in the PostgreSQL database with ORM migration using Objection.js.',
+  },
+  {
+    title: 'Freelance Frontend Developer',
+    company: 'TuniAOS',
+    location: 'Remote',
+    range: 'September 2021 - November 2021',
+    url: 'http://www.tuniaos.com',
+    text1: 'Frontend development of a MEVN stack web app.',
+    text2: 'Created interfaces.',
+    text3: 'Consumed data from the API.',
+  },
+  {
+    title: 'Summer Intern',
+    company: 'Tunisie Telecom',
+    location: 'El kef, tunisia',
+    range: 'June 2021 - July 2021',
+    url: '',
+    text1: 'Designed, developed, and deployed a serverless mini-platform.',
+    text2: '',
+    text3: '',
   },
 ]
 
