@@ -16,7 +16,7 @@ export default function Projects() {
             Projects
           </h1>
           <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-            A list of projects I have been working on or built
+            A list of projects I have been working on.
           </p>
         </div>
         <div className="container py-12">
@@ -36,6 +36,7 @@ export default function Projects() {
             ))}
           </div>
         </div>
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5" />
       </div>
     </>
   )
