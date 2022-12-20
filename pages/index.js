@@ -32,6 +32,36 @@ export default function Home({ posts }) {
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
               {`Welcome to ${siteMetadata.description}. `}
             </h2>
+            <p className="pt-5 text-lg leading-7 text-slate-600 dark:text-slate-300 sm:block md:hidden lg:hidden">
+              This is my place to present my{' '}
+              <RoughNotation
+                animate="true"
+                type="box"
+                show={true}
+                color="#DE1D8D"
+                animationDelay={1000}
+                animationDuration={2500}
+                className="text-slate-200"
+              >
+                thoughts, reflections & everything in between&nbsp;
+              </RoughNotation>
+              .
+            </p>
+            <p className="hidden pt-10 text-lg leading-7 text-slate-600 dark:text-slate-300 md:block">
+              This is my place to present my{' '}
+              <RoughNotation
+                animate="true"
+                type="highlight"
+                show={true}
+                color="#DE1D8D"
+                animationDelay={1000}
+                animationDuration={2500}
+                className="text-slate-200"
+              >
+                thoughts, reflections & everything in between&nbsp;
+              </RoughNotation>
+              .
+            </p>
           </div>
           <div className="flex items-center justify-center">
             <div className="grid grid-cols-1 grid-rows-3 gap-8 py-12">

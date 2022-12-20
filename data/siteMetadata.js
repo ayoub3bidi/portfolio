@@ -2,7 +2,8 @@ const siteMetadata = {
   title: 'Portfolio | Ayoub Abidi',
   author: 'Ayoub Abidi',
   headerTitle: 'My portfolio',
-  description: 'my personal portfolio & blog where I share my projects & articles',
+  description:
+    'my personal portfolio where I share my articles, projects and technologies that I use',
   snippets: 'Reuseable code snippets collected by me',
   language: 'en-us',
   theme: 'system', // system, dark or light
