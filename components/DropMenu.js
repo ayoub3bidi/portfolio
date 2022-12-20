@@ -97,7 +97,7 @@ export default function DropMenu() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link href="/blog">
+                <Link href="/articles">
                   <a
                     className={classNames(
                       active
