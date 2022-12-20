@@ -110,7 +110,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             <p>
               You can see technologies that I use from{' '}
               <Link
-                href={'/uses'}
+                href={'/technologies'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
               >
                 here

@@ -133,7 +133,7 @@ export default function DropMenu() {
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <Link href="/uses">
+                <Link href="/technologies">
                   <a
                     className={classNames(
                       active
