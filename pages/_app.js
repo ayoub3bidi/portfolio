@@ -10,7 +10,6 @@ import NProgress from 'nprogress'
 import siteMetadata from '@/data/siteMetadata'
 import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
-import { ClientReload } from '@/components/ClientReload'
 import ProgressBar from 'react-scroll-progress-bar'
 import ScrollTop from '@/components/ScrollTop'
 import { SessionProvider } from 'next-auth/react'
@@ -60,7 +59,6 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
           <Head>
             <meta content="width=device-width, initial-scale=1" name="viewport" />
           </Head>
-          {isDevelopment && isSocket && <ClientReload />}
           <Analytics />
           <LayoutWrapper>
             <Component {...pageProps} />
