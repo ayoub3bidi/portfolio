@@ -15,12 +15,11 @@ export default function FourZeroFour() {
         <div className="mx-auto max-w-2xl">
           <div className="md:border-l-2 md:px-6">
             <p className="mb-4 text-xl font-bold leading-normal md:text-2xl">
-              Unavailable For Legal Reasons
+              What are you doing here? This page doesn't exist.
             </p>
             <p className="mb-4">
-              Why show a generic 404 when I can make it sound mysterious? It seems you've found
-              something that used to exist, or you spelled something wrong. I'm guessing you spelled
-              something wrong. Can you double check that URL?
+              It seems you've found something that used to exist, or you spelled something wrong.
+              I'm guessing you spelled something wrong. Can you double check that URL?
             </p>
             <p>But dont worry, you can find plenty of other things on our homepage.</p>
           </div>
