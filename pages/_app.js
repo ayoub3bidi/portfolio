@@ -1,4 +1,3 @@
-import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import ScrollTop from '@/components/ScrollTop'
 import '@/css/extra.css'
@@ -52,7 +51,6 @@ export default function App({ Component, pageProps: { ...pageProps } }) {
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
-      <Analytics />
       <LayoutWrapper>
         <Component {...pageProps} />
       </LayoutWrapper>
