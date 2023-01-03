@@ -29,7 +29,7 @@ import useSound from 'use-sound'
 
 export default function DropMenu() {
   const [isOpen, setIsOpen] = useState(false)
-  const { data: session } = useSession()
+  // const { data: session } = useSession()
   const toggleIcon = () => {
     setIsOpen(!isOpen)
   }
