@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Ma5zen',
+    description: `A full-stack inventory web app.`,
+    imgSrc: '',
+    href: '',
+    github: 'https://github.com/ayoub3bidi/ma5zen',
+    tech1: 'Next.js',
+    tech2: 'Tailwind CSS • Mantine UI',
+    tech3: 'Prisma • PostgreSQL • Docker',
+  },
+  {
     title: 'Mouzika',
     description: `A Spotify clone. [Academic project]`,
     imgSrc: '',
@@ -8,6 +18,16 @@ const projectsData = [
     tech1: 'React • Redux',
     tech2: 'Tailwind CSS',
     tech3: 'RapidAPI (Shazam core)',
+  },
+  {
+    title: 'Vets',
+    description: `A veterinary clinic mobile app. [Tagamuta Valley project]`,
+    imgSrc: '',
+    href: '',
+    github: '',
+    tech1: 'Flutter',
+    tech2: 'Firebase • Spring Boot',
+    tech3: 'BloC/Cubit • Clean Code Architecture',
   },
   {
     title: 'Sector R',

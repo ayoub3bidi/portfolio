@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 18,
+    title: 'How to deal with imposter syndrome as a developer',
+    link: 'https://ayoub3bidi.medium.com/how-to-deal-with-imposter-syndrome-as-a-junior-developer-from-a-junior-developer-ec56607363ac',
+  },
+  {
     id: 17,
     title: 'Let\'s talk about being a "jack of all trades, master of none" in software development',
     link: 'https://www.linkedin.com/pulse/lets-talk-being-jack-all-trades-master-none-software-ayoub-abidi',
