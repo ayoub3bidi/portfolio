@@ -24,16 +24,21 @@ const usesData = [
     description: `Multi-Platform Frontend Framework`,
     href: 'https://flutter.dev',
   },
-  {
-    title: 'Firebase',
-    description: `Serverless platform`,
-    href: 'https://firebase.google.com',
-  },
+  // {
+  //   title: 'React Native',
+  //   description: `Mobile App Frontend Framework`,
+  //   href: 'https://reactnative.dev',
+  // },
   {
     title: 'Express',
     description: `JavaScript Backend framework`,
     href: 'https://expressjs.com',
   },
+  // {
+  //   title: 'Prisma',
+  //   description: `Node.js and TypeScript ORM`,
+  //   href: 'https://www.prisma.io',
+  // },
   {
     title: 'Mongo DB',
     description: `NoSQL Database`,
@@ -45,18 +50,23 @@ const usesData = [
     href: 'https://www.postgresql.org',
   },
   {
+    title: 'Firebase',
+    description: `Serverless platform`,
+    href: 'https://firebase.google.com',
+  },
+  {
     title: 'Visual Studio Code',
     description: `No seriously, are you using anything else?`,
     href: 'https://code.visualstudio.com',
   },
   {
     title: 'Daily.dev',
-    description: `Homepage to stay up to date in the dev world`,
+    description: `Home page to stay up to date in the dev world`,
     href: 'https://api.daily.dev/',
   },
   {
     title: 'Notion',
-    description: `Organizing my life.`,
+    description: `Organizing my life`,
     href: 'https://www.notion.so/',
   },
 ]

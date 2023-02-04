@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 19,
+    title: 'Let’s settle things out [2]: NPM Vs. YARN VS. PNPM',
+    link: 'https://ayoub3bidi.medium.com/lets-settle-things-out-2-npm-vs-yarn-vs-pnpm-e980f6257530',
+  },
+  {
     id: 18,
     title: 'How to deal with imposter syndrome as a developer',
     link: 'https://ayoub3bidi.medium.com/how-to-deal-with-imposter-syndrome-as-a-junior-developer-from-a-junior-developer-ec56607363ac',
