@@ -1,7 +1,7 @@
 const projectsData = [
   {
     title: 'Fairmat App',
-    description: `Bar code scanning web app for Fairmat factory.`,
+    description: `Bar code scanning web app for Fairmat factory. [Comwork project]`,
     imgSrc: '',
     href: '',
     github: '',
@@ -11,7 +11,7 @@ const projectsData = [
   },
   {
     title: 'Document Control Connector',
-    description: `A microservice for Docapost.`,
+    description: `A microservice for Docapost. [Comwork project]`,
     imgSrc: '',
     href: '',
     github: '',
@@ -21,7 +21,7 @@ const projectsData = [
   },
   {
     title: 'Comwork.io',
-    description: `The official Comwork website.`,
+    description: `The official Comwork website. [Comwork project]`,
     imgSrc: '',
     href: 'https://comwork.io',
     github: '',
@@ -31,7 +31,7 @@ const projectsData = [
   },
   {
     title: 'Comwork Cloud',
-    description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs.`,
+    description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs. [Comwork project]`,
     imgSrc: '',
     href: 'https://cloud.comwork.io/',
     github: 'https://github.com/idrissneumann/comwork-cloud-wiki',
