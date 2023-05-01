@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-import usesData from '@/data/usesData'
+import technologiesData from '@/data/technologiesData'
 import Link from '@/components/Link'
 
 export default function Uses() {
@@ -18,7 +18,7 @@ export default function Uses() {
         </div>
         <div className="container py-12">
           <div className="flex flex-row flex-wrap">
-            {usesData.map((d) => (
+            {technologiesData.map((d) => (
               <Link
                 key={d.href}
                 href={d.href}

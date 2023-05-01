@@ -1,6 +1,16 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 21,
+    title: 'The beauty of using Python for your back-end',
+    link: 'https://ayoub3bidi.medium.com/the-beauty-of-using-python-for-your-back-end-5e09107e90fa',
+  },
+  {
+    id: 20,
+    title: 'Junior Developers: Balancing code quality with speed of delivery',
+    link: 'https://ayoub3bidi.medium.com/junior-developers-balancing-code-quality-with-speed-of-delivery-b0a88e388606',
+  },
+  {
     id: 19,
     title: 'Let’s settle things out [2]: NPM Vs. YARN VS. PNPM',
     link: 'https://ayoub3bidi.medium.com/lets-settle-things-out-2-npm-vs-yarn-vs-pnpm-e980f6257530',

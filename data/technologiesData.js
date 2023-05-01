@@ -1,4 +1,4 @@
-const usesData = [
+const technologiesData = [
   {
     title: 'React',
     description: `Frontend library`,
@@ -34,11 +34,21 @@ const usesData = [
     description: `JavaScript Backend framework`,
     href: 'https://expressjs.com',
   },
-  // {
-  //   title: 'Prisma',
-  //   description: `Node.js and TypeScript ORM`,
-  //   href: 'https://www.prisma.io',
-  // },
+  {
+    title: 'Prisma',
+    description: `Node.js and TypeScript ORM`,
+    href: 'https://www.prisma.io',
+  },
+  {
+    title: 'Flask',
+    description: `Python lightweight web framework to build web applications.`,
+    href: 'https://flask.palletsprojects.com/en/2.2.x/',
+  },
+  {
+    title: 'FastAPI',
+    description: `Python high-performance web framework for building APIs.`,
+    href: 'https://fastapi.tiangolo.com',
+  },
   {
     title: 'Mongo DB',
     description: `NoSQL Database`,
@@ -48,6 +58,11 @@ const usesData = [
     title: 'PostgreSQL',
     description: `SQL Database`,
     href: 'https://www.postgresql.org',
+  },
+  {
+    title: 'Redis',
+    description: `key value Database`,
+    href: 'https://www.redis.io',
   },
   {
     title: 'Firebase',
@@ -71,4 +86,4 @@ const usesData = [
   },
 ]
 
-export default usesData
+export default technologiesData

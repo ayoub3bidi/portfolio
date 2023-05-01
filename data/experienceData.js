@@ -1,5 +1,15 @@
 const experienceData = [
   {
+    title: 'Fullstack Developer',
+    company: 'Comwork.io',
+    location: 'Mutuelleville, Tunis, Tunisia',
+    range: 'January 2023 - Present',
+    url: 'https://comwork.io',
+    text1: 'Developed interfaces & API endpoints.',
+    text2: 'Developed CLI commands.',
+    text3: 'Updated the documentations.',
+  },
+  {
     title: 'Frontend Developer',
     company: 'Tagamuta Valley',
     location: 'El Ghazela, Ariana, Tunisia',
