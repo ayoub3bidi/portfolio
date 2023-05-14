@@ -44,6 +44,18 @@ export default function AuthorLayout({ children, frontMatter }) {
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
             <div className="text-gray-500 dark:text-gray-400">{company}</div>
+            <div className="flex flex-col pt-3">
+              <a
+                className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
+                href="https://twitter.com/ayoub3bidi"
+                data-screen-name="@ayoub3bidi"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <AiOutlineTwitter className="mr-2 mb-0.5 inline h-5 w-5" />
+                Say Hi!
+              </a>
+            </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
             <p>
@@ -93,7 +105,8 @@ export default function AuthorLayout({ children, frontMatter }) {
               >
                 <span className="text-black dark:text-white">Open source</span>
               </RoughNotation>
-              ), and{' '}
+              ).
+              {/* and{' '}
               <RoughNotation
                 type="underline"
                 show={true}
@@ -103,25 +116,46 @@ export default function AuthorLayout({ children, frontMatter }) {
                 multiline={true}
               >
                 actively on the lookout for a remote job to be a Digital Nomad.
-              </RoughNotation>
+              </RoughNotation> */}
             </p>
             {text2}
             <p>
-              You can see technologies that I use from{' '}
-              <Link
-                href={'/technologies'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                here
-              </Link>
-              , and you can reach to me from{' '}
-              <Link
-                href={'/contact'}
-                className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
-              >
-                here
-              </Link>
-              .
+              <div className="flex flex-row">
+                <div className="mr-2 text-lg text-primary-color-500"> &#8227;</div>
+                <span className="mr-2">
+                  <Link
+                    href={'/technologies'}
+                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    Here
+                  </Link>
+                </span>{' '}
+                you can see technologies I used / am using.
+              </div>
+              <div className="flex flex-row">
+                <div className="mr-2 text-lg text-primary-color-500"> &#8227;</div>
+                <span className="mr-2">
+                  <Link
+                    href={`https://ayoub3bidi.notion.site/VS-Code-Extensions-1bd165eaf39d4f6cb8ad0e8091937757`}
+                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    Here
+                  </Link>
+                </span>{' '}
+                you can see the VS code extensions I installed.
+              </div>
+              <div className="flex flex-row">
+                <div className="mr-2 text-lg text-primary-color-500"> &#8227;</div>
+                <span className="mr-2">
+                  <Link
+                    href={'/contact'}
+                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    Here
+                  </Link>
+                </span>{' '}
+                is how you can reach me.
+              </div>
             </p>
             <br />
           </div>

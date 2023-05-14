@@ -7,7 +7,7 @@ const experienceData = [
     url: 'https://comwork.io',
     text1: 'Developed interfaces & API endpoints.',
     text2: 'Developed CLI commands.',
-    text3: 'Updated the documentations.',
+    text3: 'Created & updated documentations.',
   },
   {
     title: 'Frontend Developer',

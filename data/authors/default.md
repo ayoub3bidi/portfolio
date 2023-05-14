@@ -2,7 +2,7 @@
 name: Ayoub Abidi
 avatar: /static/images/avatar.jpg
 occupation: Full-stack developer
-company:
+company: Comwork.io
 email: mrayoubabidi@gmail.com
 twitter: https://twitter.com/ayoub3bidi
 linkedin: https://www.linkedin.com/in/ayoub3bidi

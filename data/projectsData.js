@@ -7,7 +7,7 @@ const projectsData = [
     github: '',
     tech1: 'Flutter',
     tech2: 'FastApi • Redis • PostgreSQL',
-    tech3: 'Docker',
+    tech3: 'Docker • CI/CD',
   },
   {
     title: 'Document Control Connector',
