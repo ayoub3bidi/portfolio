@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 22,
+    title: 'AI on the job market: a boost or a future plan for replacement?',
+    link: 'https://ayoub3bidi.medium.com/ai-on-the-job-market-a-boost-or-a-future-plan-for-replacement-a626c29aa272',
+  },
+  {
     id: 21,
     title: 'The beauty of using Python for your back-end',
     link: 'https://ayoub3bidi.medium.com/the-beauty-of-using-python-for-your-back-end-5e09107e90fa',
