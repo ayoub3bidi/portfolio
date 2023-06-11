@@ -10,6 +10,16 @@ const projectsData = [
     tech3: 'Docker • CI/CD',
   },
   {
+    title: 'ZAN-f',
+    description: `The official ZAN-f wood products website. [Comwork project]`,
+    imgSrc: '',
+    href: 'https://www.zan-f.com/',
+    github: '',
+    tech1: 'React',
+    tech2: 'Docusaurus',
+    tech3: 'Tailwind CSS',
+  },
+  {
     title: 'Document Control Connector',
     description: `A microservice for Docapost. [Comwork project]`,
     imgSrc: '',
