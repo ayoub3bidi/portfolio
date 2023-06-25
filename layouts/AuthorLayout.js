@@ -156,6 +156,18 @@ export default function AuthorLayout({ children, frontMatter }) {
                 </span>{' '}
                 is how you can reach me.
               </div>
+              <div className="flex flex-row">
+                <div className="mr-2 text-lg text-primary-color-500"> &#8227;</div>
+                <span className="mr-2">
+                  <Link
+                    href={'/collaboration'}
+                    className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+                  >
+                    Here
+                  </Link>
+                </span>{' '}
+                is how we can collaborate.
+              </div>
             </p>
             <br />
           </div>
