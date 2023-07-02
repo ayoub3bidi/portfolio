@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 23,
+    title: 'The Three.js Supremacy',
+    link: 'https://ayoub3bidi.medium.com/the-three-js-supremacy-515fbb849cb2',
+  },
+  {
     id: 22,
     title: 'AI on the job market: a boost or a future plan for replacement?',
     link: 'https://ayoub3bidi.medium.com/ai-on-the-job-market-a-boost-or-a-future-plan-for-replacement-a626c29aa272',
