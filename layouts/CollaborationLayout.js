@@ -8,7 +8,7 @@ const CollaborationLayout = () => (
           Modes of collaboration
         </h1>
         <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-          Want to collaborate ? no problem. Here's the diffrent modes of collaborations available.
+          Want to collaborate? no problem. Here are the different modes of collaboration available.
         </p>
       </div>
       <ul>

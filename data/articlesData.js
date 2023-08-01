@@ -1,6 +1,12 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 24,
+    title:
+      'The Importance of Balancing Humility and Confidence in Software Development: Exploring the Role of Egoism',
+    link: 'https://ayoub3bidi.medium.com/the-importance-of-balancing-humility-and-confidence-in-software-development-exploring-the-role-of-50d738719812',
+  },
+  {
     id: 23,
     title: 'The Three.js Supremacy',
     link: 'https://ayoub3bidi.medium.com/the-three-js-supremacy-515fbb849cb2',
