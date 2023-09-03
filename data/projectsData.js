@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Golf App',
+    description: `Golf Tee Times management mobile app for dAInamic. [Comwork project]`,
+    imgSrc: '',
+    href: '',
+    github: '',
+    tech1: '',
+    tech2: 'Flutter',
+    tech3: '',
+  },
+  {
     title: 'Fairmat App',
     description: `Bar code scanning web app for Fairmat factory. [Comwork project]`,
     imgSrc: '',
