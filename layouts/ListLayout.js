@@ -8,7 +8,7 @@ const ListLayout = ({ posts }) => (
           Articles
         </h1>
         <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-          A list of articles I published on DEV/LinkedIn/Medium.
+          A list of articles I published on DEV, LinkedIn, Medium and Hackernoon.
         </p>
       </div>
       <ul>

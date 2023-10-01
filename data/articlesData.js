@@ -1,11 +1,16 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 26,
+    title: 'The Rise of Low-Code and No-Code Platforms: Implications for Software Developers',
+    link: 'https://ayoub3bidi.medium.com/the-rise-of-low-code-and-no-code-platforms-implications-for-software-developers-38110d795424',
+  },
+  {
     id: 25,
-    title:
-      'The Role of Communication in Software Development',
+    title: 'The Role of Communication in Software Development',
     link: 'https://ayoub3bidi.medium.com/the-role-of-communication-in-software-development-2dbeb6cbe38c',
-  },{
+  },
+  {
     id: 24,
     title:
       'The Importance of Balancing Humility and Confidence in Software Development: Exploring the Role of Egoism',
