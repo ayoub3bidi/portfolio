@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Mercury',
+    description: `A FastApi template with PostgreSQL and Redis databases. [Open-source project]`,
+    imgSrc: '',
+    href: '',
+    github: 'https://github.com/ayoub3bidi/mercury',
+    tech1: 'FastApi',
+    tech2: 'PostgreSQL • Redis • Flyway',
+    tech3: 'Docker',
+  },
+  {
     title: 'Golf App',
     description: `Golf Tee Times management mobile app for dAInamic. [Comwork project]`,
     imgSrc: '',
