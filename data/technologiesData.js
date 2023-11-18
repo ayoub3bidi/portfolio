@@ -1,13 +1,13 @@
 const technologiesData = [
   {
-    title: 'React',
-    description: `Frontend library`,
-    href: 'https://reactjs.org',
-  },
-  {
     title: 'Vue',
     description: `Frontend Framework`,
     href: 'https://vuejs.org',
+  },
+  {
+    title: 'React',
+    description: `Frontend library`,
+    href: 'https://reactjs.org',
   },
   {
     title: 'Bootstrap',
@@ -24,11 +24,11 @@ const technologiesData = [
     description: `Multi-Platform Frontend Framework`,
     href: 'https://flutter.dev',
   },
-  // {
-  //   title: 'React Native',
-  //   description: `Mobile App Frontend Framework`,
-  //   href: 'https://reactnative.dev',
-  // },
+  {
+    title: 'React Native',
+    description: `Mobile App Frontend Framework`,
+    href: 'https://reactnative.dev',
+  },
   {
     title: 'Express',
     description: `JavaScript Backend framework`,
@@ -61,13 +61,23 @@ const technologiesData = [
   },
   {
     title: 'Redis',
-    description: `key value Database`,
+    description: `Key value Database`,
     href: 'https://www.redis.io',
   },
   {
     title: 'Firebase',
     description: `Serverless platform`,
     href: 'https://firebase.google.com',
+  },
+  {
+    title: 'Docker',
+    description: `Containerization Platform`,
+    href: 'https://www.docker.com',
+  },
+  {
+    title: 'GitLab CI/CD & GitHub Actions',
+    description: `CI/CD Platforms`,
+    href: 'https://about.gitlab.com/stages-devops-lifecycle/continuous-integration/',
   },
   {
     title: 'Visual Studio Code',
