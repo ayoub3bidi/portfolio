@@ -71,7 +71,7 @@ const projectsData = [
   },
   {
     title: 'Book Notes',
-    description: `Notes from programming books.`,
+    description: `Notes from programming books. [Open-source project]`,
     imgSrc: '',
     href: 'https://book-notes.vercel.app/',
     github: 'https://github.com/Tunisian-GitHub-Community/Book-notes',
