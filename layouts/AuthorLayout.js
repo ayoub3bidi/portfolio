@@ -4,7 +4,6 @@ import Link from '@/components/Link'
 import Experience from '@/components/Experience'
 import experienceData from '@/data/experienceData'
 import { RoughNotation } from 'react-rough-notation'
-import { AiOutlineTwitter } from 'react-icons/ai'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const {
@@ -43,19 +42,7 @@ export default function AuthorLayout({ children, frontMatter }) {
             />
             <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
             <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex flex-col pt-3">
-              <a
-                className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
-                href="https://twitter.com/ayoub3bidi"
-                data-screen-name="@ayoub3bidi"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <AiOutlineTwitter className="mr-2 mb-0.5 inline h-5 w-5" />
-                Say Hi!
-              </a>
-            </div>
+            <div className="text-gray-500 dark:text-gray-400">@ {company}</div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">
             <p>
