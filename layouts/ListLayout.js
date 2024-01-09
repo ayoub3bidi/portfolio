@@ -13,7 +13,7 @@ const ListLayout = ({ posts }) => (
       </div>
       <ul>
         {!posts.length && 'No posts found.'}
-        {posts.map((post) => {
+        {posts.map((post, index) => {
           return (
             // eslint-disable-next-line react/jsx-key
             <Link
@@ -30,7 +30,7 @@ const ListLayout = ({ posts }) => (
                             href={post.link}
                             className="text-gray-900 transition duration-500 ease-in-out hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-500"
                           >
-                            {post.title}
+                          #{posts.length - index} {post.title}
                           </Link>
                         </h2>
                       </div>

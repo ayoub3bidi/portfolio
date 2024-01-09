@@ -11,7 +11,10 @@ export default function Home() {
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Hi, I am{' '}
+              Hello.
+            </h1>
+            <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+              My name is{' '}
               <span className="text-primary-color-500 dark:text-primary-color-dark-500">
                 Ayoub Abidi
               </span>
@@ -141,7 +144,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <hr className="border-gray-200 dark:border-gray-700" />
       </div>
     </>
   )
