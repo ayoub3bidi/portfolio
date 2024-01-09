@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Link from '@/components/Link'
 
 const Experience = ({ title, company, location, range, url, texts}) => {

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Link from '@/components/Link'
 
 const ListLayout = ({ posts }) => (
@@ -15,7 +16,6 @@ const ListLayout = ({ posts }) => (
         {!posts.length && 'No posts found.'}
         {posts.map((post, index) => {
           return (
-            // eslint-disable-next-line react/jsx-key
             <Link
               href={post.link}
               className="group flex bg-transparent bg-opacity-20 px-2 transition duration-100 hover:scale-105 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
