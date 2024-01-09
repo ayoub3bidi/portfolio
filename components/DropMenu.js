@@ -7,7 +7,7 @@ import {
   Link2Icon,
   Pencil1Icon,
   PersonIcon,
-  StarFilledIcon
+  StarFilledIcon,
 } from '@radix-ui/react-icons'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
