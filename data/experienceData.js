@@ -5,9 +5,15 @@ const experienceData = [
     location: 'Mutuelleville, Tunis, Tunisia',
     range: 'January 2023 - Present',
     url: 'https://comwork.io',
-    text1: 'Developed interfaces & API endpoints.',
-    text2: 'Developed CLI commands.',
-    text3: 'Created & updated documentations.',
+    texts: [
+      'Designed and developed web & mobile app interfaces.',
+      'Developed restful API endpoints.',
+      'Developed CLI commands.',
+      'Wrote Unit and Integration tests.',
+      'Prepared Docker files and CI/CD pipelines.',
+      'Formed a development team.',
+      'Created and Updated documentations.'
+    ]
   },
   {
     title: 'Frontend Developer',
@@ -15,9 +21,10 @@ const experienceData = [
     location: 'El Ghazela, Ariana, Tunisia',
     range: 'October 2022 - December 2022',
     url: 'https://tagamuta-valley.com',
-    text1: 'Developed mobile app interfaces with Flutter following Figma design.',
-    text2: "Consumed the backend's APIs with Clean Code Architecture.",
-    text3: '',
+    texts: [
+      'Developed mobile app interfaces.',
+      'Consumed the backend APIs.'
+    ]
   },
   {
     title: 'End of studies intern',
@@ -25,9 +32,11 @@ const experienceData = [
     location: 'Remote',
     range: 'January 2022 - May 2022',
     url: 'https://www.podyam.com',
-    text1: 'Full-stack development of a finance web platform.',
-    text2: 'Developed interfaces with Vue.js, Quasar, and Bootstrap following Figma design.',
-    text3: 'Created tables in the PostgreSQL database with ORM migration using Objection.js.',
+    texts: [
+      'Full-stack development of a finance web platform.',
+      'Developed interfaces with Vue.js, Quasar, and Bootstrap following Figma design.',
+      'Created tables in the PostgreSQL database with ORM migration using Objection.js.'
+    ]
   },
   {
     title: 'Freelance Frontend Developer',
@@ -35,19 +44,21 @@ const experienceData = [
     location: 'Remote',
     range: 'September 2021 - November 2021',
     url: 'http://www.tuniaos.com',
-    text1: 'Frontend development of a MEVN stack web app.',
-    text2: 'Created interfaces.',
-    text3: 'Consumed data from the API.',
+    texts: [
+      'Frontend development of a MEVN stack web app.',
+      'Created interfaces with Vue.js and Bootstrap.',
+      'Consumed data from the API using Axios.'
+    ]
   },
   {
     title: 'Summer Intern',
     company: 'Tunisie Telecom',
     location: 'El kef, tunisia',
     range: 'June 2021 - July 2021',
-    url: '',
-    text1: 'Designed, developed, and deployed a serverless mini-platform.',
-    text2: '',
-    text3: '',
+    url: 'https://www.tunisietelecom.tn',
+    texts: [
+      'Designed, developed, and deployed a serverless mini-platform.'
+    ]
   },
 ]
 

@@ -175,9 +175,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                 location={d.location}
                 range={d.range}
                 url={d.url}
-                text1={d.text1}
-                text2={d.text2}
-                text3={d.text3}
+                texts={d.texts}
               />
             ))}
           </div>
