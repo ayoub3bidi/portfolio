@@ -17,6 +17,7 @@ const ListLayout = ({ posts }) => (
         {posts.map((post, index) => {
           return (
             <Link
+              key={index}
               href={post.link}
               className="group flex bg-transparent bg-opacity-20 px-2 transition duration-100 hover:scale-105 hover:rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
             >

@@ -18,7 +18,7 @@ const Experience = ({ title, company, location, range, url, texts}) => {
         <div className="p-2">
           {
             texts.map((text, index) => (
-              <div className="flex flex-row ">
+              <div key={index} className="flex flex-row ">
                 <div className="mr-2 text-lg text-primary-color-500"> &#8227;</div>
                 <div className="text-gray-500 dark:text-gray-400">{text}</div>
               </div>
