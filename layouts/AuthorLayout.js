@@ -67,7 +67,8 @@ export default function AuthorLayout({ children, frontMatter }) {
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things (especially stuff related to
               <span className="font-semibold"> Open source</span>
-              ), and{' '}
+              ),
+              {/* , and{' '}
               <RoughNotation
                 type="underline"
                 show={true}
@@ -78,7 +79,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               >
                 actively on the lookout for remote internships which I can pursue in field of Data
                 Science.
-              </RoughNotation>
+              </RoughNotation> */}
             </p>
             <p className="hidden md:block">
               I am always looking to learn new things (especially stuff related to{' '}

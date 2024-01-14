@@ -12,8 +12,8 @@ const experienceData = [
       'Wrote Unit and Integration tests.',
       'Prepared Docker files and CI/CD pipelines.',
       'Formed a development team.',
-      'Created and Updated documentations.'
-    ]
+      'Created and Updated documentations.',
+    ],
   },
   {
     title: 'Frontend Developer',
@@ -21,10 +21,7 @@ const experienceData = [
     location: 'El Ghazela, Ariana, Tunisia',
     range: 'October 2022 - December 2022',
     url: 'https://tagamuta-valley.com',
-    texts: [
-      'Developed mobile app interfaces.',
-      'Consumed the backend APIs.'
-    ]
+    texts: ['Developed mobile app interfaces.', 'Consumed the backend APIs.'],
   },
   {
     title: 'End of studies intern',
@@ -35,8 +32,8 @@ const experienceData = [
     texts: [
       'Full-stack development of a finance web platform.',
       'Developed interfaces with Vue.js, Quasar, and Bootstrap following Figma design.',
-      'Created tables in the PostgreSQL database with ORM migration using Objection.js.'
-    ]
+      'Created tables in the PostgreSQL database with ORM migration using Objection.js.',
+    ],
   },
   {
     title: 'Freelance Frontend Developer',
@@ -47,8 +44,8 @@ const experienceData = [
     texts: [
       'Frontend development of a MEVN stack web app.',
       'Created interfaces with Vue.js and Bootstrap.',
-      'Consumed data from the API using Axios.'
-    ]
+      'Consumed data from the API using Axios.',
+    ],
   },
   {
     title: 'Summer Intern',
@@ -56,9 +53,7 @@ const experienceData = [
     location: 'El kef, tunisia',
     range: 'June 2021 - July 2021',
     url: 'https://www.tunisietelecom.tn',
-    texts: [
-      'Designed, developed, and deployed a serverless mini-platform.'
-    ]
+    texts: ['Designed, developed, and deployed a serverless mini-platform.'],
   },
 ]
 
