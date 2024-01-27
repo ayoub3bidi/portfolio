@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'imalive',
+    description: `A simple, fast and reliable uptime monitoring service. [Open-source project]`,
+    imgSrc: '',
+    href: '',
+    github: 'https://github.com/idrissneumann/imalive',
+    tech1: 'Fast API',
+    tech2: 'Docker',
+    tech3: 'CI/CD',
+  },
+  {
     title: 'Mercury',
     description: `A FastApi template with PostgreSQL and Redis databases. [Open-source project]`,
     imgSrc: '',
@@ -60,6 +70,16 @@ const projectsData = [
     tech3: 'Tailwind CSS',
   },
   {
+    title: 'Comwork Cloud CLI',
+    description: `A CLI to use Comwork Cloud API. [Open-source project]`,
+    imgSrc: '',
+    href: '',
+    github: 'https://github.com/idrissneumann/cwc',
+    tech1: 'Go',
+    tech2: 'Cobra CLI',
+    tech3: 'Docker • CI/CD',
+  },
+  {
     title: 'Comwork Cloud',
     description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs. [Comwork project]`,
     imgSrc: '',
@@ -67,7 +87,7 @@ const projectsData = [
     github: 'https://github.com/idrissneumann/comwork-cloud-wiki',
     tech1: 'React • Docusaurus • Bootstrap • Mantine UI',
     tech2: 'Axios • Flask • Pulumi • Minio',
-    tech3: 'Redis • PostgreSQL • Docker • CI/CD • GO',
+    tech3: 'Redis • PostgreSQL • Docker • CI/CD',
   },
   {
     title: 'Book Notes',
