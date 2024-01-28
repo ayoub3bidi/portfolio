@@ -111,10 +111,10 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              {/* <div className="my-2 grid items-start gap-8">
+              <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
-                  <Link href="https://drive.google.com/file/d/1QU8c1-i7KyZF2Hqlb79ruyUNx3JoyoKM/view">
+                  <Link href="https://drive.google.com/file/d/1Mn6sEbYrNzgZgdD9zfMWSe_EuuhWkfY1/view">
                     <span className="relative flex items-center divide-x divide-gray-600 rounded-lg bg-white px-7 py-4 leading-none dark:bg-black">
                       <span className="flex items-center space-x-5">
                         <svg
@@ -140,7 +140,7 @@ export default function Home() {
                     </span>
                   </Link>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>
