@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 27,
+    title: 'Code Review Culture: Orchestrating Excellence in Software',
+    link: 'https://ayoub3bidi.medium.com/code-review-culture-orchestrating-excellence-in-software-b39a77c6c7a1',
+  },
+  {
     id: 26,
     title: 'The Rise of Low-Code and No-Code Platforms: Implications for Software Developers',
     link: 'https://ayoub3bidi.medium.com/the-rise-of-low-code-and-no-code-platforms-implications-for-software-developers-38110d795424',
