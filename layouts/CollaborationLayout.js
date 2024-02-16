@@ -8,7 +8,15 @@ const CollaborationLayout = () => (
           Modes of collaboration
         </h1>
         <p className="text-md leading-7 text-gray-500 dark:text-gray-400">
-          Want to collaborate? no problem. Here are the different modes of collaboration available.
+          Want to collaborate? no problem at all! I'm open to new projects and opportunities. Feel
+          free to book a meeting with me to discuss your project on
+          <Link
+            href="https://calendly.com/ayoub3bidi/intro-call"
+            className="text-primary-500 hover:underline dark:text-primary-400"
+          >
+            <span> calendly</span>
+          </Link>
+          . Here are the different modes of collaboration available:
         </p>
       </div>
       <ul>
