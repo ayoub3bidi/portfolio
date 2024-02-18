@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'Talaba TN',
+    description: `An e-learning platform landing page. [Freelance project]`,
+    imgSrc: '',
+    href: 'https://talabatn.net',
+    github: '',
+    tech1: 'React',
+    tech2: 'MUI',
+    tech3: 'CSS',
+  },
+  {
     title: 'imalive',
     description: `A simple, fast and reliable uptime monitoring service. [Open-source project]`,
     imgSrc: '',
