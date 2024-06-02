@@ -1,6 +1,16 @@
 /* eslint-disable prettier/prettier */
 export const articles = [
   {
+    id: 29,
+    title: 'Demystifying Software Engineering Experience: What Counts on Your Resume?',
+    link: 'https://ayoub3bidi.medium.com/demystifying-software-engineering-experience-what-counts-on-your-resume-a62e202b9b4b',
+  },
+  {
+    id: 28,
+    title: 'Quick tutorial: How to add a release GitHub workflow',
+    link: 'https://dev.to/ayoub3bidi/quick-tutorial-how-to-add-a-release-github-workflow-56ib',
+  },
+  {
     id: 27,
     title: 'Code Review Culture: Orchestrating Excellence in Software',
     link: 'https://ayoub3bidi.medium.com/code-review-culture-orchestrating-excellence-in-software-b39a77c6c7a1',
