@@ -5,9 +5,19 @@ const technologiesData = [
     href: 'https://vuejs.org',
   },
   {
+    title: 'Angular',
+    description: `Frontend Framework`,
+    href: 'https://angular.dev',
+  },
+  {
     title: 'React',
     description: `Frontend library`,
     href: 'https://reactjs.org',
+  },
+  {
+    title: 'Jest',
+    description: `JavaScript Testing Framework`,
+    href: 'https://jestjs.io',
   },
   {
     title: 'Bootstrap',
