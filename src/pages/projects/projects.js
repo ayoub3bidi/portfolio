@@ -1,7 +1,8 @@
 const projectsData = [
     {
       title: 'Talaba TN',
-      description: `An e-learning platform landing page. [Freelance project]`,
+      description: `An e-learning platform landing page.`,
+      type: 'Freelance',
       imgSrc: '',
       href: 'https://talabatn.net',
       github: '',
@@ -9,7 +10,8 @@ const projectsData = [
     },
     {
       title: 'imalive',
-      description: `A simple, fast and reliable uptime monitoring service. [Open-source project]`,
+      description: `A simple, fast and reliable uptime monitoring service.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/idrissneumann/imalive',
@@ -17,7 +19,8 @@ const projectsData = [
     },
     {
       title: 'Mercury',
-      description: `A FastApi template with PostgreSQL and Redis databases. [Open-source project]`,
+      description: `A FastApi template with PostgreSQL and Redis databases`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/ayoub3bidi/mercury',
@@ -25,7 +28,8 @@ const projectsData = [
     },
     {
       title: 'Golf App',
-      description: `Golf Tee Times management mobile app for dAInamic. [Comwork project]`,
+      description: `Golf Tee Times management mobile app for dAInamic.`,
+      type: 'Comwork',
       imgSrc: '',
       href: '',
       github: '',
@@ -33,7 +37,8 @@ const projectsData = [
     },
     {
       title: 'Fairmat App',
-      description: `Bar code scanning web app for Fairmat factory. [Comwork project]`,
+      description: `Bar code scanning web app for Fairmat factory.`,
+      type: 'Comwork',
       imgSrc: '',
       href: '',
       github: '',
@@ -41,7 +46,8 @@ const projectsData = [
     },
     {
       title: 'ZAN-f',
-      description: `The official ZAN-f wood products website. [Comwork project]`,
+      description: `The official ZAN-f wood products website.`,
+      type: 'Comwork',
       imgSrc: '',
       href: 'https://www.zan-f.com/',
       github: '',
@@ -49,7 +55,8 @@ const projectsData = [
     },
     {
       title: 'Document Control Connector',
-      description: `A microservice for Docapost. [Comwork project]`,
+      description: `A microservice for Docapost.`,
+      type: 'Comwork',
       imgSrc: '',
       href: '',
       github: '',
@@ -57,7 +64,8 @@ const projectsData = [
     },
     {
       title: 'Comwork.io',
-      description: `The official Comwork website. [Comwork project]`,
+      description: `The official Comwork website.`,
+      type: 'Comwork',
       imgSrc: '',
       href: 'https://comwork.io',
       github: '',
@@ -65,7 +73,8 @@ const projectsData = [
     },
     {
       title: 'Comwork Cloud CLI',
-      description: `A CLI to use Comwork Cloud API. [Open-source project]`,
+      description: `A CLI to use Comwork Cloud API.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/idrissneumann/cwc',
@@ -73,7 +82,8 @@ const projectsData = [
     },
     {
       title: 'Comwork Cloud',
-      description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs. [Comwork project]`,
+      description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs.`,
+      type: 'Comwork',
       imgSrc: '',
       href: 'https://cloud.comwork.io/',
       github: 'https://github.com/idrissneumann/comwork-cloud-wiki',
@@ -81,7 +91,8 @@ const projectsData = [
     },
     {
       title: 'Book Notes',
-      description: `Notes from programming books. [Open-source project]`,
+      description: `Notes from programming books. [Open-source]`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://book-notes.vercel.app/',
       github: 'https://github.com/Tunisian-GitHub-Community/Book-notes',
@@ -90,6 +101,7 @@ const projectsData = [
     {
       title: 'Notes',
       description: `A markdown-supported note-taking web app.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/ayoub3bidi/ma5zen',
@@ -98,6 +110,7 @@ const projectsData = [
     {
       title: 'Ma5zen',
       description: `A full-stack inventory web app.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/ayoub3bidi/ma5zen',
@@ -105,7 +118,8 @@ const projectsData = [
     },
     {
       title: 'Mouzika',
-      description: `A Spotify clone. [Academic project]`,
+      description: `A Spotify clone.`,
+      type: 'Academic',
       imgSrc: '',
       href: 'https://mouzika.vercel.app',
       github: 'https://github.com/ayoub3bidi/mouzika',
@@ -113,7 +127,8 @@ const projectsData = [
     },
     {
       title: 'Vets',
-      description: `A veterinary clinic mobile app. [Tagamuta Valley project]`,
+      description: `A veterinary clinic mobile app.`,
+      type: 'Tagamuta Valley',
       imgSrc: '',
       href: '',
       github: '',
@@ -122,6 +137,7 @@ const projectsData = [
     {
       title: 'Sector R',
       description: `A real-time chatroom.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://sector-r.vercel.app',
       github: 'https://github.com/ayoub3bidi/sector-r',
@@ -130,6 +146,7 @@ const projectsData = [
     {
       title: 'Reddit Clone',
       description: `A full-stack reddit clone.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/ayoub3bidi/reddit-clone',
@@ -138,6 +155,7 @@ const projectsData = [
     {
       title: 'Flousi',
       description: `A simple expense tracker web app.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://flousi.vercel.app',
       github: 'https://github.com/ayoub3bidi/flousi',
@@ -146,6 +164,7 @@ const projectsData = [
     {
       title: 'Ommek Sannefa',
       description: `Kitchen recipes sharing platform.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/ayoub3bidi/ommek-sannefa',
@@ -153,7 +172,8 @@ const projectsData = [
     },
     {
       title: 'Podium ESG',
-      description: `Financial portfolios publication web app. [End-of-studies internship project]`,
+      description: `Financial portfolios publication web app.`,
+      type: 'Academic',
       imgSrc: '',
       href: '',
       github: '',
@@ -162,6 +182,7 @@ const projectsData = [
     {
       title: 'Koujina API',
       description: `An API for kitchen recipes.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/Tunisian-GitHub-Community/Koujina_api',
@@ -170,6 +191,7 @@ const projectsData = [
     {
       title: 'Sou9 API',
       description: `An API for e-commerce.`,
+      type: 'Open-source',
       imgSrc: '',
       href: '',
       github: 'https://github.com/pycoder2000/Stock-Management',
@@ -178,6 +200,7 @@ const projectsData = [
     {
       title: 'Covid Tracker',
       description: `Covid-19 cases and deaths tracker.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://online-covid-19-tracker.netlify.app',
       github: 'https://github.com/ayoub3bidi/covid-tracker',
@@ -185,7 +208,8 @@ const projectsData = [
     },
     {
       title: 'Time Check',
-      description: `Projects management platform. [Freelance project]`,
+      description: `Projects management platform.`,
+      type: 'Freelance',
       imgSrc: '',
       href: '',
       github: '',
@@ -193,7 +217,8 @@ const projectsData = [
     },
     {
       title: 'My List',
-      description: `A simple platform to share your passion by creating lists and sharing them with other users. [Summer internship project].`,
+      description: `A simple platform to share your passion by creating lists and sharing them with other users.`,
+      type: 'Academic',
       imgSrc: '',
       href: 'https://mylist-f82d6.firebaseapp.com',
       github: 'https://github.com/ayoub3bidi/mylist',
@@ -202,6 +227,7 @@ const projectsData = [
     {
       title: 'My Heroes',
       description: `A minimalist website that can display mini-biographies about 20 programmers who made the internet as we know it today.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/myheroes/',
       github: 'https://github.com/ayoub3bidi/myheroes',
@@ -210,6 +236,7 @@ const projectsData = [
     {
       title: 'Quotes',
       description: `A website that can display random inspirational quotes from a public Api.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/Quotes',
       github: 'https://github.com/ayoub3bidi/Quotes',
@@ -218,6 +245,7 @@ const projectsData = [
     {
       title: 'My Favorite LOL Champion',
       description: `A minimalist website for my favorite League of Legends champion Ekko.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/myFavoriteLolChampion/',
       github: 'https://github.com/ayoub3bidi/myFavoriteLolChampion',
@@ -226,6 +254,7 @@ const projectsData = [
     {
       title: 'Dokkōdō',
       description: `A minimalist website that can display Musashi's 21 principles for those who walk alone in this life.`,
+      type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/Dokkodo',
       github: 'https://github.com/ayoub3bidi/Dokkodo',

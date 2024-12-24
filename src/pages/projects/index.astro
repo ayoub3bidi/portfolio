@@ -5,12 +5,28 @@ import { i18n } from '../../i18n/translation'
 import I18nKey from '../../i18n/i18nKey'
 import projectsData from './projects'
 import ButtonTag from '@components/control/ButtonTag.astro'
+
+// Get unique project types
+const projectTypes = ['all', ...new Set(projectsData.map(project => project.type))]
 ---
 
 <MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+    <div class="mb-6 flex flex-wrap justify-center gap-2">
+        {projectTypes.map(type => (
+            <button
+                class="filter-btn px-4 py-2 bg-[var(--card-bg)] text-black dark:text-white rounded-md border-2 border-solid border-gray-200 dark:border-gray-700 hover:border-[var(--primary)] transition-colors"
+                data-type={type}
+            >
+                {type}
+            </button>
+        ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full" id="projects-grid">
         {projectsData.map((project) => (
-            <div class="bg-[var(--card-bg)] h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 transition duration-500 hover:rounded-md hover:border-[var(--primary)] hover:bg-gray-300 dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+            <div 
+                class="project-card bg-[var(--card-bg)] h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 transition duration-500 hover:rounded-md hover:border-[var(--primary)] dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+                data-type={project.type}
             >
                 <div class="p-6">
                     <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50">{project.title}</div>
@@ -53,3 +69,37 @@ import ButtonTag from '@components/control/ButtonTag.astro'
         ))}
     </div>
 </MainGridLayout>
+
+<script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    // Set 'all' as active by default
+    document.querySelector('[data-type="all"]')?.classList.add('active');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const selectedType = button.getAttribute('data-type');
+
+            projectCards.forEach(card => {
+                if (selectedType === 'all' || card.getAttribute('data-type') === selectedType) {
+                    (card as HTMLElement).style.display = 'block';
+                } else {
+                    (card as HTMLElement).style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .filter-btn.active {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: white;
+    }
+</style>
