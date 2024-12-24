@@ -1,12 +1,12 @@
 const projectsData = [
     {
       title: 'Talaba TN',
-      description: `An e-learning platform landing page.`,
+      description: `A Tunisian e-learning platform landing page.`,
       type: 'Freelance',
       imgSrc: '',
       href: 'https://talabatn.net',
       github: '',
-      techStack: ['React'],
+      techStack: ['React', "Bootstrap", "Lottie Animations"],
     },
     {
       title: 'imalive',
@@ -25,6 +25,24 @@ const projectsData = [
       href: '',
       github: 'https://github.com/ayoub3bidi/mercury',
       techStack: ['Fast API', 'PostgreSQL', 'Redis', 'Docker'],
+    },
+    {
+      title: 'Object Detection System',
+      description: `A real-time object detection system.`,
+      type: 'Academic',
+      imgSrc: '',
+      href: 'https://ayoub-object-detection.vercel.app',
+      github: 'https://github.com/ayoub3bidi/object_detection',
+      techStack: ['Python', 'OpenCV', 'YOLO', 'Firebase', "GTTS", "React", "Vite"],
+    },
+    {
+      title: 'Festival Management System',
+      description: `A festival management system.`,
+      type: 'Academic',
+      imgSrc: '',
+      href: '',
+      github: 'https://github.com/ayoub3bidi/gestion_festival',
+      techStack: ['Next', 'Redux', 'Chart.js', 'Tailwind CSS', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     },
     {
       title: 'Golf App',

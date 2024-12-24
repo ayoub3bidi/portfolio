@@ -7,6 +7,14 @@ import projectsData from './projects'
 import ButtonTag from '@components/control/ButtonTag.astro'
 
 const projectTypes = ['All', ...new Set(projectsData.map(project => project.type))]
+const projectCounts: { [key: string]: number } = {
+    All: projectsData.length,
+    ...Object.fromEntries(
+        projectTypes
+            .filter(type => type !== 'All')
+            .map(type => [type, projectsData.filter(project => project.type === type).length])
+    )
+}
 ---
 
 <MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
@@ -16,7 +24,7 @@ const projectTypes = ['All', ...new Set(projectsData.map(project => project.type
                 class="filter-btn px-4 py-2 bg-[var(--card-bg)] text-black dark:text-white rounded-md border-2 border-solid border-gray-200 dark:border-gray-700 hover:border-[var(--primary)] transition-colors"
                 data-type={type}
             >
-                {type}
+                {type} ({projectCounts[type]})
             </button>
         ))}
     </div>
