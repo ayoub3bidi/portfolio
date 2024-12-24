@@ -19,4 +19,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
     name: i18n(I18nKey.collaboration),
     url: '/collaboration/',
   },
+  [LinkPreset.Projects]: {
+    name: i18n(I18nKey.projects),
+    url: '/projects/',
+  },
 }

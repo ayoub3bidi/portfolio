@@ -1,0 +1,55 @@
+---
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { i18n } from '../../i18n/translation'
+import I18nKey from '../../i18n/i18nKey'
+import projectsData from './projects'
+import ButtonTag from '@components/control/ButtonTag.astro'
+---
+
+<MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+        {projectsData.map((project) => (
+            <div class="bg-[var(--card-bg)] h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 transition duration-500 hover:rounded-md hover:border-[var(--primary)] hover:bg-gray-300 dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+            >
+                <div class="p-6">
+                    <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50">{project.title}</div>
+                    <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2"></div>
+                    <p class="text-center text-neutral-400 mb-4">{project.description}</p>
+                    
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        {project.techStack.map((tech) => (
+                            <ButtonTag>{tech}</ButtonTag>
+                        ))}
+                    </div>
+                    
+                    <div class="flex gap-2 justify-center">
+                        {project.href && (
+                            <a 
+                                href={project.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+                                aria-label="Live Demo"
+                            >
+                                <Icon name="fa6-solid:globe" class="text-[1.5rem]" />
+                            </a>
+                        )}
+                        
+                        {project.github && (
+                            <a 
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+                                aria-label="GitHub Repository"
+                            >
+                                <Icon name="fa6-brands:github" class="text-[1.5rem]" />
+                            </a>
+                        )}
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</MainGridLayout>
