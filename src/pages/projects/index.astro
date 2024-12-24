@@ -6,8 +6,7 @@ import I18nKey from '../../i18n/i18nKey'
 import projectsData from './projects'
 import ButtonTag from '@components/control/ButtonTag.astro'
 
-// Get unique project types
-const projectTypes = ['all', ...new Set(projectsData.map(project => project.type))]
+const projectTypes = ['All', ...new Set(projectsData.map(project => project.type))]
 ---
 
 <MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
@@ -71,29 +70,33 @@ const projectTypes = ['all', ...new Set(projectsData.map(project => project.type
 </MainGridLayout>
 
 <script>
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectCards = document.querySelectorAll('.project-card');
+    function initializeFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        document.querySelector('[data-type="All"]')?.classList.add('active');
 
-    // Set 'all' as active by default
-    document.querySelector('[data-type="all"]')?.classList.add('active');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
+                const selectedType = button.getAttribute('data-type');
 
-            const selectedType = button.getAttribute('data-type');
-
-            projectCards.forEach(card => {
-                if (selectedType === 'all' || card.getAttribute('data-type') === selectedType) {
-                    (card as HTMLElement).style.display = 'block';
-                } else {
-                    (card as HTMLElement).style.display = 'none';
-                }
+                projectCards.forEach(card => {
+                    if (selectedType === 'All' || card.getAttribute('data-type') === selectedType) {
+                        (card as HTMLElement).style.display = 'block';
+                    } else {
+                        (card as HTMLElement).style.display = 'none';
+                    }
+                });
             });
         });
-    });
+    }
+
+    initializeFilters();
+
+    document.addEventListener('astro:page-load', initializeFilters);
 </script>
 
 <style>
