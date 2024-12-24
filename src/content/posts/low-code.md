@@ -2,7 +2,7 @@
 title: "The Rise of Low-Code and No-Code Platforms: Implications for Software Developers"
 published: 2023-10-01
 description: ""
-image: ""
+image: "./covers/low-code.jpg"
 tags: ["low-code", "no-code"]
 category: Worth talking subjects
 draft: false

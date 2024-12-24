@@ -2,7 +2,7 @@
 title: "Demystifying Software Engineering Experience: What Counts on Your Resume?"
 published: 2024-06-01
 description: ""
-image: ""
+image: "./covers/resume.jpg"
 tags: ["struggles", "experience", "resume"]
 category: Worth talking subjects
 draft: false

@@ -2,7 +2,7 @@
 title: The Role of Communication in Software Development
 published: 2023-09-01
 description: ""
-image: ""
+image: "./covers/communication.jpg"
 tags: ["struggles", "communication"]
 category: Worth talking subjects
 draft: false

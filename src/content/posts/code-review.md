@@ -2,7 +2,7 @@
 title: "Code Review Culture: Orchestrating Excellence in Software"
 published: 2024-02-01
 description: ""
-image: ""
+image: "./covers/code-review.jpg"
 tags: ["code-review"]
 category: Worth talking subjects
 draft: false
@@ -163,4 +163,4 @@ Sources:
 
 -----------
 This article is also available on:  
-* [Medium]()
+* [Medium](https://ayoub3bidi.medium.com/code-review-culture-orchestrating-excellence-in-software-b39a77c6c7a1)

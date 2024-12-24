@@ -2,7 +2,7 @@
 title: "Quick tutorial: How to add a release GitHub workflow"
 published: 2024-03-01
 description: ""
-image: ""
+image: "./covers/github.jpeg"
 tags: ["tutuorial", "devops", "git", "github", "CI/CD"]
 category: My tech journey
 draft: false
