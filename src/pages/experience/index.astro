@@ -3,7 +3,7 @@ import MainGridLayout from '../../layouts/MainGridLayout.astro'
 import { i18n } from '../../i18n/translation'
 import I18nKey from '../../i18n/i18nKey'
 import experienceData from './experience'
-
+import ButtonTag from '../../components/control/ButtonTag.astro';
 ---
 
 <MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
@@ -38,11 +38,19 @@ import experienceData from './experience'
                             
                             <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{experience.location}</p>
                             
-                            <ul class="space-y-2">
+                            <ul class="space-y-2 mb-4">
                                 {experience.texts.map((text) => (
                                     <li class="text-gray-700 dark:text-gray-300">• {text}</li>
                                 ))}
                             </ul>
+
+                            <div class="flex flex-wrap gap-2">
+                                {experience.stack.map((tech) => (
+                                    <ButtonTag>
+                                        {tech}
+                                    </ButtonTag>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
