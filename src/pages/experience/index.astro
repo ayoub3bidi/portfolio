@@ -1,0 +1,60 @@
+---
+import MainGridLayout from '../../layouts/MainGridLayout.astro'
+import { i18n } from '../../i18n/translation'
+import I18nKey from '../../i18n/i18nKey'
+import experienceData from './experience'
+
+---
+
+<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="bg-white dark:bg-[var(--card-bg)] z-10 px-9 py-6 relative w-full shadow-lg">
+            <h2 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Work Experience</h2>
+            <div class="space-y-6">
+                {experienceData.map((experience) => (
+                    <div class="relative flex gap-4 pb-10">
+                        <div class="absolute left-2.5 top-0 h-full w-0.5 bg-gray-200 dark:bg-gray-700" />
+                        <div class="relative z-10 mt-1.5">
+                            <div class="h-5 w-5 rounded-full bg-[var(--primary)] border-4 border-white dark:border-gray-900" />
+                        </div>
+                        
+                        <div class="flex-1">
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
+                                <div>
+                                    <h3 class="text-lg font-semibold inline-flex items-center gap-2 text-gray-900 dark:text-white">
+                                        {experience.title} @ 
+                                        <a
+                                            href={experience.url}
+                                            class="text-[var(--primary)] hover:text-orange-500 transition-colors"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {experience.company}
+                                        </a>
+                                    </h3>
+                                </div>
+                                <span class="text-sm text-gray-500 dark:text-gray-400">{experience.range}</span>
+                            </div>
+                            
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{experience.location}</p>
+                            
+                            <ul class="space-y-2">
+                                {experience.texts.map((text) => (
+                                    <li class="text-gray-700 dark:text-gray-300">• {text}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+</MainGridLayout>
+
+<style>
+    @media (max-width: 640px) {
+        .flex-col {
+            gap: 0.5rem;
+        }
+    }
+</style>
