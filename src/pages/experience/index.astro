@@ -5,6 +5,9 @@ import I18nKey from '../../i18n/i18nKey'
 import experienceData from './experience'
 import ButtonTag from '../../components/control/ButtonTag.astro'
 import { calculateDuration, calculateTotalExperience, formatDuration } from './calculateExperience'
+import { Icon } from 'astro-icon/components'
+
+const totalExp = calculateTotalExperience(experienceData);
 ---
 
 <MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
@@ -12,17 +15,12 @@ import { calculateDuration, calculateTotalExperience, formatDuration } from './c
         <div class="bg-white dark:bg-[var(--card-bg)] z-10 px-9 py-6 relative w-full shadow-lg">
             <div class="flex items-center justify-between mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Work Experience</h2>
-                {(() => {
-                    const totalExp = calculateTotalExperience(experienceData);
-                    return (
-                        <ButtonTag>
-                            Total: {totalExp.years} years {totalExp.months} months
-                        </ButtonTag>
-                    );
-                })()}
+                <ButtonTag>
+                    Total: {totalExp.years} years {totalExp.months} months
+                </ButtonTag>
             </div>
             <div class="space-y-6">
-                {experienceData.map((experience) => {
+                {experienceData.map((experience, index) => {
                     const [startMonth, startYear] = experience.range.split(' - ')[0].split(' ');
                     const duration = calculateDuration(
                         `${startMonth} 1, ${startYear}`,
@@ -30,49 +28,69 @@ import { calculateDuration, calculateTotalExperience, formatDuration } from './c
                     );
                     
                     return (
-                        <div class="relative flex gap-4 pb-10">
+                        <div class="relative" data-accordion-item>
                             <div class="absolute left-2.5 top-0 h-full w-0.5 bg-gray-200 dark:bg-gray-700" />
-                            <div class="relative z-10 mt-1.5">
-                                <div class="h-5 w-5 rounded-full bg-[var(--primary)] border-4 border-white dark:border-gray-900" />
-                            </div>
-                            
-                            <div class="flex-1">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
-                                    <div>
-                                        <h3 class="text-lg font-semibold inline-flex items-center gap-2 text-gray-900 dark:text-white">
-                                            {experience.title} @ 
-                                            <a
-                                                href={experience.url}
-                                                class="text-[var(--primary)] hover:text-[var(--btn-content)] transform transition duration-500"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                {experience.company}
-                                            </a>
-                                        </h3>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-sm text-gray-500 dark:text-gray-400">{experience.range}</span>
-                                        <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">
-                                            {formatDuration(duration)}
-                                        </span>
-                                    </div>
+                            <div class="relative flex gap-4">
+                                <div class="relative z-10 mt-1.5">
+                                    <div class="h-5 w-5 rounded-full bg-[var(--primary)] border-4 border-white dark:border-gray-900" />
                                 </div>
                                 
-                                <p class="text-sm text-gray-500 dark:text-gray-400 mb-2">{experience.location}</p>
-                                
-                                <ul class="space-y-2 mb-4">
-                                    {experience.texts.map((text) => (
-                                        <li class="text-gray-700 dark:text-gray-300">• {text}</li>
-                                    ))}
-                                </ul>
+                                <div class="flex-1">
+                                    <button 
+                                        class="w-full text-left group flex flex-col sm:flex-row sm:items-center justify-between mb-1"
+                                        aria-expanded="false"
+                                    >
+                                        <div>
+                                            <h3 class="text-lg font-semibold inline-flex items-center gap-2 text-gray-900 dark:text-white">
+                                                {experience.title} @ 
+                                                <a
+                                                    href={experience.url}
+                                                    class="text-[var(--primary)] hover:text-[var(--btn-content)] transform transition duration-500"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    {experience.company}
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <div class="flex items-center gap-3">
+                                            <span class="text-sm text-gray-500 dark:text-gray-400">{experience.range}</span>
+                                            <span class="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">
+                                                {formatDuration(duration)}
+                                            </span>
+                                            <svg 
+                                                class="w-5 h-5 transform transition-transform duration-300 ease-in-out text-gray-500"
+                                                fill="none" 
+                                                stroke="currentColor" 
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    
+                                    <div class="content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                                        <div class="pt-4">
+                                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-1">
+                                                <Icon name="fa6-solid:location-dot" class="text-[1rem]"></Icon>
+                                                {experience.location}
+                                            </p>
+                                            
+                                            <ul class="space-y-2 mb-4">
+                                                {experience.texts.map((text) => (
+                                                    <li class="text-gray-700 dark:text-gray-300">• {text}</li>
+                                                ))}
+                                            </ul>
 
-                                <div class="flex flex-wrap gap-2">
-                                    {experience.stack.map((tech) => (
-                                        <ButtonTag>
-                                            {tech}
-                                        </ButtonTag>
-                                    ))}
+                                            <div class="flex flex-wrap gap-2">
+                                                {experience.stack.map((tech) => (
+                                                    <ButtonTag>
+                                                        {tech}
+                                                    </ButtonTag>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,10 +101,23 @@ import { calculateDuration, calculateTotalExperience, formatDuration } from './c
     </div>
 </MainGridLayout>
 
-<style>
-    @media (max-width: 640px) {
-        .flex-col {
-            gap: 0.5rem;
-        }
-    }
-</style>
+<script>
+    document.querySelectorAll('[data-accordion-item]').forEach(item => {
+        const button = item.querySelector('button');
+        const content = item.querySelector('.content') as HTMLElement;
+        const icon = button?.querySelector('svg');
+
+        button?.addEventListener('click', () => {
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', (!isExpanded).toString());
+
+            if (content) {
+                content.style.maxHeight = isExpanded ? '0' : `${content.scrollHeight}px`;
+            }
+
+            if (icon) {
+                icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+        });
+    });
+</script>
