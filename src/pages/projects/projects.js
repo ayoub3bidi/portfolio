@@ -51,7 +51,7 @@ const projectsData = [
       imgSrc: '',
       href: '',
       github: '',
-      techStack: ['Flutter', 'Firebase', 'Spring Boot'],
+      techStack: ['Flutter', 'Firebase'],
     },
     {
       title: 'Fairmat App',
