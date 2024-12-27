@@ -1,0 +1,135 @@
+---
+const categories = [
+  {
+    name: 'Frontend Development',
+    icon: 'globe',
+    items: ['Vue.js', 'React.js', 'Angular.js', 'Bootstrap', 'Tailwind CSS', 'Material UI', 'Flutter'],
+    bgColor: 'bg-green-500/10 dark:bg-green-400/10',
+    textColor: 'text-green-500 dark:text-green-400',
+    iconColor: 'text-green-500/80 dark:text-green-400/80'
+  },
+  {
+    name: 'Backend Development',
+    icon: 'notebook',
+    items: ['Express.js', 'FastAPI', 'Flask', 'Spring Boot'],
+    bgColor: 'bg-purple-500/10 dark:bg-purple-400/10',
+    textColor: 'text-purple-500 dark:text-purple-400',
+    iconColor: 'text-purple-500/80 dark:text-purple-400/80'
+  },
+  {
+    name: 'Databases',
+    icon: 'database',
+    items: ['PostgreSQL', 'Redis', 'Firebase', 'MySQL'],
+    bgColor: 'bg-red-500/10 dark:bg-red-400/10',
+    textColor: 'text-red-500 dark:text-red-400',
+    iconColor: 'text-red-500/80 dark:text-red-400/80'
+  },
+  {
+    name: 'DevOps & Cloud',
+    icon: 'cloud',
+    items: ['Docker', 'Kubernetes', 'GitLab CI/CD', 'GitHub Actions', 'AWS', 'GCP', 'Minio', 'Nginx', 'Pulumi'],
+    bgColor: 'bg-orange-500/10 dark:bg-orange-400/10',
+    textColor: 'text-orange-500 dark:text-orange-400',
+    iconColor: 'text-orange-500/80 dark:text-orange-400/80'
+  },
+  {
+    name: 'Testing',
+    icon: 'flask-conical',
+    items: ['Unittest', 'Jest'],
+    bgColor: 'bg-yellow-500/10 dark:bg-yellow-400/10',
+    textColor: 'text-yellow-500 dark:text-yellow-400',
+    iconColor: 'text-yellow-500/80 dark:text-yellow-400/80'
+  },
+];
+---
+
+<div class="w-full space-y-6">
+  <h2 class="text-2xl text-white font-bold mb-6">Technical Stack Overview</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+    {categories.map((category, index) => (
+      <div class={`tech-card group p-6 rounded-lg bg-card transition-all duration-300 hover:shadow-lg cursor-pointer dark:hover:shadow-none ${
+        index === categories.length - 1 && categories.length % 2 !== 0 ? 'md:col-span-2 lg:col-span-2' : ''
+      }`}>
+        <div class="flex items-center space-x-3 mb-4">
+          <div class={`p-2 rounded-lg ${category.bgColor} transition-colors duration-300 group-hover:bg-opacity-20`}>
+            <i class={`icon-${category.icon} w-6 h-6 ${category.iconColor}`}></i>
+          </div>
+          <h3 class={`font-semibold text-lg ${category.textColor}`}>{category.name}</h3>
+        </div>
+        
+        <div class="space-y-2">
+          {category.items.map((item) => (
+            <div class="tech-item transition-all duration-300 text-foreground/80 dark:text-foreground/70 dark:text-white">
+              • {item}
+            </div>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .tech-card {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .tech-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.6s;
+  }
+
+  .tech-card:hover::before {
+    transform: translateX(100%);
+  }
+
+  .tech-item {
+    opacity: 0.8;
+    transform: translateX(0);
+  }
+
+  .tech-card:hover .tech-item {
+    opacity: 1;
+    transform: translateX(0.5rem);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .tech-card {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+</style>
+
+<script>
+    // Add staggered animation delay to tech items
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.tech-card');
+      
+      cards.forEach((card) => {
+        const items = card.querySelectorAll('.tech-item');
+        items.forEach((item, index) => {
+          if (item instanceof HTMLElement) {  // Type check
+            item.style.transitionDelay = `${index * 50}ms`;
+          }
+        });
+      });
+    });
+</script>

@@ -15,16 +15,4 @@ When I’m not coding, you’ll often find me immersed in books, video games, or
   </div>    
 </p>
 
--------------------------
-# Technical Stack Overview
-
-| Category | Technologies |
-|----------|-------------|
-| Programming Languages | - Java<br>- JavaScript<br>- Python<br>- Dart<br>- Go |
-| Frontend Development | - Vue.js <br>- React.js<br>- Angular.js<br>- Bootstrap<br>- Tailwind CSS<br>- Material UI (MUI)<br>- Flutter |
-| Backend Development | - FastAPI<br>- Flask<br>- Spring Boot |
-| Databases | - PostgreSQL<br>- Redis<br>- Firebase<br>- MySQL |
-| DevOps & Cloud | - Docker<br>- Kubernetes<br>- GitLab CI/CD<br>- GitHub Actions<br>- AWS<br>- GCP<br>- Minio |
-| Testing | - Unittest<br>- Jest |
-| Additional Tools | - SQLAlchemy<br>- Kafka<br>- Bloc/Cubit (Flutter)<br>- Cobra CLI |
 
