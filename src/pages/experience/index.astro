@@ -102,22 +102,30 @@ const totalExp = calculateTotalExperience(experienceData);
 </MainGridLayout>
 
 <script>
-    document.querySelectorAll('[data-accordion-item]').forEach(item => {
-        const button = item.querySelector('button');
-        const content = item.querySelector('.content') as HTMLElement;
-        const icon = button?.querySelector('svg');
+    function initializeAccordions() {
+        document.querySelectorAll('[data-accordion-item]').forEach(item => {
+            const button = item.querySelector('button');
+            const content = item.querySelector('.content') as HTMLElement;
+            const icon = button?.querySelector('svg');
 
-        button?.addEventListener('click', () => {
-            const isExpanded = button.getAttribute('aria-expanded') === 'true';
-            button.setAttribute('aria-expanded', (!isExpanded).toString());
+            button?.removeEventListener('click', handleClick);
+            button?.addEventListener('click', handleClick);
 
-            if (content) {
-                content.style.maxHeight = isExpanded ? '0' : `${content.scrollHeight}px`;
-            }
+            function handleClick() {
+                const isExpanded = button?.getAttribute('aria-expanded') === 'true';
+                button?.setAttribute('aria-expanded', (!isExpanded).toString());
 
-            if (icon) {
-                icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+                if (content) {
+                    content.style.maxHeight = isExpanded ? '0' : `${content.scrollHeight}px`;
+                }
+
+                if (icon) {
+                    icon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+                }
             }
         });
-    });
+    }
+
+    initializeAccordions();
+    document.addEventListener('astro:page-load', initializeAccordions);
 </script>
