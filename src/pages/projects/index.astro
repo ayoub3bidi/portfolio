@@ -21,7 +21,7 @@ const projectCounts: { [key: string]: number } = {
     <div class="mb-6 flex flex-wrap justify-center gap-2">
         {projectTypes.map(type => (
             <button
-                class="filter-btn px-4 py-2 bg-[var(--card-bg)] text-black dark:text-white rounded-md border-2 border-solid border-gray-200 dark:border-gray-700 hover:border-[var(--primary)] transition-colors"
+                class="filter-btn px-4 py-2 bg-[var(--card-bg)] text-black dark:text-white rounded-md border-2 border-solid border-gray-200 hover:border-[var(--primary)] transition duration-500 hover:rounded-md dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
                 data-type={type}
             >
                 {type} ({projectCounts[type]})
