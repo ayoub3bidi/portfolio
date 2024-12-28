@@ -1,14 +1,14 @@
 ---
-import MainGridLayout from "../../layouts/MainGridLayout.astro";
-import { i18n } from "../../i18n/translation";
-import I18nKey from "../../i18n/i18nKey";
-import experienceData from "./experience";
-import ButtonTag from "../../components/control/ButtonTag.astro";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import { i18n } from "../i18n/translation";
+import I18nKey from "../i18n/i18nKey";
+import experienceData from '../constants/experience';
+import ButtonTag from "../components/control/ButtonTag.astro";
 import {
   calculateDuration,
   calculateTotalExperience,
   formatDuration,
-} from "./calculateExperience";
+} from "../utils/calculate-experience";
 import { Icon } from "astro-icon/components";
 
 const totalExp = calculateTotalExperience(experienceData);

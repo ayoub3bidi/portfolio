@@ -1,5 +1,13 @@
-// utils/calculateExperience.js
-export const calculateDuration = (startDate, endDate = new Date()) => {
+interface Experience {
+  range: string;
+}
+
+interface Duration {
+  years: number;
+  months: number;
+}
+
+export const calculateDuration = (startDate: string, endDate: Date | string = new Date()): Duration => {
   const start = new Date(startDate);
   const end = endDate === "Present" ? new Date() : new Date(endDate);
 
@@ -14,7 +22,7 @@ export const calculateDuration = (startDate, endDate = new Date()) => {
   return { years, months };
 };
 
-export const calculateTotalExperience = (experiences) => {
+export const calculateTotalExperience = (experiences: Experience[]): Duration => {
   let totalMonths = 0;
 
   experiences.forEach((exp) => {
@@ -23,7 +31,7 @@ export const calculateTotalExperience = (experiences) => {
       exp.range.split(" - ")[1] === "Present"
         ? [
             new Date().toLocaleString("default", { month: "long" }),
-            new Date().getFullYear(),
+            new Date().getFullYear().toString(),
           ]
         : exp.range.split(" - ")[1].split(" ");
 
@@ -40,7 +48,7 @@ export const calculateTotalExperience = (experiences) => {
   };
 };
 
-export const formatDuration = (duration) => {
+export const formatDuration = (duration: Duration): string => {
   const yearsText =
     duration.years > 0
       ? `${duration.years} ${duration.years === 1 ? "year" : "years"}`
