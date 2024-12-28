@@ -1,0 +1,116 @@
+---
+import MainGridLayout from '../layouts/MainGridLayout.astro'
+import { Icon } from 'astro-icon/components'
+import { i18n } from '../i18n/translation'
+import I18nKey from '../i18n/i18nKey'
+import projectsData from '../constants/projects'
+import ButtonTag from '@components/control/ButtonTag.astro'
+
+const projectTypes = ['All', ...new Set(projectsData.map(project => project.type))]
+const projectCounts: { [key: string]: number } = {
+    All: projectsData.length,
+    ...Object.fromEntries(
+        projectTypes
+            .filter(type => type !== 'All')
+            .map(type => [type, projectsData.filter(project => project.type === type).length])
+    )
+}
+---
+
+<MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
+    <div class="mb-6 flex flex-wrap justify-center gap-2">
+        {projectTypes.map(type => (
+            <button
+                class="filter-btn px-4 py-2 bg-[var(--card-bg)] text-black dark:text-white rounded-md border-2 border-solid border-gray-200 hover:border-[var(--primary)] transition duration-500 hover:rounded-md dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+                data-type={type}
+            >
+                {type} ({projectCounts[type]})
+            </button>
+        ))}
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full" id="projects-grid">
+        {projectsData.map((project) => (
+            <div 
+                class="project-card bg-[var(--card-bg)] h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 transition duration-500 hover:rounded-md hover:border-[var(--primary)] dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+                data-type={project.type}
+            >
+                <div class="p-6">
+                    <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50">{project.title}</div>
+                    <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2"></div>
+                    <p class="text-center text-neutral-400 mb-4">{project.description}</p>
+                    
+                    <div class="flex flex-wrap justify-center gap-2 mb-4">
+                        {project.techStack.map((tech) => (
+                            <ButtonTag>{tech}</ButtonTag>
+                        ))}
+                    </div>
+                    
+                    <div class="flex gap-2 justify-center">
+                        {project.href && (
+                            <a 
+                                href={project.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+                                aria-label="Live Demo"
+                            >
+                                <Icon name="fa6-solid:globe" class="text-[1.5rem]" />
+                            </a>
+                        )}
+                        
+                        {project.github && (
+                            <a 
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+                                aria-label="GitHub Repository"
+                            >
+                                <Icon name="fa6-brands:github" class="text-[1.5rem]" />
+                            </a>
+                        )}
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>
+</MainGridLayout>
+
+<script>
+    function initializeFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+        document.querySelector('[data-type="All"]')?.classList.add('active');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const selectedType = button.getAttribute('data-type');
+
+                projectCards.forEach(card => {
+                    if (selectedType === 'All' || card.getAttribute('data-type') === selectedType) {
+                        (card as HTMLElement).style.display = 'block';
+                    } else {
+                        (card as HTMLElement).style.display = 'none';
+                    }
+                });
+            });
+        });
+    }
+
+    initializeFilters();
+
+    document.addEventListener('astro:page-load', initializeFilters);
+</script>
+
+<style>
+    .filter-btn.active {
+        background-color: var(--primary);
+        border-color: var(--primary);
+        color: white;
+    }
+</style>
