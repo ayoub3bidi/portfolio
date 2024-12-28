@@ -53,13 +53,7 @@ export const profileConfig: ProfileConfig = {
   name: 'Ayoub Abidi',
   bio: 'Your Friendly Neighborhood Developer.',
   links: [
-    // {
-    //   name: 'Twitter',
-    //   icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-    //                                     // You will need to install the corresponding icon set if it's not already included
-    //                                     // `pnpm add @iconify-json/<icon-set-name>`
-    //   url: 'https://twitter.com',
-    // },
+    // Visit https://icones.js.org/ for icon codes
     {
       name: 'GitHub',
       icon: 'fa6-brands:github',
@@ -73,7 +67,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'CV',
       icon: 'fa6-regular:file-lines',
-      url: 'https://drive.google.com/file/d/1ztU5GrI5T8kXN3tUxYllSTvgrXGTDK-b/view?usp=sharing'
+      url: 'https://drive.google.com/file/d/16fIpBlVGY6_xelH-3KnqSeimN6eD8Onn/view?usp=sharing'
     },
   ],
 }
