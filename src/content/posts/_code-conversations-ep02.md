@@ -1,6 +1,6 @@
 ---
 title: "Code Conversations Podcast Episode 02: Reflections on Trusting Trust, The Hidden Threats in Software Security"
-published: 2024-11-01
+published: 2024-12-01
 description: ""
 image: ""
 tags: ["podcast", "cyber-security"]
