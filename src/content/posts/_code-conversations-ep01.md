@@ -2,7 +2,7 @@
 title: "Code Conversations Podcast Episode 01: No Silver Bullet, A Deep Dive into Software Engineering Challenges"
 published: 2024-11-01
 description: ""
-image: ""
+image: "./covers/code_conversations.webp"
 tags: ["podcast", "challenges"]
 category: Podcasts
 draft: false

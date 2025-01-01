@@ -2,7 +2,7 @@
 title: "Code Conversations Podcast Episode 03: Evolution in Open Source Software, Insights from a Case Study"
 published: 2025-01-01
 description: ""
-image: ""
+image: "./covers/code_conversations.webp"
 tags: ["podcast", "open-source"]
 category: Podcasts
 draft: false
