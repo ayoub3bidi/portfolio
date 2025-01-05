@@ -1,12 +1,21 @@
 const projectsData = [
     {
+      title: 'Janus',
+      description: `A modern documentation website boilerplate powered by Docusaurus and Tailwind CSS.`,
+      type: 'Open-source',
+      imgSrc: '',
+      href: 'https://janus-docs.vercel.app',
+      github: 'https://github.com/ayoub3bidi/janus',
+      techStack: ['React', 'Docusaurus', 'Tailwind CSS', 'Docker', 'CI/CD'],
+    },
+    {
       title: 'Talaba TN',
-      description: `A Tunisian e-learning platform landing page.`,
+      description: `A Tunisian e-learning platform, dedicated to high school and university students.`,
       type: 'Freelance',
       imgSrc: '',
       href: 'https://talabatn.net',
       github: '',
-      techStack: ['React', "Bootstrap", "Lottie Animations"],
+      techStack: ["React Native", 'React', "AngularJS", "Bootstrap", "MUI", "Lottie Animations", "Docker", "FastAPI", "Flask", "PostgreSQL"],
     },
     {
       title: 'imalive',
