@@ -10,7 +10,7 @@ draft: false
 
 <center style="border: 2px solid #4CAF50; padding: 10px; border-radius: 5px;">
   <strong>🎉 Exciting News! 🎉</strong><br>
-  This article has gathered over <strong>5K reads</strong> on <a href="https://dev.to/ayoub3bidi/quick-tutorial-how-to-add-a-release-github-workflow-56ib">DEV</a>.<br/>
+  This article has gathered over <strong>6K reads</strong> on <a href="https://dev.to/ayoub3bidi/quick-tutorial-how-to-add-a-release-github-workflow-56ib">DEV</a>.<br/>
   Thank you all for your incredible support!
 </center>
 
