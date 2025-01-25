@@ -112,7 +112,7 @@ const projectsData = [
       description: `A complete, fully functional, local developers or sysadmin environment on the cloud, has been designed to reduce the setup time as well as your hosting costs.`,
       type: 'Comwork.io',
       imgSrc: '',
-      href: 'https://www.comwork.io/cloud',
+      href: 'https://www.cwcloud.tech',
       github: 'https://github.com/comworkio/comwork-cloud-wiki',
       techStack: ['React', 'Docusaurus', 'Bootstrap', 'Material UI', 'Axios', 'FastAPI', 'Jinja 2', 'Pulumi', 'Minio', 'Redis', 'PostgreSQL', 'Docker', 'CI/CD'],
     },
