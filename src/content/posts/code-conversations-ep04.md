@@ -18,7 +18,7 @@ Tune in to learn how the Null Object Pattern promotes cleaner, more maintainable
 
 Whether you’re new to design patterns or looking to deepen your understanding, this episode offers practical insights into improving your software architecture.
 
-<iframe src="https://creators.spotify.com/pod/show/code-conversations/episodes/Code-Conversations-S01-E04-The-Null-Object-Pattern--Simplifying-Code-with-Design-Patterns-e2pb6dj" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E04-The-Null-Object-Pattern--Simplifying-Code-with-Design-Patterns-e2pb6dj" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
 
 Bobby Woolf introduced the Null Object pattern in his seminal paper "The Null Object Pattern" (published in the Pattern Languages of Program Design 3, 1997). This pattern provides an elegant solution to handle null references in object-oriented programming, reducing the need for explicit null checks throughout the codebase.
 
