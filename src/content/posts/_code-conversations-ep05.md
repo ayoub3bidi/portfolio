@@ -111,3 +111,7 @@ The paper identifies emerging trends in agile architecture:
 ## Conclusion
 
 Marić and Tumbas's work demonstrates that the role of software architects remains vital in agile environments but requires significant adaptation. Success depends on balancing technical leadership with agile principles, focusing on collaboration, and maintaining architectural integrity while supporting rapid development cycles.
+
+------------
+
+Enjoying this content? Follow us on our [LinkedIn page](https://www.linkedin.com/company/code-conversations-podcast) to stay updated!

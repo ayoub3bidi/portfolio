@@ -101,3 +101,7 @@ While the problem Thompson describes is fundamentally unsolvable in its complete
 Thompson's paper remains a masterpiece of computer science literature, combining technical brilliance with philosophical depth. Its lessons about trust, verification, and security continue to resonate in an era where software supply chain attacks and compiler security are more relevant than ever.
 
 The paper serves as a humbling reminder that in computer security, even our most basic assumptions must be questioned, and absolute trust is impossible to achieve. As we build increasingly complex and interconnected systems, Thompson's insights about the nature of trust and verification remain essential reading for every computer scientist and security professional.
+
+------------
+
+Enjoying this content? Follow us on our [LinkedIn page](https://www.linkedin.com/company/code-conversations-podcast) to stay updated!

@@ -116,3 +116,8 @@ Note: As an AI, I should mention that while I aim to be accurate about the paper
 - Woolf, Bobby (1997). "The Null Object Pattern". Pattern Languages of Program Design 3. Addison-Wesley.
 - Martin, Robert C. (2002). "Agile Software Development, Principles, Patterns, and Practices". Prentice Hall.
 - Fowler, Martin (1999). "Refactoring: Improving the Design of Existing Code". Addison-Wesley.
+
+------------
+
+Enjoying this content? Follow us on our [LinkedIn page](https://www.linkedin.com/company/code-conversations-podcast) to stay updated!
+
