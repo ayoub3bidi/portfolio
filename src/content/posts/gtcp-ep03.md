@@ -19,4 +19,4 @@ draft: false
 
 In this episode, we talked with  Abderraouf Ghrissi, founder of CodingBeTounsi. We talked about the possible ways of transitioning to the tech industry while sharing real-life experiences and some of his opinions about boot camps, the added value of the university experience, and perseverance in the learning process.
 
-<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-3-Transitioning-to-technology-with-Abderraouf-Ghrissi-e1sgnvh/a-a92tuht" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-3-Transitioning-to-technology-with-Abderraouf-Ghrissi-e1sgnvh/a-a92tuht" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>

@@ -20,7 +20,7 @@ Learn how the dynamics of open-source development differ from proprietary softwa
 
 Join us for a deep dive into open-source software's architecture, community, and long-term evolution!
 
-<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E03-Evolution-in-Open-Source-Software--Insights-from-a-Case-Study-e2pb61g/a-abil7rn" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E03-Evolution-in-Open-Source-Software--Insights-from-a-Case-Study-e2pb61g/a-abil7rn" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>
 
 Godfrey and Tu's study "Evolution in Open Source Software: A Case Study" challenged conventional wisdom about software evolution by examining the growth patterns of the Linux kernel. Their research provided compelling evidence that open source software development might follow different evolutionary patterns than those observed in traditional commercial software.
 

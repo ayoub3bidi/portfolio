@@ -19,4 +19,4 @@ draft: false
 
 In this episode, we had a fantastic time at the talk by Burawi Ben Ammar on the versatility of JavaScript. The discussion covered various topics, from the common pitfalls for newcomers to job offers. Burawi shared valuable insights on his code review and testing approach in large-scale projects.
 
-<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-4-Single-Threaded-JavaScript-with-Burawi-BEN-AMMAR-e20dc4b/a-a9g67fp" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-4-Single-Threaded-JavaScript-with-Burawi-BEN-AMMAR-e20dc4b/a-a9g67fp" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>

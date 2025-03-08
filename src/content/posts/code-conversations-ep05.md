@@ -20,7 +20,7 @@ The conversation explores how architects can balance upfront design with iterati
 
 Join us as we uncover the challenges and strategies for thriving as a software architect in today’s Agile world!
 
-<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E05-The-Role-of-the-Software-Architect-in-Agile--Balancing-Design-and-Flexibility-e2pb6n1/a-abil8kq" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E05-The-Role-of-the-Software-Architect-in-Agile--Balancing-Design-and-Flexibility-e2pb6n1/a-abil8kq" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>
 
 In their influential paper, Mirjana Marić and Pere Tumbas explore the evolving role of software architects within agile development methodologies. Their research examines how traditional architectural responsibilities transform and adapt in the context of agile practices, challenging the conventional notion of up-front architectural design.
 

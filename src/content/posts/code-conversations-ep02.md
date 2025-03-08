@@ -18,7 +18,7 @@ The conversation explores the concept of trust in software, especially the subtl
 
 Tune in to discover how this decades-old insight remains relevant in today's cybersecurity and development practices world.
 
-<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E02-Reflections-on-Trusting-Trust--The-Hidden-Threats-in-Software-Security-e2pb5on/a-abil7gb" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E02-Reflections-on-Trusting-Trust--The-Hidden-Threats-in-Software-Security-e2pb5on/a-abil7gb" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>
 
 Ken Thompson's 1984 paper "Reflections on Trusting Trust," based on his Turing Award acceptance speech, remains one of the most profound and unsettling works in computer security. In this masterfully crafted piece, Thompson demonstrates how fundamental our assumptions about trust are in computing, and how deeply those assumptions can be subverted.
 

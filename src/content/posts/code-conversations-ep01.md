@@ -18,7 +18,7 @@ Join our AI hosts as they dissect the key concepts of the paper, examining the i
 
 They’ll discuss the distinction between essential and accidental difficulties, the implications of Brooks' insights for modern software development, and how these ideas resonate in today’s tech landscape.
 
-<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E01-No-Silver-Bullet--A-Deep-Dive-into-Software-Engineering-Challenges-e2pb0h4/a-abil0v7" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/code-conversations/embed/episodes/Code-Conversations-S01-E01-No-Silver-Bullet--A-Deep-Dive-into-Software-Engineering-Challenges-e2pb0h4/a-abil0v7" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>
 
 Frederick P. Brooks Jr.'s 1986 paper "No Silver Bullet: Essence and Accident in Software Engineering" remains one of the most influential works in software engineering. Over three decades later, its core thesis continues to challenge and inform our understanding of software development's fundamental challenges.
 

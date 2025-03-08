@@ -19,4 +19,4 @@ draft: false
 
 In this episode, we had the chance to meet Elyes Manai a Google Expert in ML, and discuss his experience in the field.
 
-<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-1-Data-science-with-Elyes-Manai-e1sdsf2/a-a92jeg5" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-1-Data-science-with-Elyes-Manai-e1sdsf2/a-a92jeg5" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>

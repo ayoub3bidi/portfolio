@@ -19,4 +19,4 @@ draft: false
 
 In this episode, we talked about DevOps job prospects internationally, common requirements to clear cloud certifications, and the difference between cloud engineers and DevOps engineers.
 
-<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-2-DevOps-with-Mohamed-Dhia-Hadden-e1sdtfm/a-a92jh0l" height="202px" width="800px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://creators.spotify.com/pod/show/githubtunisia/embed/episodes/Sahriya-Episode-2-DevOps-with-Mohamed-Dhia-Hadden-e1sdtfm/a-a92jh0l" height="auto" width="800px" frameborder="0" scrolling="no"></iframe>
