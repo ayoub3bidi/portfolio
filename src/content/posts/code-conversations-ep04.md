@@ -1,5 +1,5 @@
 ---
-title: "Code Conversations S01 E04: The Null Object Pattern, Simplifying Code with Design Patterns"
+title: "Code Conversations Podcast Episode 04: The Null Object Pattern, Simplifying Code with Design Patterns"
 published: 2025-02-01
 description: ""
 image: "./covers/code_conversations.webp"
@@ -110,8 +110,6 @@ Woolf's pattern has influenced modern programming language features and practice
 The Null Object pattern represents a significant contribution to software design, offering a structured approach to handling null references. While it may not be suitable for every situation, understanding and appropriately applying this pattern can lead to more robust and maintainable code.
 
 ## References
-
-Note: As an AI, I should mention that while I aim to be accurate about the paper's content, you should verify these specific citations:
 
 - Woolf, Bobby (1997). "The Null Object Pattern". Pattern Languages of Program Design 3. Addison-Wesley.
 - Martin, Robert C. (2002). "Agile Software Development, Principles, Patterns, and Practices". Prentice Hall.

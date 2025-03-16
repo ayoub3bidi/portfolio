@@ -1,5 +1,5 @@
 ---
-title: "Code Conversations S01 E05: The Role of the Software Architect in Agile, Balancing Design and Flexibility"
+title: "Code Conversations Podcast Episode 05: The Role of the Software Architect in Agile, Balancing Design and Flexibility"
 published: 2025-03-01
 description: ""
 image: "./covers/code_conversations.webp"
