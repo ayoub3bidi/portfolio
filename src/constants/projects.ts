@@ -1,5 +1,14 @@
 const projectsData = [
     {
+      title: 'Comwork Cloud MCP',
+      description: `A production-ready Model Context Protocol server enabling AI assistants to integrate with Comwork Cloud services`,
+      type: 'Comwork.io',
+      imgSrc: '',
+      href: '',
+      github: 'https://gitlab.comwork.io/oss/cwcloud/cwcloud-mcp',
+      techStack: ['Go', 'Logrus', 'Godotenv', 'MCP Protocol'],
+    },
+    {
       title: 'Janus',
       description: `A modern documentation website boilerplate powered by Docusaurus and Tailwind CSS.`,
       type: 'Open-source',
@@ -101,10 +110,10 @@ const projectsData = [
     {
       title: 'Comwork Cloud CLI',
       description: `A CLI to use Comwork Cloud API.`,
-      type: 'Open-source',
+      type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/comworkio/cwc',
+      github: 'https://gitlab.comwork.io/oss/cwcloud/cwc',
       techStack: ['Go', 'Cobra CLI', 'Docker', 'CI/CD'],
     },
     {

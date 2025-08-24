@@ -67,7 +67,7 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'CV',
       icon: 'fa6-regular:file-lines',
-      url: 'https://drive.google.com/file/d/1JETk8c7J2zCaO8mVefM4sknV99ErVXeb/view?usp=sharing'
+      url: 'https://drive.google.com/file/d/1pfxk81l6TwQwKRWgMb4ucZXJFYWiPXKR/view?usp=sharing'
     },
   ],
 }
