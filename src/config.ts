@@ -21,7 +21,7 @@ export const siteConfig: SiteConfig = {
     credit: {
       enable: true,         // Display the credit text of the banner image
       text: 'Spirited Away - Studio Ghibli',              // Credit text to be displayed
-      url: ''                // (Optional) URL link to the original artwork or artist's page
+      url: 'https://www.imdb.com/title/tt0245429'                // (Optional) URL link to the original artwork or artist's page
     }
   },
   toc: {
