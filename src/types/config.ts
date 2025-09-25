@@ -57,6 +57,7 @@ export type ProfileConfig = {
   avatar?: string
   name: string
   bio?: string
+  openToOpportunities?: boolean
   links: {
     name: string
     url: string

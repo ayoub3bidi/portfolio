@@ -52,6 +52,7 @@ export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/profile-pic-2.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Ayoub Abidi',
   bio: 'Full-stack Developer',
+  openToOpportunities: true,
   links: [
     // Visit https://icones.js.org/ for icon codes
     {
@@ -65,7 +66,7 @@ export const profileConfig: ProfileConfig = {
       url: 'https://www.linkedin.com/in/ayoubabidi',
     },
     {
-      name: 'CV',
+      name: 'Resume',
       icon: 'fa6-regular:file-lines',
       url: 'https://drive.google.com/file/d/1pfxk81l6TwQwKRWgMb4ucZXJFYWiPXKR/view?usp=sharing'
     },

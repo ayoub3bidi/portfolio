@@ -3,7 +3,6 @@ import ImageWrapper from '../misc/ImageWrapper.astro'
 import { Icon } from 'astro-icon/components'
 import { profileConfig } from '../../config'
 import { url } from '../../utils/url-utils'
-
 const config = profileConfig
 ---
 <div class="card-base p-3">
@@ -22,6 +21,18 @@ const config = profileConfig
         <div class="font-bold text-xl text-center mb-1 dark:text-neutral-50 transition">{config.name}</div>
         <div class="h-1 w-5 bg-[var(--primary)] mx-auto rounded-full mb-2 transition"></div>
         <div class="text-center text-neutral-400 mb-2.5 transition">{config.bio}</div>
+
+        {config.openToOpportunities && (
+            <div class="flex justify-center mb-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-green-100 dark:bg-green-900/30 
+                            text-green-800 dark:text-green-300 text-sm font-medium rounded-full border 
+                            border-green-200 dark:border-green-700 transition-colors">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    Open for new job opportunities
+                </div>
+            </div>
+        )}
+        
         <div class="flex gap-2 justify-center mb-1">
             {config.links.length > 1 && config.links.map(item =>
                     <a rel="me" aria-label={item.name} href={item.url} target="_blank" class="btn-regular rounded-lg h-10 w-10 active:scale-90">
