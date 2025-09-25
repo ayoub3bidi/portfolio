@@ -1,7 +1,16 @@
 const projectsData = [
+    // {
+    //   title: 'Sacred Scripts',
+    //   description: `A collection of open-source scripts and tools for automating tasks and enhancing productivity.`,
+    //   type: 'Open-source',
+    //   imgSrc: '',
+    //   href: '',
+    //   github: 'https://github.com/ayoub3bidi/sacred-scripts',
+    //   techStack: ['Python']
+    // },
     {
       title: 'Comwork Cloud MCP',
-      description: `A production-ready Model Context Protocol server enabling AI assistants to integrate with Comwork Cloud services`,
+      description: `A Context Protocol server enabling AI assistants to integrate with Comwork Cloud services`,
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
