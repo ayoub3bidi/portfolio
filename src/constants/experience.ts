@@ -1,35 +1,35 @@
 const experienceData = [
-  // {
-  //   title: "Full-stack Developer (Freelance)",
-  //   company: "Talaba TN",
-  //   location: "Remote",
-  //   range: "December 2023 - Present",
-  //   url: "https://talabatn.net",
-  //   texts: [
-  //     "Developed web & mobile app interfaces.",
-  //     "Developed RESTful API endpoints.",
-  //     "Developed Microservices",
-  //     "Conducted code reviews to ensure code quality and adherence to best practices."
-  //   ],
-  //   stack: [
-  //     "JavaScript",
-  //     "React",
-  //     "React Native",
-  //     "Angular",
-  //     "Bootstrap",
-  //     "MUI",
-  //     "Flask",
-  //     "FastAPI",
-  //     "PostgreSQL",
-  //     "Docker",
-  //     "AWS"
-  //   ],
-  // },
+  {
+    title: "Full-stack Developer (Freelance)",
+    company: "Talaba TN",
+    location: "Remote",
+    range: "December 2023 - Present",
+    url: "https://talabatn.net",
+    texts: [
+      "Developed web & mobile app interfaces.",
+      "Developed RESTful API endpoints.",
+      "Developed Microservices",
+      "Conducted code reviews to ensure code quality and adherence to best practices."
+    ],
+    stack: [
+      "JavaScript",
+      "React",
+      "React Native",
+      "Angular",
+      "Bootstrap",
+      "MUI",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "Docker",
+      "AWS"
+    ],
+  },
   {
     title: "Full-stack Developer",
     company: "Comwork.io",
     location: "Tunis, Tunisia (Hybrid)",
-    range: "January 2023 - Present",
+    range: "January 2023 - September 2025",
     url: "https://comwork.io",
     texts: [
       "Designed and developed web & mobile app interfaces.",
