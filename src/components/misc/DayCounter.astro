@@ -1,0 +1,55 @@
+---
+// Calculate days since October 1st, 2025
+const startDate = new Date('2025-10-01T00:00:00');
+const today = new Date();
+const diffTime = Math.abs(today.getTime() - startDate.getTime());
+const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+---
+
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-orange-500/10 
+            dark:from-purple-500/20 dark:via-pink-500/20 dark:to-orange-500/20 
+            border border-purple-200 dark:border-purple-700/50 p-4 mb-4 transition-all">
+    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent 
+                animate-shimmer pointer-events-none"></div>
+    
+    <div class="relative z-10">
+        <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2">
+                <div class="w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium text-neutral-600 dark:text-neutral-300">
+                    Coding Journey
+                </span>
+            </div>
+            <span class="text-xs text-neutral-500 dark:text-neutral-400">
+                Since Oct 1, 2025
+            </span>
+        </div>
+        
+        <div class="flex items-baseline gap-2 mb-1">
+            <span class="text-4xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-orange-600 
+                         dark:from-purple-400 dark:via-pink-400 dark:to-orange-400 
+                         bg-clip-text text-transparent">
+                Day #{diffDays}
+            </span>
+        </div>
+        
+        <p class="text-sm text-neutral-700 dark:text-neutral-300 font-medium">
+            Coding every day until YOU hire me!
+        </p>
+    </div>
+</div>
+
+<style>
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+    
+    .animate-shimmer {
+        animation: shimmer 3s infinite;
+    }
+</style>
