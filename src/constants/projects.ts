@@ -4,7 +4,7 @@ const projectsData = [
     //   description: `A web app that visualizes algorithms in animated step by step.`,
     //   type: 'Open-source',
     //   imgSrc: '',
-    //   href: '',
+    //   href: 'https://algoviz-app.netlify.app',
     //   github: 'https://github.com/ayoub3bidi/algorithm-visualizer',
     //   techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
     // },
