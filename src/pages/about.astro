@@ -7,7 +7,6 @@ import { i18n } from '../i18n/translation'
 import I18nKey from '../i18n/i18nKey'
 import Markdown from '@components/misc/Markdown.astro'
 import TechStack from '@components/widget/techStack.astro'
-import DayCounter from '@components/misc/DayCounter.astro'
 
 const aboutPost = await getEntry('spec', 'about')
 
@@ -19,7 +18,6 @@ const { Content } = await aboutPost.render()
             <Markdown class="mt-2">
                 <Content />
             </Markdown>
-<DayCounter/>
             <TechStack />
             <div class="mt-2 hidden lg:flex justify-center space-x-4">
                 <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">

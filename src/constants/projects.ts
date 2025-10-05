@@ -141,7 +141,7 @@ const projectsData = [
       imgSrc: '',
       href: 'https://www.cwcloud.tech',
       github: 'https://github.com/comworkio/comwork-cloud-wiki',
-      techStack: ['React', 'Docusaurus', 'Bootstrap', 'Material UI', 'Axios', 'FastAPI', 'Jinja 2', 'Pulumi', 'Minio', 'Redis', 'PostgreSQL', 'Docker', 'CI/CD'],
+      techStack: ['React', 'Docusaurus', 'Bootstrap', 'Material UI', 'Axios', 'FastAPI', 'Jinja 2', 'Pulumi', 'Minio', 'Redis', 'PostgreSQL', 'Docker', 'Kubernetes', 'GitLab CI/CD','Scaleway', 'AWS', 'GCP'],
     },
     {
       title: 'Book Notes',
