@@ -1,4 +1,13 @@
 const projectsData = [
+    {
+      title: 'DirHash',
+      description: `Compute a deterministic checksum of a directory by hashing file contents and their relative paths, with support for glob-based exclusions and symbolic link navigation.`,
+      type: 'Open-source',
+      imgSrc: '',
+      href: '',
+      github: 'https://github.com/ayoub3bidi/dirhash/tree/feat/modernize-2025',
+      techStack: ['Go', 'Cobra CLI', 'GitHub Actions'],
+    },
     // {
     //   title: 'Algorithm Visualizer',
     //   description: `A web app that visualizes algorithms in animated step by step.`,
