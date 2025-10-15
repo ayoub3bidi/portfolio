@@ -70,6 +70,11 @@ export const profileConfig: ProfileConfig = {
       icon: 'fa6-regular:file-lines',
       url: 'https://drive.google.com/file/d/1pfxk81l6TwQwKRWgMb4ucZXJFYWiPXKR/view?usp=sharing'
     },
+    {
+      name: 'Email',
+      icon: 'fa6-regular:envelope',
+      url: 'mailto:mrayoubabidi@gmail.com'
+    }
   ],
 }
 

@@ -1,7 +1,7 @@
 const projectsData = [
     {
       title: 'DirHash',
-      description: `Compute a deterministic checksum of a directory by hashing file contents and their relative paths, with support for glob-based exclusions and symbolic link navigation.`,
+      description: `Compute a deterministic checksum of a directory by hashing file contents and their relative paths.`,
       type: 'Open-source',
       imgSrc: '',
       href: '',

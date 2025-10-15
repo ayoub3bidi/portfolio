@@ -28,7 +28,7 @@ const experienceData = [
   {
     title: "Full-stack Developer",
     company: "Comwork.io",
-    location: "Tunis, Tunisia (Hybrid)",
+    location: "Remote",
     range: "January 2023 - September 2025",
     url: "https://comwork.io",
     texts: [
