@@ -73,7 +73,12 @@ export const profileConfig: ProfileConfig = {
     {
       name: 'Email',
       icon: 'fa6-regular:envelope',
-      url: 'mailto:mrayoubabidi@gmail.com'
+      url: 'mailto:contact@ayoub3bidi.me'
+    },
+    {
+      name: 'WhatsApp',
+      icon: 'fa6-brands:whatsapp',
+      url: 'https://wa.me/+21629608841'
     }
   ],
 }
