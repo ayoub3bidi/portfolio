@@ -53,9 +53,12 @@ const projectCounts: { [key: string]: number } = {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="btn-regular rounded-lg h-9 w-9 sm:h-10 sm:w-10 active:scale-90"
-                                aria-label="Live Demo"
+                                aria-label={project.href.includes('play.google.com') ? 'Google Play Store' : 'Live Demo'}
                             >
-                                <Icon name="fa6-solid:globe" class="text-[1.25rem] sm:text-[1.5rem]" />
+                                <Icon 
+                                    name={project.href.includes('play.google.com') ? 'fa6-brands:google-play' : 'fa6-solid:globe'} 
+                                    class="text-[1.25rem] sm:text-[1.5rem]" 
+                                />
                             </a>
                         )}
                         
