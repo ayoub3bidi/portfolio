@@ -62,15 +62,18 @@ const projectCounts: { [key: string]: number } = {
                             </a>
                         )}
                         
-                        {project.github && (
+                        {project.repo && (
                             <a 
-                                href={project.github}
+                                href={project.repo}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="btn-regular rounded-lg h-9 w-9 sm:h-10 sm:w-10 active:scale-90"
-                                aria-label="GitHub Repository"
+                                aria-label={project.repo.includes('gitlab.com') ? 'GitLab Repository' : 'GitHub Repository'}
                             >
-                                <Icon name="fa6-brands:github" class="text-[1.25rem] sm:text-[1.5rem]" />
+                                <Icon 
+                                    name={project.repo.includes('gitlab.com') ? 'fa6-brands:gitlab' : 'fa6-brands:github'} 
+                                    class="text-[1.25rem] sm:text-[1.5rem]" 
+                                />
                             </a>
                         )}
                     </div>

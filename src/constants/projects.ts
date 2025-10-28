@@ -5,8 +5,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'ovh.github.io/cds',
-      github: 'https://github.com/ayoub3bidi/cds/tree/fix/use-environment-variables',
+      repo: 'https://github.com/ayoub3bidi/cds/tree/fix/use-environment-variables',
       techStack: ['Go', 'PostgreSQL', 'Redis', 'GRPC', 'Docker'],
+      startDate: '2025-10-27',
+      endDate: ''
     },
     {
       title: 'Think-iT-Labs/dirhash',
@@ -14,8 +16,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/dirhash/tree/feat/modernize-2025',
+      repo: 'https://github.com/ayoub3bidi/dirhash/tree/feat/modernize-2025',
       techStack: ['Go', 'Cobra CLI', 'GitHub Actions'],
+      startDate: '2025-10-07',
+      endDate: ''
     },
     // {
     //   title: 'Bayan Flow',
@@ -23,8 +27,10 @@ const projectsData = [
     //   type: 'Open-source',
     //   imgSrc: '',
     //   href: 'https://bayanflow.netlify.app',
-    //   github: 'https://github.com/ayoub3bidi/bayan-flow',
+    //   repo: 'https://github.com/ayoub3bidi/bayan-flow',
     //   techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
+    //   startDate: '2025-10-01',
+    //   endDate: ''
     // },
     // {
     //   title: 'Sacred Scripts',
@@ -32,8 +38,10 @@ const projectsData = [
     //   type: 'Open-source',
     //   imgSrc: '',
     //   href: '',
-    //   github: 'https://github.com/ayoub3bidi/sacred-scripts',
-    //   techStack: ['Python']
+    //   repo: 'https://github.com/ayoub3bidi/sacred-scripts',
+    //   techStack: ['Python'],
+    //   startDate: '2024-10-06',
+    //   endDate: ''
     // },
     {
       title: 'Comwork Cloud MCP',
@@ -41,8 +49,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: 'https://gitlab.comwork.io/oss/cwcloud/cwcloud-mcp',
+      repo: 'https://gitlab.comwork.io/oss/cwcloud/cwcloud-mcp',
       techStack: ['Go', 'Logrus', 'Godotenv', 'MCP Protocol'],
+      startDate: '2025-08-05',
+      endDate: '2025-09-30'
     },
     {
       title: 'Janus',
@@ -50,8 +60,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://janus-docs.netlify.app',
-      github: 'https://github.com/ayoub3bidi/janus',
-      techStack: ['React', 'Docusaurus', 'Tailwind CSS', 'Docker', 'CI/CD'],
+      repo: 'https://github.com/ayoub3bidi/janus',
+      techStack: ['React', 'Docusaurus', 'Tailwind CSS', 'Docker'],
+      startDate: '2025-01-03',
+      endDate: ''
     },
     {
       title: 'Talaba TN',
@@ -59,8 +71,10 @@ const projectsData = [
       type: 'Freelance',
       imgSrc: '',
       href: 'https://talabatn.net',
-      github: '',
+      repo: '',
       techStack: ["React Native", 'React', "AngularJS", "Bootstrap", "MUI", "Lottie Animations", "Docker", "FastAPI", "Flask", "PostgreSQL"],
+      startDate: '2023-12-16',
+      endDate: ''
     },
     {
       title: 'imalive',
@@ -68,8 +82,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/idrissneumann/imalive',
+      repo: 'https://github.com/idrissneumann/imalive',
       techStack: ['Fast API', 'Docker', 'CI/CD'],
+      startDate: '2023-10-04',
+      endDate: '2025-06-20'
     },
     {
       title: 'Mercury',
@@ -77,8 +93,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/mercury',
+      repo: 'https://github.com/ayoub3bidi/mercury',
       techStack: ['Fast API', 'PostgreSQL', 'Redis', 'Docker'],
+      startDate: '2023-10-04',
+      endDate: ''
     },
     {
       title: 'Object Detection System',
@@ -86,8 +104,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: 'https://ayoub-object-detection.netlify.app',
-      github: 'https://github.com/ayoub3bidi/object_detection',
+      repo: 'https://github.com/ayoub3bidi/object_detection',
       techStack: ['Python', 'OpenCV', 'YOLO', 'Firebase', "GTTS", "React", "Vite"],
+      startDate: '2023-11-01',
+      endDate: '2023-12-03'
     },
     {
       title: 'Festival Management System',
@@ -95,8 +115,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/gestion_festival',
+      repo: 'https://github.com/ayoub3bidi/gestion_festival',
       techStack: ['Next', 'Redux', 'Chart.js', 'Tailwind CSS', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+      startDate: '2023-10-28',
+      endDate: '2023-12-10'
     },
     {
       title: 'Golf App',
@@ -104,8 +126,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: '',
+      repo: '',
       techStack: ['Flutter', 'Firebase'],
+      startDate: '2023-07-03',
+      endDate: '2023-08-21'
     },
     {
       title: 'Fairmat App',
@@ -113,8 +137,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: '',
+      repo: '',
       techStack: ['Flutter', 'FastAPI', 'Redis', 'PostgreSQL', 'Docker', 'CI/CD'],
+      startDate: '2023-03-11',
+      endDate: '2023-07-22'
     },
     {
       title: 'ZAN-f',
@@ -122,8 +148,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: 'https://www.zan-f.com/',
-      github: '',
+      repo: '',
       techStack: ['React', 'Docusaurus', 'Tailwind CSS'],
+      startDate: '2023-05-23',
+      endDate: '2023-06-12'
     },
     {
       title: 'Document Control Connector',
@@ -131,8 +159,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: '',
+      repo: '',
       techStack: ['Flask', 'Minio', 'Redis', 'MySQL', 'Docker', 'CI/CD'],
+      startDate: '2023-02-23',
+      endDate: '2023-03-30'
     },
     {
       title: 'Comwork.io',
@@ -140,8 +170,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: 'https://comwork.io',
-      github: '',
+      repo: '',
       techStack: ['React', 'Docusaurus', 'Tailwind CSS', 'Framer Motion', 'Lottie Animations'],
+      startDate: '2023-01-23',
+      endDate: '2025-09-30'
     },
     {
       title: 'Comwork Cloud CLI',
@@ -149,8 +181,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: '',
-      github: 'https://gitlab.comwork.io/oss/cwcloud/cwc',
+      repo: 'https://gitlab.comwork.io/oss/cwcloud/cwc',
       techStack: ['Go', 'Cobra CLI', 'Docker', 'CI/CD'],
+      startDate: '2023-01-23',
+      endDate: '2025-06-20'
     },
     {
       title: 'Comwork Cloud',
@@ -158,8 +192,10 @@ const projectsData = [
       type: 'Comwork.io',
       imgSrc: '',
       href: 'https://www.cwcloud.tech',
-      github: 'https://github.com/comworkio/comwork-cloud-wiki',
+      repo: 'https://github.com/comworkio/comwork-cloud-wiki',
       techStack: ['React', 'Docusaurus', 'Bootstrap', 'Material UI', 'Axios', 'FastAPI', 'Jinja 2', 'Pulumi', 'Minio', 'Redis', 'PostgreSQL', 'Docker', 'Kubernetes', 'GitLab CI/CD','Scaleway', 'AWS', 'GCP'],
+      startDate: '2023-01-23',
+      endDate: '2025-09-30'
     },
     {
       title: 'Book Notes',
@@ -167,8 +203,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/Tunisian-GitHub-Community/Book-notes',
+      repo: 'https://github.com/Tunisian-GitHub-Community/Book-notes',
       techStack: ['React', 'Docusaurus', 'CSS'],
+      startDate: '2022-05-18',
+      endDate: ''
     },
     {
       title: 'Notes',
@@ -176,8 +214,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/ma5zen',
+      repo: 'https://github.com/ayoub3bidi/ma5zen',
       techStack: ['React', 'TypeScript', 'Bootstrap', 'React-select'],
+      startDate: '2022-12-23',
+      endDate: '2023-01-05'
     },
     {
       title: 'Ma5zen',
@@ -185,8 +225,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/ma5zen',
+      repo: 'https://github.com/ayoub3bidi/ma5zen',
       techStack: ['Next.js', 'Tailwind CSS', 'Mantine UI', 'Prisma', 'PostgreSQL', 'Docker'],
+      startDate: '2022-12-23',
+      endDate: '2023-01-05'
     },
     {
       title: 'Mouzika',
@@ -194,8 +236,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: 'https://mouzika.netlify.app',
-      github: 'https://github.com/ayoub3bidi/mouzika',
+      repo: 'https://github.com/ayoub3bidi/mouzika',
       techStack: ['React', 'Redux', 'Tailwind CSS', 'RapidAPI'],
+      startDate: '2022-11-13',
+      endDate: '2023-01-04'
     },
     {
       title: 'My Vets',
@@ -203,8 +247,10 @@ const projectsData = [
       type: 'Tagamuta Valley',
       imgSrc: '',
       href: 'https://play.google.com/store/apps/details?id=tn.myvetsapp.myvets',
-      github: '',
+      repo: '',
       techStack: ['Flutter', 'Firebase', 'Spring Boot', 'Kafka'],
+      startDate: '2022-10-05',
+      endDate: '2022-12-21'
     },
     {
       title: 'Sector R',
@@ -212,8 +258,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://sector-r.netlify.app',
-      github: 'https://github.com/ayoub3bidi/sector-r',
+      repo: 'https://github.com/ayoub3bidi/sector-r',
       techStack: ['React', 'Sass', 'Firebase'],
+      startDate: '2022-05-04',
+      endDate: '2023-01-19'
     },
     {
       title: 'Reddit Clone',
@@ -221,8 +269,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/reddit-clone',
+      repo: 'https://github.com/ayoub3bidi/reddit-clone',
       techStack: ['Next', 'TypeScript', 'Express', 'TypeORM', 'GraphQL', 'PostgreSQL', 'Docker'],
+      startDate: '2022-06-25',
+      endDate: '2022-10-03'
     },
     {
       title: 'Flousi',
@@ -230,8 +280,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://flousi.netlify.app',
-      github: 'https://github.com/ayoub3bidi/flousi',
+      repo: 'https://github.com/ayoub3bidi/flousi',
       techStack: ['React', 'Express', 'MongoDB'],
+      startDate: '2022-06-06',
+      endDate: '2022-06-19'
     },
     {
       title: 'Ommek Sannefa',
@@ -239,8 +291,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/ommek-sannefa',
+      repo: 'https://github.com/ayoub3bidi/ommek-sannefa',
       techStack: ['Vue', 'VueX', 'Firebase'],
+      startDate: '2022-05-02',
+      endDate: '2022-06-05'
     },
     {
       title: 'Podium ESG (End-of-studies internship project) ',
@@ -248,8 +302,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: '',
-      github: '',
+      repo: '',
       techStack: ['Vue', 'Bootstrap', 'Quasar', 'Express', 'Objection.js', 'PostgreSQL', 'Docker'],
+      startDate: '2022-01-20',
+      endDate: '2022-05-26'
     },
     {
       title: 'Koujina API',
@@ -257,8 +313,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/Tunisian-GitHub-Community/Koujina_api',
+      repo: 'https://github.com/Tunisian-GitHub-Community/Koujina_api',
       techStack: ['Express', 'JWT', 'Bcrypt.js', 'MongoDB'],
+      startDate: '2022-01-16',
+      endDate: '2022-10-06'
     },
     {
       title: 'Sou9 API',
@@ -266,8 +324,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/pycoder2000/Stock-Management',
+      repo: 'https://github.com/ayoub3bidi/sou9_api',
       techStack: ['Express', 'JWT', 'Crypto.js', 'MongoDB'],
+      startDate: '2022-01-23',
+      endDate: '2022-10-06'
     },
     {
       title: 'Covid Tracker',
@@ -275,8 +335,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://online-covid-19-tracker.netlify.app',
-      github: 'https://github.com/ayoub3bidi/covid-tracker',
+      repo: 'https://github.com/ayoub3bidi/covid-tracker',
       techStack: ['Vue', 'Tailwind CSS', 'Covid-19 API'],
+      startDate: '2022-01-16',
+      endDate: '2022-01-20'
     },
     {
       title: 'Time Check',
@@ -284,8 +346,10 @@ const projectsData = [
       type: 'Freelance',
       imgSrc: '',
       href: '',
-      github: '',
+      repo: '',
       techStack: ['MongoDB', 'Express', 'Vue', 'Node', 'Bootstrap'],
+      startDate: '2021-09-12',
+      endDate: '2021-11-05'
     },
     {
       title: 'My List (Summer internship project)',
@@ -293,8 +357,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: 'https://mylist-f82d6.firebaseapp.com',
-      github: 'https://github.com/ayoub3bidi/mylist',
+      repo: 'https://github.com/ayoub3bidi/mylist',
       techStack: ['Vue', 'Bootstrap', 'Firebase'],
+      startDate: '2021-06-19',
+      endDate: '2021-07-11'
     },
     {
       title: 'GFA Phones',
@@ -302,8 +368,10 @@ const projectsData = [
       type: 'Academic',
       imgSrc: '',
       href: '',
-      github: 'https://github.com/ayoub3bidi/GFA-phones',
+      repo: 'https://github.com/ayoub3bidi/GFA-phones',
       techStack: ['Angular', 'Bootstrap ', 'Adobe XD', "Balsamique", "FastAPI", "MySQL"],
+      startDate: '2021-02-03',
+      endDate: '2021-04-22'
     },
     {
       title: 'My Heroes',
@@ -311,8 +379,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/myheroes/',
-      github: 'https://github.com/ayoub3bidi/myheroes',
+      repo: 'https://github.com/ayoub3bidi/myheroes',
       techStack: ['Vue', 'Bootstrap'],
+      startDate: '2021-03-17',
+      endDate: '2021-03-19'
     },
     {
       title: 'Quotes',
@@ -320,8 +390,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/Quotes',
-      github: 'https://github.com/ayoub3bidi/Quotes',
+      repo: 'https://github.com/ayoub3bidi/Quotes',
       techStack: ['Bootstrap', 'Javascript', 'Public API'],
+      startDate: '2021-03-15',
+      endDate: '2021-03-15'
     },
     {
       title: 'My Favorite LOL Champion',
@@ -329,8 +401,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/myFavoriteLolChampion/',
-      github: 'https://github.com/ayoub3bidi/myFavoriteLolChampion',
+      repo: 'https://github.com/ayoub3bidi/myFavoriteLolChampion',
       techStack: ['HTML', 'Bootstrap', 'Javascript'],
+      startDate: '2021-01-17',
+      endDate: '2021-03-14'
     },
     {
       title: 'Dokkōdō',
@@ -338,8 +412,10 @@ const projectsData = [
       type: 'Open-source',
       imgSrc: '',
       href: 'https://ayoub3bidi.github.io/Dokkodo',
-      github: 'https://github.com/ayoub3bidi/Dokkodo',
+      repo: 'https://github.com/ayoub3bidi/Dokkodo',
       techStack: ['JavaScript', 'CSS', 'Webslides'],
+      startDate: '2021-01-19',
+      endDate: '2021-03-13'
     },
   ]
   
