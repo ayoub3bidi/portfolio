@@ -1,19 +1,26 @@
 ---
-import MainGridLayout from '../layouts/MainGridLayout.astro'
-import { Icon } from 'astro-icon/components'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
-import projectsData from '../constants/projects'
 import ButtonTag from '@components/control/ButtonTag.astro'
+import TimelineSidebar from '@components/misc/TimelineSidebar.svelte'
+import { Icon } from 'astro-icon/components'
+import projectsData from '../constants/projects'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
+import MainGridLayout from '../layouts/MainGridLayout.astro'
 
-const projectTypes = ['All', ...new Set(projectsData.map(project => project.type))]
+const projectTypes = [
+  'All',
+  ...new Set(projectsData.map(project => project.type)),
+]
 const projectCounts: { [key: string]: number } = {
-    All: projectsData.length,
-    ...Object.fromEntries(
-        projectTypes
-            .filter(type => type !== 'All')
-            .map(type => [type, projectsData.filter(project => project.type === type).length])
-    )
+  All: projectsData.length,
+  ...Object.fromEntries(
+    projectTypes
+      .filter(type => type !== 'All')
+      .map(type => [
+        type,
+        projectsData.filter(project => project.type === type).length,
+      ]),
+  ),
 }
 ---
 
@@ -34,6 +41,7 @@ const projectCounts: { [key: string]: number } = {
             <div 
                 class="project-card bg-[var(--card-bg)] h-full transform overflow-hidden rounded-md border-2 border-solid border-gray-200 transition duration-500 hover:rounded-md hover:border-[var(--primary)] dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
                 data-type={project.type}
+                data-start-date={project.startDate}
             >
                 <div class="p-4 sm:p-6">
                     <div class="font-bold text-lg sm:text-xl text-center mb-1 dark:text-neutral-50">{project.title}</div>
@@ -81,6 +89,8 @@ const projectCounts: { [key: string]: number } = {
             </div>
         ))}
     </div>
+    
+    <TimelineSidebar slot="after-main" projects={projectsData} client:load />
 </MainGridLayout>
 
 <script>

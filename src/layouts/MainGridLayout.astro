@@ -86,6 +86,9 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
         </div>
 
         <BackToTop></BackToTop>
+        
+        <!-- Additional content outside overflow-hidden (e.g., timeline) -->
+        <slot name="after-main"></slot>
     </div>
 </div>
 
