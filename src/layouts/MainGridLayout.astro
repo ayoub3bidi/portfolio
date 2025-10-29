@@ -78,6 +78,8 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
                         <Footer></Footer>
                     </div>
                 </div>
+                <!-- Additional content outside overflow-hidden (e.g., timeline) but still within swup container -->
+                <slot name="after-main"></slot>
             </main>
 
             <div class="footer col-span-2 onload-animation block lg:hidden">
@@ -87,8 +89,6 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
 
         <BackToTop></BackToTop>
         
-        <!-- Additional content outside overflow-hidden (e.g., timeline) -->
-        <slot name="after-main"></slot>
     </div>
 </div>
 
