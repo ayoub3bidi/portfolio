@@ -5,13 +5,14 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "pnpm run validate:announcements && astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --apply ./src",
+    "validate:announcements": "tsx scripts/validate-announcements.ts",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
@@ -55,7 +56,8 @@
     "svelte": "^5.2.2",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",
@@ -65,7 +67,8 @@
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.13.0",
     "postcss-import": "^16.1.0",
-    "postcss-nesting": "^13.0.1"
+    "postcss-nesting": "^13.0.1",
+    "tsx": "^4.19.2"
   },
   "packageManager": "pnpm@9.14.4"
 }

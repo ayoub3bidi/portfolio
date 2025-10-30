@@ -17,6 +17,7 @@ import {
 } from '../constants/constants'
 import type { Favicon } from '../types/config'
 import { url, pathsEqual } from '../utils/url-utils'
+import Announcement from '@components/announcement/Announcement.svelte'
 
 interface Props {
   title?: string
@@ -158,6 +159,7 @@ const bannerOffset =
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "enable-banner": enableBanner}]}
 		  data-overlayscrollbars-initialize
 	>
+		<Announcement client:load />
 		<ConfigCarrier></ConfigCarrier>
 		<slot />
 
