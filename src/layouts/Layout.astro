@@ -61,6 +61,14 @@ if (!lang) {
 }
 const siteLang = lang.replace('_', '-')
 
+let ogImage: string
+if (setOGTypeArticle && banner && banner !== siteConfig.banner.src) {
+  ogImage = new URL(banner, Astro.site || Astro.url.origin).toString()
+} else {
+  const avatarPath = profileConfig.avatar || siteConfig.banner.src
+  ogImage = new URL(avatarPath.startsWith('/') ? avatarPath : `/${avatarPath}`, Astro.site || Astro.url.origin).toString()
+}
+
 const bannerOffsetByPosition = {
   top: `${BANNER_HEIGHT_EXTEND}vh`,
   center: `${BANNER_HEIGHT_EXTEND / 2}vh`,
@@ -86,6 +94,7 @@ const bannerOffset =
 		<meta property="og:url" content={Astro.url}>
 		<meta property="og:title" content={pageTitle}>
 		<meta property="og:description" content={description || pageTitle}>
+		<meta property="og:image" content={ogImage}>
 		{setOGTypeArticle ? (
         <meta property="og:type" content="article" />
         ) : (
@@ -96,6 +105,7 @@ const bannerOffset =
 		<meta property="twitter:url" content={Astro.url}>
 		<meta name="twitter:title" content={pageTitle}>
 		<meta name="twitter:description" content={description || pageTitle}>
+		<meta name="twitter:image" content={ogImage}>
 
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
