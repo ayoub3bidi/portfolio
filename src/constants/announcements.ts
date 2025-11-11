@@ -39,7 +39,7 @@ export const ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'maintenance-2025-11-01',
     startDate: '2025-11-01',
-    endDate: '2025-12-16',
+    endDate: '2025-11-29',
     message: 'Have you seen my new project ? Check it out, you might like it!',
     href: 'https://bayanflow.netlify.app',
   },

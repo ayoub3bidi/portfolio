@@ -1,5 +1,16 @@
 const projectsData = [
   {
+    title: 'airbusgeo/godal',
+    description: `golang wrapper for github.com/OSGEO/gdal`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/ayoub3bidi/godal/tree/fix/memory-leak-error-path',
+    techStack: ['Go', 'CGO', 'GDAL', 'VSI'],
+    startDate: '2025-11-04',
+    endDate: '',
+  },
+  {
     title: 'ovh/cds',
     description: `Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform.`,
     type: 'Open-source',
@@ -21,17 +32,17 @@ const projectsData = [
     startDate: '2025-10-07',
     endDate: '',
   },
-  // {
-  //   title: 'Bayan Flow',
-  //   description: `A web app that visualizes algorithms in animated step by step.`,
-  //   type: 'Open-source',
-  //   imgSrc: '',
-  //   href: 'https://bayanflow.netlify.app',
-  //   repo: 'https://github.com/ayoub3bidi/bayan-flow',
-  //   techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
-  //   startDate: '2025-10-01',
-  //   endDate: ''
-  // },
+  {
+    title: 'Bayan Flow',
+    description: `A web app that visualizes algorithms in animated step by step.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: 'https://bayanflow.netlify.app',
+    repo: 'https://github.com/ayoub3bidi/bayan-flow',
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
+    startDate: '2025-10-01',
+    endDate: ''
+  },
   // {
   //   title: 'Sacred Scripts',
   //   description: `A collection of open-source scripts and tools for automating tasks and enhancing productivity.`,
