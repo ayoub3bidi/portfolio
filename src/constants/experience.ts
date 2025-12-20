@@ -70,25 +70,6 @@ const experienceData = [
     ],
   },
   {
-    title: "Mobile Application Developer",
-    company: "Tagamuta Valley",
-    location: "Ariana, Tunisia",
-    range: "October 2022 - December 2022",
-    url: "https://tagamuta-valley.com",
-    texts: [
-      "Developed mobile app interfaces.",
-      "Consumed the backend APIs."
-    ],
-    stack: [
-      "Figma",
-      "Flutter",
-      "Bloc/Cubit",
-      "Firebase",
-      "Spring Boot",
-      "Kafka"
-    ]
-  },
-  {
     title: "End-of-studies intern",
     company: "Podyam",
     location: "Remote",

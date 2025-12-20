@@ -313,17 +313,6 @@ const projectsData = [
     endDate: '2023-01-04',
   },
   {
-    title: 'My Vets',
-    description: `A veterinary clinic mobile app.`,
-    type: 'Tagamuta Valley',
-    imgSrc: '',
-    href: 'https://play.google.com/store/apps/details?id=tn.myvetsapp.myvets',
-    repo: '',
-    techStack: ['Flutter', 'Firebase', 'Spring Boot', 'Kafka'],
-    startDate: '2022-10-05',
-    endDate: '2022-12-21',
-  },
-  {
     title: 'Sector R',
     description: `A real-time chatroom.`,
     type: 'Open-source',
