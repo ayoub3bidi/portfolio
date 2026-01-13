@@ -1,5 +1,16 @@
 const projectsData = [
   {
+    title: 'criteo/node-disruption-controller',
+    description: `A way to control node disruptions in a K8s cluster.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/criteo/node-disruption-controller/pull/76',
+    techStack: ['Go'],
+    startDate: '2025-12-19',
+    endDate: '',
+  },
+  {
     title: 'airbusgeo/godal',
     description: `golang wrapper for github.com/OSGEO/gdal`,
     type: 'Open-source',
@@ -8,7 +19,7 @@ const projectsData = [
     repo: 'https://github.com/airbusgeo/godal/pull/148',
     techStack: ['Go', 'CGO', 'GDAL', 'VSI'],
     startDate: '2025-11-04',
-    endDate: '',
+    endDate: '2025-12-18',
   },
   {
     title: 'ovh/cds',
