@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.9.4
-        version: 0.9.4(typescript@5.7.2)
+        version: 0.9.4(typescript@5.9.3)
       '@astrojs/rss':
         specifier: ^4.0.9
         version: 4.0.10
@@ -19,10 +19,10 @@ importers:
         version: 3.2.1
       '@astrojs/svelte':
         specifier: ^6.0.1
-        version: 6.0.2(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2))(lightningcss@1.27.0)(stylus@0.63.0)(svelte@5.15.0)(terser@5.37.0)(typescript@5.7.2)
+        version: 6.0.2(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3))(lightningcss@1.27.0)(stylus@0.63.0)(svelte@5.15.0)(terser@5.37.0)(typescript@5.9.3)
       '@astrojs/tailwind':
         specifier: ^5.1.2
-        version: 5.1.4(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2))(tailwindcss@3.4.17)
+        version: 5.1.4(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3))(tailwindcss@3.4.17)
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.1.1
         version: 5.1.1
@@ -55,10 +55,10 @@ importers:
         version: 0.5.15(tailwindcss@3.4.17)
       astro:
         specifier: ^4.16.13
-        version: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2)
+        version: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3)
       astro-compress:
         specifier: ^2.3.5
-        version: 2.3.5(@types/node@22.10.2)(rollup@2.79.2)(stylus@0.63.0)(typescript@5.7.2)
+        version: 2.3.5(@types/node@22.10.2)(rollup@2.79.2)(stylus@0.63.0)(typescript@5.9.3)
       astro-icon:
         specifier: ^1.1.1
         version: 1.1.4
@@ -127,7 +127,7 @@ importers:
         version: 3.4.17
       typescript:
         specifier: ^5.6.3
-        version: 5.7.2
+        version: 5.9.3
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
@@ -4378,6 +4378,7 @@ packages:
   sitemap@8.0.0:
     resolution: {integrity: sha512-+AbdxhM9kJsHtruUF39bwS/B0Fytw6Fr1o4ZAIAEqA6cke2xcoO2GleBw9Zw7nRzILVEgz7zBM5GiTJjie1G9A==}
     engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    deprecated: 'SECURITY: Multiple vulnerabilities fixed in 8.0.1 (XML injection, path traversal, command injection, protocol injection). Upgrade immediately: npm install sitemap@8.0.1'
     hasBin: true
 
   slash@3.0.0:
@@ -4636,8 +4637,8 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  typescript@5.7.2:
-    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -4895,6 +4896,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -5031,12 +5033,12 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@astrojs/check@0.9.4(typescript@5.7.2)':
+  '@astrojs/check@0.9.4(typescript@5.9.3)':
     dependencies:
-      '@astrojs/language-server': 2.15.4(typescript@5.7.2)
+      '@astrojs/language-server': 2.15.4(typescript@5.9.3)
       chokidar: 4.0.3
       kleur: 4.1.5
-      typescript: 5.7.2
+      typescript: 5.9.3
       yargs: 17.7.2
     transitivePeerDependencies:
       - prettier
@@ -5046,12 +5048,12 @@ snapshots:
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/language-server@2.15.4(typescript@5.7.2)':
+  '@astrojs/language-server@2.15.4(typescript@5.9.3)':
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/yaml2ts': 0.2.2
       '@jridgewell/sourcemap-codec': 1.5.0
-      '@volar/kit': 2.4.11(typescript@5.7.2)
+      '@volar/kit': 2.4.11(typescript@5.9.3)
       '@volar/language-core': 2.4.11
       '@volar/language-server': 2.4.11
       '@volar/language-service': 2.4.11
@@ -5107,13 +5109,13 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.1
 
-  '@astrojs/svelte@6.0.2(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2))(lightningcss@1.27.0)(stylus@0.63.0)(svelte@5.15.0)(terser@5.37.0)(typescript@5.7.2)':
+  '@astrojs/svelte@6.0.2(@types/node@22.10.2)(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3))(lightningcss@1.27.0)(stylus@0.63.0)(svelte@5.15.0)(terser@5.37.0)(typescript@5.9.3)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 4.0.4(svelte@5.15.0)(vite@5.4.11(@types/node@22.10.2)(lightningcss@1.27.0)(stylus@0.63.0)(terser@5.37.0))
-      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3)
       svelte: 5.15.0
-      svelte2tsx: 0.7.31(svelte@5.15.0)(typescript@5.7.2)
-      typescript: 5.7.2
+      svelte2tsx: 0.7.31(svelte@5.15.0)(typescript@5.9.3)
+      typescript: 5.9.3
       vite: 5.4.11(@types/node@22.10.2)(lightningcss@1.27.0)(stylus@0.63.0)(terser@5.37.0)
     transitivePeerDependencies:
       - '@types/node'
@@ -5126,9 +5128,9 @@ snapshots:
       - supports-color
       - terser
 
-  '@astrojs/tailwind@5.1.4(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@5.1.4(astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
@@ -6730,12 +6732,12 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@volar/kit@2.4.11(typescript@5.7.2)':
+  '@volar/kit@2.4.11(typescript@5.9.3)':
     dependencies:
       '@volar/language-service': 2.4.11
       '@volar/typescript': 2.4.11
       typesafe-path: 0.2.2
-      typescript: 5.7.2
+      typescript: 5.9.3
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.0.8
 
@@ -6845,12 +6847,12 @@ snapshots:
       get-intrinsic: 1.2.6
       is-array-buffer: 3.0.5
 
-  astro-compress@2.3.5(@types/node@22.10.2)(rollup@2.79.2)(stylus@0.63.0)(typescript@5.7.2):
+  astro-compress@2.3.5(@types/node@22.10.2)(rollup@2.79.2)(stylus@0.63.0)(typescript@5.9.3):
     dependencies:
       '@playform/pipe': 0.1.1
       '@types/csso': 5.0.4
       '@types/html-minifier-terser': 7.0.2
-      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.36.0)(typescript@5.7.2)
+      astro: 4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.36.0)(typescript@5.9.3)
       commander: 12.1.0
       csso: 5.0.5
       deepmerge-ts: 7.1.3
@@ -6881,7 +6883,7 @@ snapshots:
       - debug
       - supports-color
 
-  astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.36.0)(typescript@5.7.2):
+  astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.36.0)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -6934,7 +6936,7 @@ snapshots:
       semver: 7.6.3
       shiki: 1.24.4
       tinyexec: 0.3.1
-      tsconfck: 3.1.4(typescript@5.7.2)
+      tsconfck: 3.1.4(typescript@5.9.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       vite: 5.4.11(@types/node@22.10.2)(lightningcss@1.27.0)(stylus@0.63.0)(terser@5.36.0)
@@ -6944,7 +6946,7 @@ snapshots:
       yargs-parser: 21.1.1
       zod: 3.24.1
       zod-to-json-schema: 3.24.1(zod@3.24.1)
-      zod-to-ts: 1.2.0(typescript@5.7.2)(zod@3.24.1)
+      zod-to-ts: 1.2.0(typescript@5.9.3)(zod@3.24.1)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -6960,7 +6962,7 @@ snapshots:
       - terser
       - typescript
 
-  astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.7.2):
+  astro@4.16.18(@types/node@22.10.2)(lightningcss@1.27.0)(rollup@2.79.2)(stylus@0.63.0)(terser@5.37.0)(typescript@5.9.3):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -7013,7 +7015,7 @@ snapshots:
       semver: 7.6.3
       shiki: 1.24.4
       tinyexec: 0.3.1
-      tsconfck: 3.1.4(typescript@5.7.2)
+      tsconfck: 3.1.4(typescript@5.9.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.3
       vite: 5.4.11(@types/node@22.10.2)(lightningcss@1.27.0)(stylus@0.63.0)(terser@5.37.0)
@@ -7023,7 +7025,7 @@ snapshots:
       yargs-parser: 21.1.1
       zod: 3.24.1
       zod-to-json-schema: 3.24.1(zod@3.24.1)
-      zod-to-ts: 1.2.0(typescript@5.7.2)(zod@3.24.1)
+      zod-to-ts: 1.2.0(typescript@5.9.3)(zod@3.24.1)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -10237,12 +10239,12 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte2tsx@0.7.31(svelte@5.15.0)(typescript@5.7.2):
+  svelte2tsx@0.7.31(svelte@5.15.0)(typescript@5.9.3):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 5.15.0
-      typescript: 5.7.2
+      typescript: 5.9.3
 
   svelte@5.15.0:
     dependencies:
@@ -10369,9 +10371,9 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsconfck@3.1.4(typescript@5.7.2):
+  tsconfck@3.1.4(typescript@5.9.3):
     optionalDependencies:
-      typescript: 5.7.2
+      typescript: 5.9.3
 
   tslib@2.8.1: {}
 
@@ -10427,7 +10429,7 @@ snapshots:
 
   typescript@4.9.5: {}
 
-  typescript@5.7.2: {}
+  typescript@5.9.3: {}
 
   uc.micro@2.1.0: {}
 
@@ -10831,9 +10833,9 @@ snapshots:
     dependencies:
       zod: 3.24.1
 
-  zod-to-ts@1.2.0(typescript@5.7.2)(zod@3.24.1):
+  zod-to-ts@1.2.0(typescript@5.9.3)(zod@3.24.1):
     dependencies:
-      typescript: 5.7.2
+      typescript: 5.9.3
       zod: 3.24.1
 
   zod@3.24.1: {}
