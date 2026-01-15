@@ -52,7 +52,7 @@
     "remark-sectionize": "^2.0.0",
     "sanitize-html": "^2.13.1",
     "sharp": "^0.33.5",
-    "stylus": "^0.63.0",
+    "stylus": "^0.64.0",
     "svelte": "^5.2.2",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
