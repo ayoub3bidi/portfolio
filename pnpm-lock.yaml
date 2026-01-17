@@ -43,7 +43,7 @@ importers:
         version: 1.2.51
       '@iconify/svelte':
         specifier: ^4.0.2
-        version: 4.1.0(svelte@5.15.0)
+        version: 4.2.0(svelte@5.15.0)
       '@sveltejs/vite-plugin-svelte':
         specifier: ^4.0.0
         version: 4.0.4(svelte@5.15.0)(vite@5.4.11(@types/node@25.0.8)(lightningcss@1.27.0)(stylus@0.63.0)(terser@5.37.0))
@@ -1198,8 +1198,8 @@ packages:
   '@iconify-json/material-symbols@1.2.51':
     resolution: {integrity: sha512-GkxlK8ocHi3NVVozaW62jm3qR9fNY3xX2penFtIRvoe1OtNhJ2KD4KRzv8x34pugMOAZYK8sALMcU30gDgCi1A==}
 
-  '@iconify/svelte@4.1.0':
-    resolution: {integrity: sha512-6oLonIDZHXPcQa9ZKbJocaOUMOV+ALeGPVDfex/lwdlHRNUxtJzI6pu121SaoVoXpRGSAYXB/VCv/MuYzCjn5w==}
+  '@iconify/svelte@4.2.0':
+    resolution: {integrity: sha512-fEl0T7SAPonK7xk6xUlRPDmFDZVDe2Z7ZstlqeDS/sS8ve2uyU+Qa8rTWbIqzZJlRvONkK5kVXiUf9nIc+6OOQ==}
     peerDependencies:
       svelte: '>4.0.0'
 
@@ -6411,7 +6411,7 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
-  '@iconify/svelte@4.1.0(svelte@5.15.0)':
+  '@iconify/svelte@4.2.0(svelte@5.15.0)':
     dependencies:
       '@iconify/types': 2.0.0
       svelte: 5.15.0
