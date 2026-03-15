@@ -6,10 +6,16 @@ const experienceData = [
     range: "December 2023 - Present",
     url: "https://talabatn.net",
     texts: [
-      "Developed web & mobile app interfaces.",
-      "Developed RESTful API endpoints.",
-      "Developed Microservices",
-      "Conducted code reviews to ensure code quality and adherence to best practices."
+      "Redesigned the public-facing landing page, including animations, bilingual (Arabic/French) support, and multiple content sections to improve user engagement.",
+      "Developed a news and announcements system allowing admins to target specific student groups by institute and class, with full content management capabilities.",
+      "Built a Lucky Wheel gamification feature from scratch to boost student engagement, with admin controls for prizes, probabilities, and promo code distribution via email.",
+      "Implemented a promo code and discount system with usage limits, expiry management, and seamless integration into the student payment flow.",
+      "Created profile management screens for students and teachers, including a custom image cropper for profile picture uploads.",
+      "Shipped a full e-commerce module for physical and digital products, covering product listings, a checkout flow, and an order management dashboard for admins.",
+      "Built an analytics dashboard giving the team visibility into student activity, marketing performance, and complaint tracking.",
+      "Developed a teacher resources module enabling teachers to upload and share course materials, with admin controls to activate or deactivate content",
+      "Consistently improved platform UX across the app, redesigned authentication pages, unified notification styles, and enhanced the video player with keyboard shortcuts and speed controls.",
+      "Added a referral system to support user acquisition and growth initiatives."
     ],
     stack: [
       "JavaScript",
@@ -32,16 +38,13 @@ const experienceData = [
     range: "January 2023 - September 2025",
     url: "https://comwork.io",
     texts: [
-      "Designed and developed web & mobile app interfaces.",
-      "Developed RESTful API endpoints.",
-      "Developed CLI commands.",
-      "Wrote Unit and Integration tests.",
-      "Dockerized apps and added GitLab CI/CD pipelines & GitHub workflows.",
-      "Developed GitHub actions.",
-      "Estimated project timelines and resource needs for web and mobile app development.",
-      "Conducted code reviews to ensure code quality and adherence to best practices.",
-      "Formed a development team.",
-      "Created and Updated documentation.",
+      "Designed and built an enterprise cloud management platform (CWCloud) with OIDC authentication and multi-tenant architecture.",
+      "Led migration from Flask to FastAPI to improve API performance and scalability.",
+      "Built production-ready RESTful APIs with comprehensive error handling, logging, and monitoring.",
+      "Developed responsive web interfaces with React and mobile applications with Flutter, focusing on improved UX/UI.",
+      "Implemented a comprehensive testing strategy (unit, integration, E2E) to increase code quality and reduce production bugs.",
+      "Established CI/CD pipelines using GitLab CI/CD and GitHub Actions with automated testing, security scanning, and containerized deployments using Docker.",
+      "Led technical reviews to improve code quality and speed up the review process."
     ],
     stack: [
       "Docker",
