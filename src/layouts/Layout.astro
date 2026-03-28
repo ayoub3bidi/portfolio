@@ -376,6 +376,10 @@ const setup = () => {
 		}
 	})
 */
+	// Swup uses fetch(); without this, browsers/CDNs can return cached HTML so swapped pages miss updated astro-islands.
+	window.swup.hooks.before('fetch:request', (_visit, args) => {
+		Object.assign(args.options, { cache: 'no-store' })
+	})
 	window.swup.hooks.on('link:click', () => {
 		// Remove the delay for the first time page load
 		document.documentElement.style.setProperty('--content-delay', '0ms')
