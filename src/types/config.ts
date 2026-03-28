@@ -12,7 +12,12 @@ export type SiteConfig = {
   }
   banner: {
     enable: boolean
+    /** Local or remote image; used when media is `image`, and as the reduced-motion fallback when media is `youtube`. */
     src: string
+    /** `youtube` shows a muted looping embed; `image` (default) keeps the static banner. */
+    media?: 'image' | 'youtube'
+    /** Required when media is `youtube` (e.g. `z9Ug-3qhrwY` from the embed URL). */
+    youtubeVideoId?: string
     position?: 'top' | 'center' | 'bottom'
     credit: {
       enable: boolean

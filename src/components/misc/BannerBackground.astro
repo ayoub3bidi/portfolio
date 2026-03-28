@@ -1,0 +1,201 @@
+---
+import type { SiteConfig } from '../../types/config'
+import ImageWrapper from './ImageWrapper.astro'
+
+interface Props {
+  banner: SiteConfig['banner']
+  class?: string
+}
+
+const { banner, class: className } = Astro.props
+
+const isYoutube =
+  banner.media === 'youtube' &&
+  typeof banner.youtubeVideoId === 'string' &&
+  banner.youtubeVideoId.length > 0
+
+const ytId = isYoutube ? banner.youtubeVideoId : ''
+---
+
+{
+  isYoutube ? (
+    <div
+      id="banner"
+      data-youtube-id={ytId}
+      class:list={[className, 'overflow-hidden relative isolate']}
+    >
+      <div
+        class="banner-video-layer absolute inset-0 z-0 motion-reduce:hidden"
+        aria-hidden="true"
+      >
+        <div class="banner-youtube-iframe">
+          <div id="banner-yt-player" />
+        </div>
+      </div>
+      <div
+        id="banner-static-fallback"
+        class="banner-static-fallback pointer-events-none absolute inset-0 z-[1] motion-reduce:opacity-100"
+      >
+        <ImageWrapper
+          src={banner.src}
+          position={banner.position}
+          alt=""
+          class="h-full w-full"
+        />
+      </div>
+      <div class="pointer-events-none absolute inset-0 z-[2] bg-black/20 transition dark:bg-black/30" />
+    </div>
+  ) : (
+    <ImageWrapper
+      id="banner"
+      alt="Banner image of the blog"
+      class:list={[className]}
+      src={banner.src}
+      position={banner.position}
+    />
+  )
+}
+
+<style>
+  .banner-video-layer {
+    overflow: hidden;
+  }
+  .banner-youtube-iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 56.25vw;
+    min-width: 177.78vh;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+  }
+  #banner-yt-player,
+  .banner-youtube-iframe :global(iframe) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    pointer-events: none;
+  }
+  .banner-static-fallback {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+  }
+  #banner.banner-yt-ready .banner-static-fallback {
+    opacity: 0;
+  }
+  #banner.banner-yt-failed .banner-static-fallback {
+    opacity: 1;
+  }
+  #banner.banner-yt-failed .banner-video-layer {
+    display: none;
+  }
+</style>
+
+{
+  isYoutube && (
+    <script is:inline define:vars={{ ytId }}>
+      ;(function () {
+        const READY_TIMEOUT_MS = 12000
+
+        function initBannerYoutube() {
+          const banner = document.getElementById('banner')
+          if (!banner || banner.dataset.youtubeId !== ytId) return
+          if (banner.dataset.ytBannerInit === '1') return
+          if (!document.getElementById('banner-yt-player')) return
+
+          if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            return
+          }
+
+          banner.dataset.ytBannerInit = '1'
+
+          let ready = false
+          const failSafe = window.setTimeout(function () {
+            if (!ready) {
+              banner.classList.add('banner-yt-failed')
+            }
+          }, READY_TIMEOUT_MS)
+
+          function clearFailSafe() {
+            window.clearTimeout(failSafe)
+          }
+
+          function markReady() {
+            ready = true
+            clearFailSafe()
+            banner.classList.add('banner-yt-ready')
+          }
+
+          function markFailed() {
+            clearFailSafe()
+            banner.classList.remove('banner-yt-ready')
+            banner.classList.add('banner-yt-failed')
+          }
+
+          function createPlayer() {
+            try {
+              const _bannerYt = new YT.Player('banner-yt-player', {
+                videoId: ytId,
+                width: '100%',
+                height: '100%',
+                playerVars: {
+                  autoplay: 1,
+                  mute: 1,
+                  loop: 1,
+                  playlist: ytId,
+                  controls: 0,
+                  modestbranding: 1,
+                  playsinline: 1,
+                  rel: 0,
+                },
+                events: {
+                  onReady: function () {
+                    markReady()
+                  },
+                  onError: function () {
+                    markFailed()
+                  },
+                },
+              })
+              void _bannerYt
+            } catch {
+              markFailed()
+            }
+          }
+
+          if (window.YT && window.YT.Player) {
+            createPlayer()
+            return
+          }
+
+          const previous = window.onYouTubeIframeAPIReady
+          window.onYouTubeIframeAPIReady = function () {
+            if (typeof previous === 'function') {
+              previous()
+            }
+            createPlayer()
+          }
+
+          if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+            const tag = document.createElement('script')
+            tag.src = 'https://www.youtube.com/iframe_api'
+            tag.async = true
+            document.head.appendChild(tag)
+          }
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initBannerYoutube)
+        } else {
+          initBannerYoutube()
+        }
+
+        document.addEventListener('astro:after-swap', initBannerYoutube)
+      })()
+    </script>
+  )
+}

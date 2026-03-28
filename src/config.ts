@@ -16,13 +16,15 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: true,
-    src: 'assets/images/ghibli-frog.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    src: 'assets/images/ghibli-frog.png',   // Fallback + Open Graph context; relative to /src unless it starts with '/'
+    media: 'youtube',
+    youtubeVideoId: 'z9Ug-3qhrwY',
+    position: 'center',      // Used for the image fallback; video uses a centered cover crop
     credit: {
-      enable: true,         // Display the credit text of the banner image
-      text: 'Spirited Away - Studio Ghibli',              // Credit text to be displayed
-      url: 'https://www.imdb.com/title/tt0245429'                // (Optional) URL link to the original artwork or artist's page
-    }
+      enable: true,
+      text: 'Studio Ghibli Nature Loop — HBO Max',
+      url: 'https://www.youtube.com/watch?v=z9Ug-3qhrwY',
+    },
   },
   toc: {
     enable: true,           // Display the table of contents on the right side of the post
@@ -51,7 +53,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/profile-pic-2.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Ayoub Abidi',
-  bio: 'Full-stack Developer',
+  bio: 'Software Developer',
   openToOpportunities: true,
   links: [
     // Visit https://icones.js.org/ for icon codes
