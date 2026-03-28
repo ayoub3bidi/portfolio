@@ -6,7 +6,7 @@ import MainGridLayout from '@/layouts/MainGridLayout.astro'
 import { projectId, sortProjectsForPage } from '@/utils/projects'
 import TimelineSidebar from '@components/misc/TimelineSidebar.svelte'
 import ProjectCard from '@components/projects/ProjectCard.astro'
-import ProjectsToolbar from '@components/projects/ProjectsToolbar.svelte'
+import ProjectsToolbar from '@components/projects/ProjectsToolbar.astro'
 
 const sortedProjects = sortProjectsForPage(projectsData)
 
@@ -22,9 +22,6 @@ const projectCounts: Record<string, number> = {
       ]),
   ),
 }
-
-const typesJson = JSON.stringify(projectTypes)
-const countsJson = JSON.stringify(projectCounts)
 ---
 
 <MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
@@ -35,7 +32,7 @@ const countsJson = JSON.stringify(projectCounts)
     Skip to project list
   </a>
 
-  <ProjectsToolbar client:load typesJson={typesJson} countsJson={countsJson} />
+  <ProjectsToolbar projectTypes={projectTypes} projectCounts={projectCounts} />
 
   <div
     class="grid w-full grid-cols-1 gap-4 px-2 sm:gap-6 sm:px-2 lg:grid-cols-2"

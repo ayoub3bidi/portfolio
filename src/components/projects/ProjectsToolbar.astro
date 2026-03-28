@@ -1,0 +1,96 @@
+---
+interface Props {
+  projectTypes: string[]
+  projectCounts: Record<string, number>
+}
+
+const { projectTypes, projectCounts } = Astro.props
+
+const payload = encodeURIComponent(
+  JSON.stringify({ types: projectTypes, counts: projectCounts }),
+)
+---
+
+<div
+  class="mb-4 space-y-3 px-2 sm:px-2"
+  id="projects-toolbar"
+  data-payload={payload}
+>
+  <div
+    class="flex flex-wrap justify-center gap-1.5 sm:gap-2"
+    role="tablist"
+    aria-label="Filter by project type"
+  >
+    {
+      projectTypes.map(t => (
+        <button
+          type="button"
+          role="tab"
+          aria-selected="false"
+          class="filter-chip rounded-md border-2 border-solid border-gray-200 bg-[var(--card-bg)] px-2 py-1.5 text-xs text-black transition duration-300 hover:border-[var(--primary)] dark:border-gray-700 dark:text-white dark:hover:border-[var(--primary)] dark:hover:bg-gray-800 sm:px-4 sm:py-2 sm:text-sm"
+          data-toolbar-type={t}
+        >
+          <span class="whitespace-nowrap">
+            {t} ({projectCounts[t] ?? 0})
+          </span>
+        </button>
+      ))
+    }
+  </div>
+
+  <div class="pt-3 sm:pt-4">
+    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:gap-4">
+      <div class="flex min-w-0 flex-1 flex-col">
+        <label
+          for="projects-search"
+          class="mb-1 block text-xs font-medium text-neutral-500 dark:text-neutral-400"
+        >
+          Search projects
+        </label>
+        <input
+          id="projects-search"
+          type="search"
+          autocomplete="off"
+          placeholder="Title, stack, type…"
+          class="box-border h-10 w-full rounded-md border-2 border-solid border-gray-200 bg-[var(--card-bg)] px-3 text-sm text-black placeholder:text-neutral-400 focus:border-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-[var(--card-bg)] dark:border-gray-700 dark:text-white dark:focus:ring-offset-gray-900"
+          role="searchbox"
+        />
+      </div>
+      <div class="flex w-full shrink-0 flex-col sm:w-auto sm:min-w-[13.5rem]">
+        <label
+          for="projects-sort"
+          id="projects-sort-label"
+          class="mb-1 block text-xs font-medium text-neutral-500 dark:text-neutral-400"
+        >
+          Sort by start date
+        </label>
+        <select
+          id="projects-sort"
+          aria-labelledby="projects-sort-label"
+          class="projects-sort-select sort-trigger box-border h-10 w-full min-w-0 cursor-pointer appearance-none rounded-lg border-2 border-solid border-gray-200 bg-[var(--card-bg)] bg-[length:1rem] bg-[right_0.65rem_center] bg-no-repeat px-3 pr-9 text-left text-sm font-medium text-neutral-900 shadow-sm transition-[border-color,box-shadow,transform] duration-200 ease-out hover:border-[var(--primary)]/60 hover:shadow-md focus:border-[var(--primary)] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] focus:ring-offset-2 focus:ring-offset-[var(--card-bg)] active:scale-[0.99] motion-reduce:transition-none motion-reduce:active:scale-100 dark:border-gray-700 dark:text-white dark:focus:ring-offset-gray-900"
+        >
+          <option value="date">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <p class="sr-only" aria-live="polite" data-projects-toolbar-announce />
+</div>
+
+<style is:global>
+  #projects-toolbar .filter-chip-active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+  }
+
+  #projects-toolbar select.projects-sort-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23737373'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  }
+
+  .dark #projects-toolbar select.projects-sort-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23a3a3a3'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+  }
+</style>
