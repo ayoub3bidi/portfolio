@@ -6,7 +6,7 @@ const projectsData = [
     imgSrc: '',
     href: 'https://edim.com.tn',
     repo: '',
-    techStack: ['React, Tailwind CSS, Framer Motion, FastAPI, PostgreSQL, Redis, Docker'],
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2025-11-29',
     endDate: '',
   },
