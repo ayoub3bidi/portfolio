@@ -36,9 +36,10 @@ export default defineConfig({
       // the default value `transition-` cause transition delay
       // when the Tailwind class `transition-all` is used
       containers: ["main", "#toc"],
+      // Morph updates the live <main> in place; default clone+replace breaks astro-island hydration after navigations.
+      morph: ["main"],
       smoothScrolling: true,
-      // In-memory page cache can serve HTML from before a deploy; production then keeps old client directives (e.g. islands) until a full reload.
-      cache: false,
+      cache: true,
       preload: true,
       accessibility: true,
       updateHead: true,
