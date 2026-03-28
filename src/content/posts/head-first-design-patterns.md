@@ -126,6 +126,3 @@ The `solution`: a general design that anyone can apply which resolves the goal a
 An Anti-Pattern tells you how to go from a problem to a BAD solution.  
     → An anti-pattern always looks like a good solution, but then turns out to be a bad solution when it is applied.    
 
--------
-
-This article is originally published on [Book Notes](https://book-notes.vercel.app/docs/head-first-design-patterns)

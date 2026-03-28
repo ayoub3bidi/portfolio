@@ -145,7 +145,3 @@ RGB stands for **R**ed, **G**ree, and **B**lue. The colors in RGB are used for d
 Use CMYK for projects that are to be printed.  
 Use RGB for anything that will be viewed on a screen.
 ```
-
------
-
-This article is originally published on [Book Notes](https://book-notes.vercel.app/docs/the-non-designers-design-book)

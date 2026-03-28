@@ -1,4 +1,6 @@
-const projectsData = [
+import type { Project } from '../types/project'
+
+const projectsData: Project[] = [
   {
     title: 'EDIM',
     description: `The official website of EDIM real estate company in Tunisia.`,
@@ -9,6 +11,12 @@ const projectsData = [
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2025-11-29',
     endDate: '',
+    role: 'Full-stack developer',
+    impact: 'Production marketing site with CMS-backed content and performant front end.',
+    highlights: [
+      'Animated UI with Framer Motion and a cohesive Tailwind design system',
+      'API and data layer with FastAPI, PostgreSQL, and Redis',
+    ],
   },
   {
     title: 'boschglobal/dse.sdp',
@@ -20,6 +28,8 @@ const projectsData = [
     techStack: ['Go'],
     startDate: '2026-02-28',
     endDate: '',
+    role: 'Contributor',
+    highlights: ['Go SDK and simulation workflow improvements via upstream PR.'],
   },
   {
     title: 'telekom/sparrow',
@@ -70,7 +80,7 @@ const projectsData = [
     description: `Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform.`,
     type: 'Open-source',
     imgSrc: '',
-    href: 'ovh.github.io/cds',
+    href: 'https://ovh.github.io/cds',
     repo: 'https://github.com/ovh/cds/pull/7535',
     techStack: ['Go', 'PostgreSQL', 'Redis', 'GRPC', 'Docker'],
     startDate: '2025-10-27',
@@ -96,7 +106,13 @@ const projectsData = [
     repo: 'https://github.com/ayoub3bidi/bayan-flow',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
     startDate: '2025-10-01',
-    endDate: ''
+    endDate: '',
+    role: 'Author & maintainer',
+    impact: 'Interactive learning tool for algorithm visualization in the browser.',
+    highlights: [
+      'Step-by-step animations with D3 and Framer Motion',
+      'Vite-based SPA with vitest for core logic',
+    ],
   },
   {
     title: 'Swiss Knife',
@@ -138,6 +154,12 @@ const projectsData = [
     imgSrc: '',
     href: 'https://talabatn.net',
     repo: '',
+    role: 'Full-stack developer',
+    impact: 'Cross-platform learning experience for students with web and mobile clients.',
+    highlights: [
+      'React Native and web clients sharing APIs',
+      'FastAPI/Flask services with PostgreSQL',
+    ],
     techStack: [
       'React Native',
       'React',
@@ -174,6 +196,8 @@ const projectsData = [
     techStack: ['Fast API', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2023-10-04',
     endDate: '',
+    role: 'Author & maintainer',
+    impact: 'Starter template for API services with Dockerized Postgres and Redis.',
   },
   {
     title: 'Object Detection System',
@@ -294,6 +318,12 @@ const projectsData = [
     imgSrc: '',
     href: 'https://www.cwcloud.tech',
     repo: 'https://github.com/comworkio/comwork-cloud-wiki',
+    role: 'Full-stack engineer',
+    impact: 'Cloud developer environments with docs, APIs, and infrastructure automation.',
+    highlights: [
+      'Large product surface: React, FastAPI, Kubernetes, and multi-cloud tooling',
+      'Long-running engagement across frontend, backend, and DevOps',
+    ],
     techStack: [
       'React',
       'Docusaurus',

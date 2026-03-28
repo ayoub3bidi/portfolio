@@ -1,0 +1,116 @@
+---
+import type { Project } from '@/types/project'
+import {
+  buildSearchBlob,
+  formatProjectDateRange,
+  getOpenSourceKind,
+} from '@/utils/projects'
+import ButtonTag from '@components/control/ButtonTag.astro'
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  project: Project
+  projectId: string
+}
+
+const { project, projectId } = Astro.props
+
+const dateLabel = formatProjectDateRange(project)
+const searchBlob = buildSearchBlob(project)
+const ossKind = getOpenSourceKind(project)
+
+const isGitlabRepo = project.repo.includes('gitlab.com')
+let repoIcon = 'fa6-brands:github'
+let repoAriaLabel = 'GitHub repository'
+if (isGitlabRepo) {
+  repoIcon = 'fa6-brands:gitlab'
+  repoAriaLabel = 'GitLab repository'
+} else if (ossKind === 'pull-request') {
+  repoIcon = 'fa6-solid:code-pull-request'
+  repoAriaLabel = 'GitHub pull request'
+} else if (ossKind === 'own-repo') {
+  repoAriaLabel = 'My GitHub repository'
+}
+---
+
+<article
+  class="project-card flex h-full min-h-0 transform flex-col overflow-hidden rounded-md border-2 border-solid border-gray-200 bg-[var(--card-bg)] transition duration-500 hover:rounded-md hover:border-[var(--primary)] motion-reduce:transition-none dark:border-gray-700 dark:hover:border-[var(--primary)] dark:hover:bg-gray-800"
+  data-project-card
+  data-project-id={projectId}
+  data-type={project.type}
+  data-start-date={project.startDate}
+  data-end-date={project.endDate || ''}
+  data-title={project.title}
+  data-search={searchBlob}
+  data-sort-date={project.startDate}
+  data-oss-kind={ossKind ?? ''}
+>
+  <div class="flex min-h-0 flex-1 flex-col p-4 sm:p-6">
+    <div class="shrink-0">
+      <div class="mb-1 text-center text-lg font-bold text-neutral-900 dark:text-neutral-50 sm:text-xl">
+        {project.title}
+      </div>
+      {
+        dateLabel && (
+          <p class="mb-2 text-center text-xs font-medium uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            {dateLabel}
+          </p>
+        )
+      }
+      <div class="mx-auto mb-2 h-1 w-5 rounded-full bg-[var(--primary)]"></div>
+    </div>
+
+    <div class="min-h-0 flex-1 pt-1">
+      <p
+        class="text-center text-sm leading-relaxed text-neutral-400 sm:text-base dark:text-neutral-400"
+      >
+        {project.description}
+      </p>
+    </div>
+
+    <div class="mt-3 flex shrink-0 flex-wrap justify-center gap-1.5 sm:mt-4 sm:gap-2">
+      {project.techStack.map(tech => (
+        <ButtonTag>{tech}</ButtonTag>
+      ))}
+    </div>
+
+    <div class="mt-3 flex shrink-0 justify-center gap-2 sm:mt-4 sm:gap-3">
+      {
+        project.href && (
+          <a
+            href={project.href.startsWith('http') ? project.href : `https://${project.href}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-regular h-9 w-9 rounded-lg active:scale-90 motion-reduce:transition-none motion-reduce:active:transform-none sm:h-10 sm:w-10"
+            aria-label={
+              project.href.includes('play.google.com') ? 'Google Play Store' : 'Live Demo'
+            }
+          >
+            <Icon
+              name={
+                project.href.includes('play.google.com')
+                  ? 'fa6-brands:google-play'
+                  : 'fa6-solid:globe'
+              }
+              class="text-[1.25rem] sm:text-[1.5rem]"
+            />
+          </a>
+        )
+      }
+
+      {
+        project.repo && (
+          <a
+            href={project.repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-regular h-9 w-9 rounded-lg active:scale-90 motion-reduce:transition-none motion-reduce:active:transform-none sm:h-10 sm:w-10"
+            aria-label={repoAriaLabel}
+          >
+            <Icon name={repoIcon} class="text-[1.25rem] sm:text-[1.5rem]" />
+          </a>
+        )
+      }
+    </div>
+  </div>
+</article>

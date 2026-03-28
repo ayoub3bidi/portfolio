@@ -561,5 +561,4 @@ same.
 
 Special thanks to [Majdi Zlitni](https://github.com/Majdi-Zlitni)
 
-This article is originally published on [Book Notes](https://book-notes.vercel.app/docs/clean-architecture)
 
