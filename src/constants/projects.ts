@@ -4,7 +4,7 @@ const projectsData = [
     description: `The official website of EDIM real estate company in Tunisia.`,
     type: 'Freelance',
     imgSrc: '',
-    href: 'https://edim.tn',
+    href: 'https://edim.com.tn',
     repo: '',
     techStack: ['React, Tailwind CSS, Framer Motion, FastAPI, PostgreSQL, Redis, Docker'],
     startDate: '2025-11-29',
