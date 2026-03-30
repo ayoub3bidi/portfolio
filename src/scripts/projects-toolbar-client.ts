@@ -124,7 +124,14 @@ function mountProjectsToolbar(root: HTMLElement): () => void {
       const typeOk = selectedType === 'All' || type === selectedType
       const searchOk = !q || blob.includes(q)
       const show = typeOk && searchOk
+      // Tailwind utilities like `flex` can override the base `[hidden]{display:none}` rule.
+      // Force an actual hide to guarantee filtering works regardless of CSS ordering.
       card.toggleAttribute('hidden', !show)
+      if (show) {
+        card.style.removeProperty('display')
+      } else {
+        card.style.display = 'none'
+      }
       if (show) visible++
     }
     if (liveRegion) {
