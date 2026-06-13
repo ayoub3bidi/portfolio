@@ -206,17 +206,26 @@ const projectsData: Project[] = [
     endDate: '2025-06-20',
   },
   {
+    title: 'Mars',
+    description: `FastAPI + PostgreSQL boilerplate with Auth, Docker, and Alembic Migrations built-in.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/ayoub3bidi/mars',
+    techStack: ['Fast API', 'Alembic', 'PostgreSQL', 'Redis', 'Docker'],
+    startDate: '2026-05-30',
+    endDate: ''
+  },
+  {
     title: 'Mercury',
-    description: `A FastAPI template with PostgreSQL and Redis databases`,
+    description: `FastAPI + PostgreSQL boilerplate with Auth, Docker, and Flyway DB Migrations built-in.`,
     type: 'Open-source',
     imgSrc: '',
     href: '',
     repo: 'https://github.com/ayoub3bidi/mercury',
-    techStack: ['Fast API', 'PostgreSQL', 'Redis', 'Docker'],
+    techStack: ['Fast API', 'Flyway DB', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2023-10-04',
-    endDate: '',
-    role: 'Author & maintainer',
-    impact: 'Starter template for API services with Dockerized Postgres and Redis.',
+    endDate: ''
   },
   {
     title: 'Object Detection System',
