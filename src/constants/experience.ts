@@ -1,5 +1,28 @@
 const experienceData = [
   {
+    title: "Full-Stack Developer",
+    company: "Byrsa Labs",
+    location: "Remote",
+    range: "November 2025 - Present",
+    url: "https://www.byrsalabs.com",
+    texts: [
+      "Architected and delivered DeepFlows.ai end-to-end across a FastAPI backend and React SPA, covering AI onboarding, investor matching, document generation, and subscription billing",
+      "Built a two-stage investor matching engine, processing 12,000+ VC investors, with tier-gated access from 3 to 450 matches per plan",
+      "Implemented an AI pipeline orchestrating website scraping, web search, pitch deck extraction, Q&A scoring, and company intelligence using LangGraph, and Jina AI Deep Search with zero-hallucination enrichment",
+      "Developed a warm-introduction path engine that scores multi-hop connections through the people graph, surfacing the strongest routes from a user's network to target investors",
+      "Designed and deployed a serverless data enrichment microservice on AWS Lambda, combining Playwright web scraping with Apollo.io and Hunter.io APIs for bulk investor processing",
+    ],
+    stack: [
+      "React",
+      "FastAPI",
+      "LangGraph",
+      "Playwright",
+      "PostgreSQL",
+      "Docker",
+      "AWS Lambda",
+    ],
+  },
+  {
     title: "Full-stack Developer (Freelance)",
     company: "Talaba TN",
     location: "Remote",
