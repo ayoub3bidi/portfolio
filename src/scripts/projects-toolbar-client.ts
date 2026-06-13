@@ -210,4 +210,5 @@ export function setupProjectsToolbar(): void {
   }
 
   document.addEventListener('astro:page-load', onPageLoad)
+  onPageLoad()
 }
