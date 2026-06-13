@@ -39,9 +39,8 @@ const parseExperienceRange = (range: string): DateRange => {
   } else {
     const [endMonth, endYear] = endPart.split(" ");
     end = new Date(`${endMonth} 1, ${endYear}`);
-    // Set to end of month
+    // Set to first of next month for an inclusive month range
     end.setMonth(end.getMonth() + 1);
-    end.setDate(0);
   }
   
   return { start, end };

@@ -37,11 +37,16 @@ const totalExp = calculateTotalExperience(experienceData);
             const [startMonth, startYear] = experience.range
               .split(" - ")[0]
               .split(" ");
+            const endLabel = experience.range.split(" - ")[1];
+            const endDate = endLabel === "Present"
+              ? new Date()
+              : new Date(`${endLabel} 1`);
+            if (endLabel !== "Present") {
+              endDate.setMonth(endDate.getMonth() + 1);
+            }
             const duration = calculateDuration(
               `${startMonth} 1, ${startYear}`,
-              experience.range.split(" - ")[1] === "Present"
-                ? new Date()
-                : new Date(`${experience.range.split(" - ")[1]} 1`)
+              endDate
             );
 
             return (
