@@ -2,6 +2,25 @@ import type { Project } from '../types/project'
 
 const projectsData: Project[] = [
   {
+    title: 'DeepFlows.ai',
+    description: `An investment networking platform that helps VC funds discover and connect with LP investors through warm introductions.`,
+    type: 'Byrsa Labs',
+    imgSrc: '',
+    href: 'https://deepflows.ai',
+    repo: '',
+    techStack: ['Python', 'FastAPI', 'SQLAlchemy', 'React', 'TypeScript', 'Vite', 'TanStack Query', 'Tailwind CSS', 'LangChain', 'Docker', 'AWS Lambda', 'Stripe', 'PostgreSQL', 'Playwright'],
+    startDate: '2025-11-01',
+    endDate: '',
+    role: 'Full-stack developer',
+    impact: 'Production platform serving VC firms with AI-powered investor discovery, enrichment, and outreach.',
+    highlights: [
+      'Multi-provider LinkedIn enrichment pipeline with LLM-based data extraction',
+      'Warm-introduction path engine scoring multi-hop connections through a people graph',
+      'Full investor CRM with CSV import, outreach tracking, and Stripe subscription billing',
+      'AI-powered founder onboarding with pitch deck analysis and document generation',
+    ],
+  },
+  {
     title: 'EDIM',
     description: `The official website of EDIM real estate company in Tunisia.`,
     type: 'Freelance',
@@ -27,7 +46,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/boschglobal/dse.sdp/pull/43',
     techStack: ['Go'],
     startDate: '2026-02-28',
-    endDate: '',
+    endDate: '2026-04-17',
     role: 'Contributor',
     highlights: ['Go SDK and simulation workflow improvements via upstream PR.'],
   },
@@ -40,7 +59,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/telekom/sparrow/pull/391',
     techStack: ['Go'],
     startDate: '2026-02-08',
-    endDate: '',
+    endDate: '2026-05-09',
   },
   {
     title: 'zalando/go-keyring',
@@ -62,7 +81,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/criteo/node-disruption-controller/pull/76',
     techStack: ['Go'],
     startDate: '2025-12-19',
-    endDate: '',
+    endDate: '2026-01-12',
   },
   {
     title: 'airbusgeo/godal',
@@ -102,7 +121,7 @@ const projectsData: Project[] = [
     description: `A web app that visualizes algorithms in animated step by step.`,
     type: 'Open-source',
     imgSrc: '',
-    href: 'https://bayanflow.netlify.app',
+    href: 'https://bayanflow.com',
     repo: 'https://github.com/ayoub3bidi/bayan-flow',
     techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
     startDate: '2025-10-01',
