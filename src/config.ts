@@ -68,14 +68,14 @@ export const profileConfig: ProfileConfig = {
       url: 'https://www.linkedin.com/in/ayoubabidi',
     },
     {
+      name: 'X',
+      icon: 'fa6-brands:x-twitter',
+      url: 'https://x.com/ayoub3bidi',
+    },
+    {
       name: 'Email',
       icon: 'fa6-regular:envelope',
       url: 'mailto:contact@ayoub3bidi.me'
-    },
-    {
-      name: 'WhatsApp',
-      icon: 'fa6-brands:whatsapp',
-      url: 'https://wa.me/+21629608841'
     }
   ],
 }

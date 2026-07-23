@@ -2,17 +2,55 @@ import type { Project } from '../types/project'
 
 const projectsData: Project[] = [
   {
+    title: 'Sun',
+    description: `The command-line interface of the Solar Stack. A lightweight Go CLI that scaffolds production-ready repositories from reusable templates using the Solar Commons engine.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/ayoub3bidi/sun',
+    techStack: ['Go', 'Cobra', 'Bubble Tea', 'Lip Gloss', 'Go-Git'],
+    startDate: '2026-06-24',
+    endDate: '',
+  },
+  {
+    title: 'Solar Commons',
+    description: `Core Go library for the sun CLI. A reusable Go scaffolding engine powering the Solar Stack.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/ayoub3bidi/solar-commons',
+    techStack: ['Go', 'Go-Git'],
+    startDate: '2026-06-20',
+    endDate: '',
+  },
+  {
     title: 'DeepFlows.ai',
     description: `An investment networking platform that helps VC funds discover and connect with LP investors through warm introductions.`,
     type: 'Byrsa Labs',
     imgSrc: '',
     href: 'https://deepflows.ai',
     repo: '',
-    techStack: ['Python', 'FastAPI', 'SQLAlchemy', 'React', 'TypeScript', 'Vite', 'TanStack Query', 'Tailwind CSS', 'LangChain', 'Docker', 'AWS Lambda', 'Stripe', 'PostgreSQL', 'Playwright'],
+    techStack: [
+      'Python',
+      'FastAPI',
+      'SQLAlchemy',
+      'React',
+      'TypeScript',
+      'Vite',
+      'TanStack Query',
+      'Tailwind CSS',
+      'LangChain',
+      'Docker',
+      'AWS Lambda',
+      'Stripe',
+      'PostgreSQL',
+      'Playwright',
+    ],
     startDate: '2025-11-01',
     endDate: '',
     role: 'Full-stack developer',
-    impact: 'Production platform serving VC firms with AI-powered investor discovery, enrichment, and outreach.',
+    impact:
+      'Production platform serving VC firms with AI-powered investor discovery, enrichment, and outreach.',
     highlights: [
       'Multi-provider LinkedIn enrichment pipeline with LLM-based data extraction',
       'Warm-introduction path engine scoring multi-hop connections through a people graph',
@@ -27,11 +65,20 @@ const projectsData: Project[] = [
     imgSrc: '',
     href: 'https://edim.com.tn',
     repo: '',
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'FastAPI', 'PostgreSQL', 'Redis', 'Docker'],
+    techStack: [
+      'React',
+      'Tailwind CSS',
+      'Framer Motion',
+      'FastAPI',
+      'PostgreSQL',
+      'Redis',
+      'Docker',
+    ],
     startDate: '2025-11-29',
     endDate: '',
     role: 'Full-stack developer',
-    impact: 'Production marketing site with CMS-backed content and performant front end.',
+    impact:
+      'Production marketing site with CMS-backed content and performant front end.',
     highlights: [
       'Animated UI with Framer Motion and a cohesive Tailwind design system',
       'API and data layer with FastAPI, PostgreSQL, and Redis',
@@ -48,7 +95,9 @@ const projectsData: Project[] = [
     startDate: '2026-02-28',
     endDate: '2026-04-17',
     role: 'Contributor',
-    highlights: ['Go SDK and simulation workflow improvements via upstream PR.'],
+    highlights: [
+      'Go SDK and simulation workflow improvements via upstream PR.',
+    ],
   },
   {
     title: 'telekom/sparrow',
@@ -99,7 +148,7 @@ const projectsData: Project[] = [
     description: `Enterprise-Grade Continuous Delivery & DevOps Automation Open Source Platform.`,
     type: 'Open-source',
     imgSrc: '',
-    href: 'https://ovh.github.io/cds',
+    href: '',
     repo: 'https://github.com/ovh/cds/pull/7535',
     techStack: ['Go', 'PostgreSQL', 'Redis', 'GRPC', 'Docker'],
     startDate: '2025-10-27',
@@ -119,15 +168,28 @@ const projectsData: Project[] = [
   {
     title: 'Bayan Flow',
     description: `A web app that visualizes algorithms in animated step by step.`,
-    type: 'Open-source',
-    imgSrc: '',
+    type: 'My Products',
+    imgSrc:
+      'https://ph-files.imgix.net/59629e42-e8d0-4e57-b5a0-9347eb629195.png?auto=compress,format&codec=mozjpeg&cs=strip&dpr=1&fit=max&fm=pjpg&frame=1&h=551&w=1100',
     href: 'https://bayanflow.com',
     repo: 'https://github.com/ayoub3bidi/bayan-flow',
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'D3js', 'vitejs', 'vitest'],
+    techStack: [
+      'React',
+      'Tailwind CSS',
+      'Framer Motion',
+      'D3js',
+      'Vite.js',
+      'Vitest',
+      'Remotion',
+      'Pyodide',
+      'Supabase',
+      'Cloudflare',
+    ],
     startDate: '2025-10-01',
     endDate: '',
     role: 'Author & maintainer',
-    impact: 'Interactive learning tool for algorithm visualization in the browser.',
+    impact:
+      'Interactive learning tool for algorithm visualization in the browser.',
     highlights: [
       'Step-by-step animations with D3 and Framer Motion',
       'Vite-based SPA with vitest for core logic',
@@ -142,7 +204,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/ayoub3bidi/swiss-knife',
     techStack: ['Python'],
     startDate: '2024-10-06',
-    endDate: ''
+    endDate: '',
   },
   {
     title: 'Comwork Cloud MCP',
@@ -174,7 +236,8 @@ const projectsData: Project[] = [
     href: 'https://talabatn.net',
     repo: '',
     role: 'Full-stack developer',
-    impact: 'Cross-platform learning experience for students with web and mobile clients.',
+    impact:
+      'Cross-platform learning experience for students with web and mobile clients.',
     highlights: [
       'React Native and web clients sharing APIs',
       'FastAPI/Flask services with PostgreSQL',
@@ -214,7 +277,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/ayoub3bidi/mars',
     techStack: ['Fast API', 'Alembic', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2026-05-30',
-    endDate: ''
+    endDate: '',
   },
   {
     title: 'Mercury',
@@ -225,7 +288,7 @@ const projectsData: Project[] = [
     repo: 'https://github.com/ayoub3bidi/mercury',
     techStack: ['Fast API', 'Flyway DB', 'PostgreSQL', 'Redis', 'Docker'],
     startDate: '2023-10-04',
-    endDate: ''
+    endDate: '',
   },
   {
     title: 'Object Detection System',
@@ -347,7 +410,8 @@ const projectsData: Project[] = [
     href: 'https://www.cwcloud.tech',
     repo: 'https://github.com/comworkio/comwork-cloud-wiki',
     role: 'Full-stack engineer',
-    impact: 'Cloud developer environments with docs, APIs, and infrastructure automation.',
+    impact:
+      'Cloud developer environments with docs, APIs, and infrastructure automation.',
     highlights: [
       'Large product surface: React, FastAPI, Kubernetes, and multi-cloud tooling',
       'Long-running engagement across frontend, backend, and DevOps',

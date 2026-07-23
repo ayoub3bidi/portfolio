@@ -3,10 +3,10 @@
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 
 import { getEntry } from 'astro:content'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
-import Markdown from '@components/misc/Markdown.astro'
 import CollaborationModes from '@components/CollaborationModes.astro'
+import Markdown from '@components/misc/Markdown.astro'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
 
 const collaborationPost = await getEntry('spec', 'collaboration')
 
@@ -23,7 +23,7 @@ const { Content } = await collaborationPost.render()
 
         <!-- Collaboration Modes Section -->
         <div>
-            <h2 class="mb-6 text-2xl font-bold text-neutral-900 dark:text-neutral-50">
+            <h2 class="mb-6 text-2xl font-bold text-center text-neutral-900 dark:text-neutral-50">
                 Modes of Collaboration
             </h2>
             <CollaborationModes />
