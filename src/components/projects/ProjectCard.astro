@@ -6,6 +6,7 @@ import {
   getOpenSourceKind,
 } from '@/utils/projects'
 import ButtonTag from '@components/control/ButtonTag.astro'
+import ImageWrapper from '@components/misc/ImageWrapper.astro'
 import { Icon } from 'astro-icon/components'
 
 interface Props {
@@ -15,6 +16,7 @@ interface Props {
 
 const { project, projectId } = Astro.props
 
+const hasCover = Boolean(project.imgSrc?.trim())
 const dateLabel = formatProjectDateRange(project)
 const searchBlob = buildSearchBlob(project)
 const ossKind = getOpenSourceKind(project)
@@ -45,6 +47,15 @@ if (isGitlabRepo) {
   data-sort-date={project.startDate}
   data-oss-kind={ossKind ?? ''}
 >
+  {hasCover && (
+    <div class="relative w-full aspect-video overflow-hidden">
+      <ImageWrapper
+        src={project.imgSrc}
+        alt={`Cover image of ${project.title}`}
+        class="w-full h-full"
+      />
+    </div>
+  )}
   <div class="flex min-h-0 flex-1 flex-col p-4 sm:p-6">
     <div class="shrink-0">
       <div class="mb-1 text-center text-lg font-bold text-neutral-900 dark:text-neutral-50 sm:text-xl">

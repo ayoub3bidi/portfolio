@@ -169,8 +169,7 @@ const projectsData: Project[] = [
     title: 'Bayan Flow',
     description: `A web app that visualizes algorithms in animated step by step.`,
     type: 'My Products',
-    imgSrc:
-      'https://ph-files.imgix.net/59629e42-e8d0-4e57-b5a0-9347eb629195.png?auto=compress,format&codec=mozjpeg&cs=strip&dpr=1&fit=max&fm=pjpg&frame=1&h=551&w=1100',
+    imgSrc: '',
     href: 'https://bayanflow.com',
     repo: 'https://github.com/ayoub3bidi/bayan-flow',
     techStack: [
