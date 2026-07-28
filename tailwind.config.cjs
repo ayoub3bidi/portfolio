@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif", ...defaultTheme.fontFamily.sans],
+        slogan: ["Space Grotesk", "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
   },

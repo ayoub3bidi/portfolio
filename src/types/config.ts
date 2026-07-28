@@ -24,6 +24,11 @@ export type SiteConfig = {
       text: string
       url?: string
     }
+    /** Home-only text overlay on the banner media. */
+    slogan?: {
+      enable: boolean
+      text: string
+    }
   }
   toc: {
     enable: boolean

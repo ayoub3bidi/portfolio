@@ -24,6 +24,10 @@ const { title, banner, description, lang, setOGTypeArticle, headings = [] } = As
 const hasBannerCredit =
   siteConfig.banner.enable && siteConfig.banner.credit.enable
 const hasBannerLink = !!siteConfig.banner.credit.url
+const hasBannerSlogan =
+  siteConfig.banner.enable &&
+  !!siteConfig.banner.slogan?.enable &&
+  !!siteConfig.banner.slogan.text?.trim()
 
 const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAIN_PANEL_OVERLAPS_BANNER_HEIGHT}rem)` : "5.5rem"
 ---
@@ -44,6 +48,17 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
       banner={siteConfig.banner}
       class:list={["object-cover h-full transition duration-700 opacity-0 scale-105"]}
     />
+    {hasBannerSlogan && (
+      <div
+        id="banner-slogan"
+        class="pointer-events-none absolute z-[3] flex justify-center px-4 sm:px-6"
+      >
+        <div class="banner-slogan-shade absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-b from-transparent to-black/40" aria-hidden="true"></div>
+        <p class="banner-slogan-text relative text-center text-white">
+          {siteConfig.banner.slogan!.text}
+        </p>
+      </div>
+    )}
 </div>}
 
 <!-- Main content -->

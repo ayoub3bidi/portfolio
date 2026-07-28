@@ -22,8 +22,12 @@ export const siteConfig: SiteConfig = {
     position: 'center',      // Used for the image fallback; video uses a centered cover crop
     credit: {
       enable: true,
-      text: 'Studio Ghibli Nature Loop — HBO Max',
+      text: 'Studio Ghibli Nature Loop',
       url: 'https://www.youtube.com/watch?v=z9Ug-3qhrwY',
+    },
+    slogan: {
+      enable: true,
+      text: 'Designing Logic For The Real World',
     },
   },
   toc: {
