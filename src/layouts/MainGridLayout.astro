@@ -51,10 +51,10 @@ const mainPanelTop = siteConfig.banner.enable ? `calc(${BANNER_HEIGHT}vh - ${MAI
     {hasBannerSlogan && (
       <div
         id="banner-slogan"
-        class="pointer-events-none absolute z-[3] flex justify-center px-6"
+        class="pointer-events-none absolute z-[3] flex justify-center px-4 sm:px-6"
       >
         <div class="banner-slogan-shade absolute inset-x-0 bottom-0 top-1/2 bg-gradient-to-b from-transparent to-black/40" aria-hidden="true"></div>
-        <p class="banner-slogan-text relative max-w-xl text-center font-medium tracking-wide text-white">
+        <p class="banner-slogan-text relative text-center text-white">
           {siteConfig.banner.slogan!.text}
         </p>
       </div>
