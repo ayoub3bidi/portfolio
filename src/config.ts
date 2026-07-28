@@ -25,6 +25,10 @@ export const siteConfig: SiteConfig = {
       text: 'Studio Ghibli Nature Loop — HBO Max',
       url: 'https://www.youtube.com/watch?v=z9Ug-3qhrwY',
     },
+    slogan: {
+      enable: true,
+      text: 'Designing logic for the real world',
+    },
   },
   toc: {
     enable: true,           // Display the table of contents on the right side of the post
