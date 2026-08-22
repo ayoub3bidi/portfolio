@@ -1,0 +1,4 @@
+Contact: mailto:contact@ayoub3bidi.me
+Expires: 2027-12-31T23:59:00Z
+Preferred-Languages: en, fr, ar
+Canonical: https://ayoub3bidi.me/.well-known/security.txt

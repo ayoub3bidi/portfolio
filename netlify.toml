@@ -10,6 +10,18 @@
     Referrer-Policy = "no-referrer-when-downgrade"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Link = '</llms.txt>; rel="describedby", </rss.xml>; rel="alternate"; type="application/rss+xml"'
+
+# Agent-facing markdown/plain-text resources: short cache, revalidate often
+[[headers]]
+  for = "/*.md"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/llms*.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
 
 # Astro bundles are content-hashed -> cache forever
 [[headers]]

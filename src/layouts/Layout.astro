@@ -77,6 +77,24 @@ const metaDescription = description || siteConfig.description || pageTitle
 // Canonical URL for the current page (Astro.site is guaranteed by astro.config.mjs)
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
+// Markdown twin for AI agents: pages with a generated .md version advertise it
+const mdPaths = new Set([
+  '/',
+  '/about/',
+  '/projects/',
+  '/experience/',
+  '/collaboration/',
+])
+const pathname = Astro.url.pathname
+const markdownURL =
+  pathname === '/'
+    ? new URL('index.md', Astro.site)
+    : mdPaths.has(pathname)
+      ? new URL(`${pathname.replace(/\/$/, '')}.md`, Astro.site)
+      : pathname.startsWith('/posts/') && pathname.endsWith('/')
+        ? new URL(`${pathname.replace(/\/$/, '')}.md`, Astro.site)
+        : undefined
+
 const favicons: Favicon[] = siteConfig.favicon
 
 // const siteLang = siteConfig.lang.replace('_', '-')
@@ -237,6 +255,8 @@ const bannerOffset =
 		<slot name="head"></slot>
 
 		<link rel="alternate" type="application/rss+xml" title={profileConfig.name} href={`${Astro.site}rss.xml`}/>
+		<link rel="describedby" type="text/plain" href={new URL('llms.txt', Astro.site).href} />
+		{markdownURL && <link rel="alternate" type="text/markdown" href={markdownURL.href} title="Markdown version for AI agents" />}
 
 	</head>
 	<body class=" min-h-screen transition " class:list={[{"lg:is-home": isHomePage, "is-home": isHomePage, "enable-banner": enableBanner}]}
