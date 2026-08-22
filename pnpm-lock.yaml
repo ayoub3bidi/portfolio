@@ -68,6 +68,9 @@ importers:
       hastscript:
         specifier: ^9.0.0
         version: 9.0.1
+      katex:
+        specifier: ^0.16.45
+        version: 0.16.45
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.1

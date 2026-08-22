@@ -2,6 +2,7 @@
 import type { GetStaticPaths } from 'astro'
 import PostPage from '../components/PostPage.astro'
 import Pagination from '../components/control/Pagination.astro'
+import { profileConfig, siteConfig } from '../config'
 import { PAGE_SIZE } from '../constants/constants'
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { getSortedPosts } from '../utils/content-utils'
@@ -15,9 +16,43 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { page } = Astro.props
 
 const len = page.data.length
+
+const personJsonLd = {
+  '@type': 'Person',
+  name: profileConfig.name,
+  url: Astro.site,
+  jobTitle: siteConfig.subtitle,
+  description: profileConfig.bio,
+  ...(profileConfig.avatar && {
+    image: new URL(
+      profileConfig.avatar.startsWith('/')
+        ? profileConfig.avatar
+        : `/${profileConfig.avatar}`,
+      Astro.site,
+    ).toString(),
+  }),
+  sameAs: profileConfig.links.map(link => link.url),
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    personJsonLd,
+    {
+      '@type': 'WebSite',
+      name: siteConfig.title,
+      alternateName: `${siteConfig.title} — ${siteConfig.subtitle}`,
+      url: Astro.site,
+      inLanguage: siteConfig.lang.replace('_', '-'),
+      author: personJsonLd,
+      publisher: personJsonLd,
+    },
+  ],
+}
 ---
 
-<MainGridLayout>
+<MainGridLayout description={siteConfig.description}>
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
     <PostPage page={page}></PostPage>
     <Pagination class="mx-auto onload-animation" page={page} style=`animation-delay: calc(var(--content-delay) + ${(len)*50}ms)`></Pagination>
 </MainGridLayout>

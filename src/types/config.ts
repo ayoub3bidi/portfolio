@@ -6,6 +6,17 @@ export type SiteConfig = {
 
   lang: string
 
+  /** Default meta/OG description used when a page doesn't provide one */
+  description?: string
+
+  seo?: {
+    /** e.g. '@ayoub3bidi', rendered as twitter:site / twitter:creator */
+    twitterHandle?: string
+    ogImageAlt?: string
+    googleSiteVerification?: string
+    bingSiteVerification?: string
+  }
+
   themeColor: {
     hue: number
     fixed: boolean

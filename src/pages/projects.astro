@@ -1,4 +1,5 @@
 ---
+import { profileConfig } from '@/config'
 import projectsData from '@/constants/projects'
 import I18nKey from '@/i18n/i18nKey'
 import { i18n } from '@/i18n/translation'
@@ -24,7 +25,7 @@ const projectCounts: Record<string, number> = {
 }
 ---
 
-<MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
+<MainGridLayout title={i18n(I18nKey.projects)} description={`Projects built by ${profileConfig.name} — open source work, apps, and experiments.`}>
   <a
     href="#projects-cards-container"
     class="pointer-events-none fixed left-4 top-0 z-[100] -translate-y-full rounded-b-md bg-[var(--primary)] px-4 py-2 text-sm font-medium text-white opacity-0 transition focus:pointer-events-auto focus:translate-y-0 focus:opacity-100 focus:outline-none motion-reduce:transition-none"

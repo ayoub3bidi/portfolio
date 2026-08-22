@@ -5,6 +5,7 @@ import MainGridLayout from '../layouts/MainGridLayout.astro'
 import { getEntry } from 'astro:content'
 import CollaborationModes from '@components/CollaborationModes.astro'
 import Markdown from '@components/misc/Markdown.astro'
+import { profileConfig } from '../config'
 import I18nKey from '../i18n/i18nKey'
 import { i18n } from '../i18n/translation'
 
@@ -12,7 +13,7 @@ const collaborationPost = await getEntry('spec', 'collaboration')
 
 const { Content } = await collaborationPost.render()
 ---
-<MainGridLayout title={i18n(I18nKey.collaboration)} description={i18n(I18nKey.collaboration)}>
+<MainGridLayout title={i18n(I18nKey.collaboration)} description={`Ways to collaborate with ${profileConfig.name} — freelance work, open source, and consulting.`}>
     <div class="flex flex-col gap-8 w-full">
         <!-- Intro Section -->
         <div class="card-base px-9 py-6">

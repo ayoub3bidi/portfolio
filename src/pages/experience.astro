@@ -1,20 +1,21 @@
 ---
-import MainGridLayout from "../layouts/MainGridLayout.astro";
-import { i18n } from "../i18n/translation";
-import I18nKey from "../i18n/i18nKey";
-import experienceData from '../constants/experience';
-import ButtonTag from "../components/control/ButtonTag.astro";
+import { Icon } from 'astro-icon/components'
+import ButtonTag from '../components/control/ButtonTag.astro'
+import { profileConfig } from '../config'
+import experienceData from '../constants/experience'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
+import MainGridLayout from '../layouts/MainGridLayout.astro'
 import {
   calculateDuration,
   calculateTotalExperience,
   formatDuration,
-} from "../utils/calculate-experience";
-import { Icon } from "astro-icon/components";
+} from '../utils/calculate-experience'
 
-const totalExp = calculateTotalExperience(experienceData);
+const totalExp = calculateTotalExperience(experienceData)
 ---
 
-<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+<MainGridLayout title={i18n(I18nKey.experience)} description={`Professional experience of ${profileConfig.name} — roles, companies, and engineering milestones.`}>
   <div
     class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
   >

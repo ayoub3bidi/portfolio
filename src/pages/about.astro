@@ -3,16 +3,17 @@
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 
 import { getEntry } from 'astro:content'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
 import Markdown from '@components/misc/Markdown.astro'
 import TechStack from '@components/widget/techStack.astro'
+import { profileConfig } from '../config'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
 
 const aboutPost = await getEntry('spec', 'about')
 
 const { Content } = await aboutPost.render()
 ---
-<MainGridLayout title={i18n(I18nKey.about)} description={i18n(I18nKey.about)}>
+<MainGridLayout title={i18n(I18nKey.about)} description={`Get to know ${profileConfig.name} — background, tech stack, and journey as a software developer.`}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
         <div class="card-base z-10 px-9 py-6 relative w-full ">
             <Markdown class="mt-2">
@@ -20,10 +21,17 @@ const { Content } = await aboutPost.render()
             </Markdown>
             <TechStack />
             <div class="mt-2 hidden lg:flex justify-center space-x-4">
-                <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="Go to Source">
-                    <img width=auto src="https://github-readme-streak-stats.herokuapp.com/?user=ayoub3bidi&theme=react&hide_border=true" alt="" />
+                <a href="https://github.com/denvercoder1/github-readme-streak-stats" title="GitHub contribution streak stats" rel="noopener">
+                    <img
+                        src="https://github-readme-streak-stats.herokuapp.com/?user=ayoub3bidi&theme=react&hide_border=true"
+                        alt="GitHub consecutive contribution streak for ayoub3bidi"
+                        width="640" height="158"
+                        loading="lazy"
+                        decoding="async"
+                        onerror="this.parentElement.style.display='none'"
+                    />
                 </a>
-            </div>            
+            </div>
         </div>
     </div>
 </MainGridLayout>
