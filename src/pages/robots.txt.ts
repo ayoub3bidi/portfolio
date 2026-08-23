@@ -32,11 +32,11 @@ const agentRules = [
 
 const robotsTxt = `
 # Ayoub Abidi — personal portfolio. AI agents are welcome.
-# Content signals (https://github.com/improved-initiative/content-signals):
-#   search=yes, ai-input=yes, ai-train=yes
+# Content Signals: https://contentsignals.org/
 
 User-agent: *
 Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 ${agentRules}
 
