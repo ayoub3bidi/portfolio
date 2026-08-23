@@ -17,7 +17,7 @@ export const GET: APIRoute = async () => {
     'Sun',
     'boschglobal/dse.sdp',
   ]
-  const slogan = siteConfig.banner.slogan.enable
+  const slogan = siteConfig.banner.slogan?.enable
     ? [siteConfig.banner.slogan.text, '']
     : []
   const body = [
