@@ -2,6 +2,23 @@ import type { Project } from '../types/project'
 
 const projectsData: Project[] = [
   {
+    title: 'Itqan CMS',
+    description: `Quranic Content Management System. Added a lazy Surah → Ayah → Word hierarchy tree API with lean payloads so the frontend never over-fetches ~77k words.`,
+    type: 'Open-source',
+    imgSrc: '',
+    href: '',
+    repo: 'https://github.com/Itqan-community/cms-backend/pull/436',
+    techStack: ['Python', 'Django', 'Django Ninja', 'PostgreSQL'],
+    startDate: '2026-08-08',
+    endDate: '2026-08-16',
+    role: 'Contributor',
+    highlights: [
+      'Hierarchy tree endpoints: /hierarchy/tree/, /hierarchy/surah/{id}/tree/, /hierarchy/ayah/{sura}/{n}/words/',
+      'Drill-down payloads with ayah and word counts that lazy-load on expansion',
+      'Unit and end-to-end drill-down tests covering happy path and not-found errors',
+    ],
+  },
+  {
     title: 'Sun',
     description: `The command-line interface of the Solar Stack. A lightweight Go CLI that scaffolds production-ready repositories from reusable templates using the Solar Commons engine.`,
     type: 'Open-source',
@@ -47,7 +64,7 @@ const projectsData: Project[] = [
       'Playwright',
     ],
     startDate: '2025-11-01',
-    endDate: '',
+    endDate: '2026-08-29',
     role: 'Full-stack developer',
     impact:
       'Production platform serving VC firms with AI-powered investor discovery, enrichment, and outreach.',
@@ -75,7 +92,7 @@ const projectsData: Project[] = [
       'Docker',
     ],
     startDate: '2025-11-29',
-    endDate: '',
+    endDate: '2026-04-17',
     role: 'Full-stack developer',
     impact:
       'Production marketing site with CMS-backed content and performant front end.',
@@ -254,7 +271,7 @@ const projectsData: Project[] = [
       'PostgreSQL',
     ],
     startDate: '2023-12-16',
-    endDate: '',
+    endDate: '2026-03-30',
   },
   {
     title: 'imalive',
