@@ -12,7 +12,7 @@ Most algorithm visualizers do one thing well: they *show* how algorithms work.
 
 But watching an animation is not the same as understanding it—let alone implementing it.
 
-[Bayan Flow](https://bayanflow.netlify.app) **0.4.0** is designed to bridge that gap.
+[Bayan Flow](https://bayanflow.com) **0.4.0** is designed to bridge that gap.
 
 <iframe width="100%" height="468" src="https://www.youtube.com/embed/uL3G3nvjGh4" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -183,7 +183,7 @@ Bayan Flow 0.4.0 shifts the focus from *watching algorithms* to *working with th
 
 If you're learning data structures and algorithms, this kind of feedback-driven environment can significantly improve how quickly you progress.
 
-- **App:** [https://bayanflow.netlify.app](https://bayanflow.netlify.app)  
+- **App:** [https://bayanflow.com](https://bayanflow.com)  
 - **GitHub Repo:** [https://github.com/ayoub3bidi/bayan-flow](https://github.com/ayoub3bidi/bayan-flow)  
 - **Product Hunt:** [https://www.producthunt.com/products/bayan-flow](https://www.producthunt.com/products/bayan-flow)  
 

@@ -52,7 +52,7 @@ I wrapped `ArrayBar` and `GridCell` with `React.memo`. When you've got dozens of
 
 0.4.0 will have new algorithm family categories beyond sorting and pathfinding. I'm also planning video export, an educational panel with some historical context, and an interactive code panel where you can edit the implementation and run it against tests.
 
-- **App:** [https://bayanflow.netlify.app](https://bayanflow.netlify.app)  
+- **App:** [https://bayanflow.com](https://bayanflow.com)  
 - **GitHub Repo:** [https://github.com/ayoub3bidi/bayan-flow](https://github.com/ayoub3bidi/bayan-flow)  
 - **Product Hunt:** [https://www.producthunt.com/products/bayan-flow](https://www.producthunt.com/products/bayan-flow)  
 

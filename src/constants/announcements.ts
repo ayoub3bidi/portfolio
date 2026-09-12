@@ -41,7 +41,7 @@ export const ANNOUNCEMENTS: Announcement[] = [
     startDate: '2025-11-01',
     endDate: '2025-11-29',
     message: 'Have you seen my new project ? Check it out, you might like it!',
-    href: 'https://bayanflow.netlify.app',
+    href: 'https://bayanflow.com',
   },
 ]
 

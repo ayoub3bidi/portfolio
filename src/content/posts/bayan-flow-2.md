@@ -105,7 +105,7 @@ Version 0.2.0 wasn’t about new algorithms. It was about making Bayan Flow reli
 
 If you try it, tell me what you think, especially about the audio and the mobile experience. I’ll keep logging progress; next episode should be algorithm-heavy again.  
 
-- **App:** [https://bayanflow.netlify.app](https://bayanflow.netlify.app)  
+- **App:** [https://bayanflow.com](https://bayanflow.com)  
 - **GitHub Repo:** [https://github.com/ayoub3bidi/bayan-flow](https://github.com/ayoub3bidi/bayan-flow)  
 - **Product Hunt:** [https://www.producthunt.com/products/bayan-flow](https://www.producthunt.com/products/bayan-flow)  
 

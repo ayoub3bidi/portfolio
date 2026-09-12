@@ -50,7 +50,7 @@ Future updates will include:
 
 It’s still early, but I’m happy with how it’s shaping up. And that’s what this whole thing is about: sharing that experience.  
 
-- **App:** [https://bayanflow.netlify.app](https://bayanflow.netlify.app)  
+- **App:** [https://bayanflow.com](https://bayanflow.com)  
 - **GitHub Repo:** [https://github.com/ayoub3bidi/bayan-flow](https://github.com/ayoub3bidi/bayan-flow)  
 - **Product Hunt:** [https://www.producthunt.com/products/bayan-flow](https://www.producthunt.com/products/bayan-flow)  
 
