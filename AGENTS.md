@@ -4,12 +4,13 @@ Guidance for AI coding agents (Claude Code, Cursor, Copilot, Warp, etc.) working
 
 ## Project
 
-Personal portfolio of Ayoub Abidi — Astro 4 static site with Svelte 5 islands, Tailwind CSS 3, Pagefind search. Deployed on Netlify (`dist/`), DNS proxied through Cloudflare.
+Personal portfolio of Ayoub Abidi — Astro 4 static site with Svelte 5 islands, Tailwind CSS 3, Pagefind search. Deployed on Cloudflare Workers (`dist/`), DNS proxied through Cloudflare.
 
 ## Commands
 
 - `pnpm dev` — dev server
 - `pnpm build` — validate announcements + astro build + pagefind index (use this to verify changes)
+- `pnpm deploy` — `wrangler deploy` (needs `CLOUDFLARE_API_TOKEN`; CI runs this on push to `main`)
 - `pnpm type-check` — `tsc --noEmit --isolatedDeclarations`
 - `pnpm lint` / `pnpm format` — Biome
 
@@ -17,6 +18,8 @@ Package manager is **pnpm only** (enforced via preinstall).
 
 ## Architecture map
 
+- `wrangler.jsonc` — Worker + static assets (`dist/`), `run_worker_first`, 404 handling
+- `worker/index.ts` — edge layer: `Accept: text/markdown` content negotiation + security/cache headers
 - `src/config.ts` — site/profile/nav config (single source of truth for identity data)
 - `src/constants/` — projects.ts, experience.ts, announcements.ts (data-driven content)
 - `src/content/posts/*.md` — blog posts (content collection, zod schema in `src/content/config.ts`)
