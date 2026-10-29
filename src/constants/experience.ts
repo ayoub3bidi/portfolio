@@ -1,16 +1,16 @@
 const experienceData = [
   {
-    title: 'Full-Stack Developer',
+    title: 'Full-Stack AI Developer (Freelance)',
     company: 'Byrsa Labs',
     location: 'Remote',
-    range: 'November 2025 - Present',
+    range: 'November 2025 - October 2026',
     url: 'https://www.byrsalabs.com',
     texts: [
-      'Architected and delivered DeepFlows.ai end-to-end across a FastAPI backend and React SPA, covering AI onboarding, investor matching, document generation, and subscription billing',
-      'Built a two-stage investor matching engine, processing 12,000+ VC investors, with tier-gated access from 3 to 450 matches per plan',
-      'Implemented an AI pipeline orchestrating website scraping, web search, pitch deck extraction, Q&A scoring, and company intelligence using LangGraph, and Jina AI Deep Search with zero-hallucination enrichment',
-      "Developed a warm-introduction path engine that scores multi-hop connections through the people graph, surfacing the strongest routes from a user's network to target investors",
-      'Designed and deployed a serverless data enrichment microservice on AWS Lambda, combining Playwright web scraping with Apollo.io and Hunter.io APIs for bulk investor processing',
+      'Built core backend and AI features of Deepflows.ai, a fundraising platform for VC-backed startups, in an 8-engineer team: AI onboarding, investor matching, document generation, and Stripe billing. Live with 700+ users across 425 startup projects and 12 paying firms.',
+      'Designed a two-stage investor matching engine over 12K+ VC investors and 33K+ LP firms, with plan-tiered access (3 to 450 matches), serving ranked results at 1s median latency.',
+      'Orchestrated a LangGraph agent pipeline with Jina AI Deep Search for scraping, web search, pitch deck extraction, and Q&A scoring, completing onboarding research in under 1 minute on average.',
+      'Engineered a warm-introduction path engine that scores multi-hop connections across a graph of 252K people and 143K relationship edges to surface the strongest routes to target investors.',
+      'Deployed a serverless enrichment microservice on AWS Lambda (Playwright, Apollo.io, Hunter.io), enriching 189K investor and contact records in bulk at a 97.6% success rate.'
     ],
     stack: [
       'React',
@@ -19,7 +19,7 @@ const experienceData = [
       'Playwright',
       'PostgreSQL',
       'Docker',
-      'AWS Lambda',
+      'AWS',
     ],
   },
   {
